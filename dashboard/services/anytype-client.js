@@ -172,6 +172,14 @@ async function exportMarkdown(objectId, objectName) {
  * Fixes: indentation, tables, horizontal rules, spacing, nested lists
  */
 function cleanMarkdown(md) {
+    // Pass 0: Fix bold formatting Anytype exports incorrectly
+    // 1. Remove trailing space before closing **: "**text **" → "**text**"
+    md = md.replace(/\*\*([^*\n]+?) \*\*/g, '**$1**');
+    // 2. Add space between numbered list and bold: "2.**text" → "2. **text"
+    md = md.replace(/^(\d+)\.\*\*/gm, '$1. **');
+    // 3. Fix "2.**   text**" pattern (extra spaces after **)
+    md = md.replace(/^(\d+\.\s+)\*\*\s+/gm, '$1**');
+
     let lines = md.split('\n');
 
     // Pass 1: Strip all leading whitespace, but track indentation for lists
