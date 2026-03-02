@@ -150,7 +150,7 @@ async function exportMarkdown(objectId, objectName) {
 
         // Build proper markdown with frontmatter
         const body = cleanMarkdown(rawBody);
-        const tagList = tags.map(t => t.name).filter(Boolean);
+        const tagList = tags.map(t => t.name).filter(t => t && t.toLowerCase() !== 'publish');
         const tagsYaml = tagList.length > 0 ? `\ntags:\n${tagList.map(t => `  - ${t}`).join('\n')}` : '';
         const descYaml = description ? `\ndescription: "${description}"` : '';
         let md = `---\ntitle: "${name}"\ndate: ${new Date().toISOString().split('T')[0]}${tagsYaml}${descYaml}\n---\n\n`;
@@ -173,12 +173,14 @@ async function exportMarkdown(objectId, objectName) {
  */
 function cleanMarkdown(md) {
     // Pass 0: Fix bold formatting Anytype exports incorrectly
-    // 1. Remove trailing space before closing **: "**text **" → "**text**"
-    md = md.replace(/\*\*([^*\n]+?) \*\*/g, '**$1**');
+    // 1. Remove trailing spaces before closing **: "**text **" → "**text**"
+    md = md.replace(/\*\*([^*\n]+?)\s+\*\*/g, '**$1**');
     // 2. Add space between numbered list and bold: "2.**text" → "2. **text"
     md = md.replace(/^(\d+)\.\*\*/gm, '$1. **');
     // 3. Fix "2.**   text**" pattern (extra spaces after **)
     md = md.replace(/^(\d+\.\s+)\*\*\s+/gm, '$1**');
+    // 4. Fix bold with colon before closing: "text: **" → "text:**"
+    md = md.replace(/\*\*([^*\n]+?:\s*)\*\*/g, '**$1**');
 
     let lines = md.split('\n');
 
@@ -218,8 +220,10 @@ function cleanMarkdown(md) {
         const isEmpty = line.trim() === '';
         const prevIsEmpty = prev.trim() === '';
 
-        // Skip standalone --- right at the start (conflicts with frontmatter)
-        if (i === 0 && isRule) continue;
+        // Skip standalone --- at the start of body (conflicts with frontmatter)
+        // Anytype often exports a leading --- that creates an unwanted <hr>
+        if (isRule && result.length === 0) continue;
+        if (isRule && result.every(l => l.trim() === '')) continue;
 
         // Ensure blank line before headings (if previous line is not empty)
         if (isHeading && !prevIsEmpty && result.length > 0) {
