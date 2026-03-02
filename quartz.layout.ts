@@ -13,7 +13,10 @@ export const sharedPageComponents: SharedLayout = {
         showTags: true,
         filter: (f) => {
           const slug = f.slug ?? ""
-          return slug !== "index" && !slug.endsWith("_index") && !slug.endsWith("/")
+          const filePath = f.filePath ?? ""
+          return slug !== "index"
+            && !filePath.includes("_index")
+            && !slug.endsWith("/")
         },
       }),
       condition: (page) => page.fileData.slug === "index",
