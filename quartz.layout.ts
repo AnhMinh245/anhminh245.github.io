@@ -60,7 +60,26 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+      sortFn: (a, b) => {
+        const order: Record<string, number> = {
+          books: 1,
+          insights: 2,
+          journal: 3,
+          tech: 4,
+          other: 5,
+        }
+        if (a.isFolder && b.isFolder) {
+          return (order[a.slugSegment] ?? 99) - (order[b.slugSegment] ?? 99)
+        }
+        if (a.isFolder && !b.isFolder) return -1
+        if (!a.isFolder && b.isFolder) return 1
+        return a.displayName.localeCompare(b.displayName, undefined, {
+          numeric: true,
+          sensitivity: "base",
+        })
+      },
+    }),
   ],
   right: [
     Component.Graph(),
@@ -84,7 +103,26 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+      sortFn: (a, b) => {
+        const order: Record<string, number> = {
+          books: 1,
+          insights: 2,
+          journal: 3,
+          tech: 4,
+          other: 5,
+        }
+        if (a.isFolder && b.isFolder) {
+          return (order[a.slugSegment] ?? 99) - (order[b.slugSegment] ?? 99)
+        }
+        if (a.isFolder && !b.isFolder) return -1
+        if (!a.isFolder && b.isFolder) return 1
+        return a.displayName.localeCompare(b.displayName, undefined, {
+          numeric: true,
+          sensitivity: "base",
+        })
+      },
+    }),
   ],
   right: [],
 }
