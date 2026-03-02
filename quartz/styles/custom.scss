@@ -154,4 +154,16 @@
     .section h3 {
         margin: 0;
     }
+
+    // Article description / excerpt
+    .article-description {
+        font-size: 0.875rem;
+        color: var(--gray);
+        line-height: 1.55;
+        margin: 0.2rem 0 0;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
 }

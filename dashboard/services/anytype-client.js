@@ -119,15 +119,20 @@ async function exportMarkdown(objectId, objectName) {
         // Determine target folder based on tags
         const targetFolder = getTargetFolder(tags);
 
-        // Build frontmatter with tags
-        const tagList = tags.map(t => t.name).filter(Boolean);
-        const tagsYaml = tagList.length > 0 ? `\ntags:\n${tagList.map(t => `  - ${t}`).join('\n')}` : '';
-
-        // Clean Anytype's markdown export format
-        const body = cleanMarkdown(rawBody);
+        // Extract description from Anytype properties, fallback to snippet
+        const descProp = props.find(p => p.key === 'description');
+        const description = (descProp?.text?.value || descProp?.value || obj.snippet || '')
+            .replace(/"/g, '\\"')
+            .replace(/\n/g, ' ')
+            .trim()
+            .substring(0, 300); // cap at 300 chars
 
         // Build proper markdown with frontmatter
-        let md = `---\ntitle: "${name}"\ndate: ${new Date().toISOString().split('T')[0]}${tagsYaml}\n---\n\n`;
+        const body = cleanMarkdown(rawBody);
+        const tagList = tags.map(t => t.name).filter(Boolean);
+        const tagsYaml = tagList.length > 0 ? `\ntags:\n${tagList.map(t => `  - ${t}`).join('\n')}` : '';
+        const descYaml = description ? `\ndescription: "${description}"` : '';
+        let md = `---\ntitle: "${name}"\ndate: ${new Date().toISOString().split('T')[0]}${tagsYaml}${descYaml}\n---\n\n`;
 
         if (body && body.trim().length > 0) {
             md += body;
