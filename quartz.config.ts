@@ -16,7 +16,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "vi-VN",
-    baseUrl: "anhminh245.github.io/anypress",
+    baseUrl: "anhminh245.github.io",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
