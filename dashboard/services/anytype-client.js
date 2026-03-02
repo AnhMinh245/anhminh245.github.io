@@ -144,12 +144,15 @@ async function exportMarkdown(objectId, objectName) {
         // Determine target folder based on tags
         const targetFolder = getTargetFolder(tags);
 
-        // Extract description from first plain paragraph of markdown (Anytype subtitle)
-        const description = extractFirstParagraph(rawBody)
+        // Build proper markdown body (clean first, then extract description)
+        const body = cleanMarkdown(rawBody);
+
+        // Extract description: prefer Anytype snippet (subtitle), fall back to first paragraph of cleaned body
+        const snippetText = (obj.snippet || '').trim();
+        const description = (snippetText.length > 10 ? snippetText : extractFirstParagraph(body))
+            .substring(0, 250)
             .replace(/"/g, '\\"');
 
-        // Build proper markdown with frontmatter
-        const body = cleanMarkdown(rawBody);
         const tagList = tags.map(t => t.name).filter(t => t && t.toLowerCase() !== 'publish');
         const tagsYaml = tagList.length > 0 ? `\ntags:\n${tagList.map(t => `  - ${t}`).join('\n')}` : '';
         const descYaml = description ? `\ndescription: "${description}"` : '';
