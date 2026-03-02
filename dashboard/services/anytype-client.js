@@ -62,6 +62,31 @@ async function listObjects(tag = 'publish') {
 }
 
 /**
+ * Extract the first plain paragraph from Anytype markdown.
+ * Anytype stores the subtitle/description as the first text block before any heading.
+ */
+function extractFirstParagraph(md, maxLen = 250) {
+    const lines = md.split('\n');
+    const collected = [];
+    for (const line of lines) {
+        const t = line.trim();
+        if (!t) {
+            if (collected.length > 0) break; // end of first paragraph
+            continue;
+        }
+        // Stop if we hit a heading, list, blockquote, code, horizontal rule
+        if (t.startsWith('#') || t.startsWith('-') || t.startsWith('*') ||
+            t.startsWith('>') || t.startsWith('`') || t.startsWith('|') ||
+            /^\d+\./.test(t) || /^---+$/.test(t)) {
+            if (collected.length > 0) break;
+            return ''; // first content is structural, not a plain paragraph
+        }
+        collected.push(t);
+    }
+    return collected.join(' ').substring(0, maxLen).trim();
+}
+
+/**
  * Map Anytype tags to content subfolder
  * Priority: first matching tag wins
  */
@@ -119,18 +144,9 @@ async function exportMarkdown(objectId, objectName) {
         // Determine target folder based on tags
         const targetFolder = getTargetFolder(tags);
 
-        // Extract description: Anytype subtitle field (obj.description) > properties > snippet
-        const descProp = props.find(p => p.key === 'description');
-        const description = (
-            obj.description                   // Anytype's subtitle/description shown under title
-            || descProp?.text?.value          // custom text property named 'description'
-            || descProp?.value
-            || ''                             // no snippet fallback — avoid showing article content
-        )
-            .replace(/"/g, '\\"')
-            .replace(/\n/g, ' ')
-            .trim()
-            .substring(0, 300);
+        // Extract description from first plain paragraph of markdown (Anytype subtitle)
+        const description = extractFirstParagraph(rawBody)
+            .replace(/"/g, '\\"');
 
         // Build proper markdown with frontmatter
         const body = cleanMarkdown(rawBody);
