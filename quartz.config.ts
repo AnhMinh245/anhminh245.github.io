@@ -23,8 +23,8 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Be Vietnam Pro",
-        body: "Nunito Sans",
+        header: "Inter",
+        body: "Be Vietnam Pro",
         code: "IBM Plex Mono",
       },
       colors: {
