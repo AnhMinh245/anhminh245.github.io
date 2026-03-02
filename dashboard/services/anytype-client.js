@@ -119,13 +119,18 @@ async function exportMarkdown(objectId, objectName) {
         // Determine target folder based on tags
         const targetFolder = getTargetFolder(tags);
 
-        // Extract description from Anytype properties, fallback to snippet
+        // Extract description: Anytype subtitle field (obj.description) > properties > snippet
         const descProp = props.find(p => p.key === 'description');
-        const description = (descProp?.text?.value || descProp?.value || obj.snippet || '')
+        const description = (
+            obj.description                   // Anytype's subtitle/description shown under title
+            || descProp?.text?.value          // custom text property named 'description'
+            || descProp?.value
+            || ''                             // no snippet fallback — avoid showing article content
+        )
             .replace(/"/g, '\\"')
             .replace(/\n/g, ' ')
             .trim()
-            .substring(0, 300); // cap at 300 chars
+            .substring(0, 300);
 
         // Build proper markdown with frontmatter
         const body = cleanMarkdown(rawBody);
