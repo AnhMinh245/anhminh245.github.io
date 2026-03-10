@@ -905,6 +905,42 @@ body {
   background: var(--text-muted);
 }
 
+/* ── Import Tabs ── */
+.import-tabs {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 12px;
+  background: var(--bg-secondary);
+  border-radius: var(--radius);
+  padding: 3px;
+}
+
+.import-tab {
+  flex: 1;
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  border-radius: calc(var(--radius) - 2px);
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.import-tab:hover {
+  color: var(--text-secondary);
+}
+
+.import-tab.active {
+  background: var(--accent);
+  color: #fff;
+}
+
+.import-tab-content.hidden {
+  display: none;
+}
+
 /* ── Spinner ── */
 .spinner {
   display: inline-block;

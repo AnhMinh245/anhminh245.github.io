@@ -552,7 +552,60 @@ function showImportModal() {
     document.getElementById('importFolder').value = '';
     document.getElementById('btnImport').disabled = true;
     document.getElementById('importFileInput').value = '';
+    document.getElementById('anytypeFolderPath').value = '';
+    document.getElementById('anytypeCategory').value = '';
+    switchImportTab('anytype');
     document.getElementById('importModal').classList.remove('hidden');
+}
+
+function switchImportTab(tab) {
+    document.getElementById('tabAnytype').classList.toggle('active', tab === 'anytype');
+    document.getElementById('tabFile').classList.toggle('active', tab === 'file');
+    document.getElementById('importTabAnytype').classList.toggle('hidden', tab !== 'anytype');
+    document.getElementById('importTabFile').classList.toggle('hidden', tab !== 'file');
+}
+
+async function importAnytypeFolder() {
+    const folderPath = document.getElementById('anytypeFolderPath').value.trim();
+    if (!folderPath) {
+        toast('Vui lòng nhập đường dẫn thư mục export từ Anytype', 'error');
+        return;
+    }
+
+    const category = document.getElementById('anytypeCategory').value;
+    const btn = document.getElementById('btnImportAnytype');
+    btn.disabled = true;
+    btn.innerHTML = '<span class="spinner"></span> Importing...';
+
+    try {
+        const res = await fetch('/api/import/anytype-folder', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ folderPath, category })
+        });
+        const data = await res.json();
+
+        if (data.success) {
+            const s = data.summary;
+            let msg = `Import thành công: ${s.articles} bài viết`;
+            if (s.images > 0) msg += ` + ${s.images} ảnh`;
+            if (data.imported.length > 0) {
+                const item = data.imported[0];
+                msg += ` → ${item.category}/`;
+                if (item.tags.length > 0) msg += ` [${item.tags.join(', ')}]`;
+            }
+            toast(msg, 'success');
+            hideImportModal();
+            loadContent();
+        } else {
+            toast('Import lỗi: ' + data.error, 'error');
+        }
+    } catch (err) {
+        toast('Lỗi: ' + err.message, 'error');
+    }
+
+    btn.disabled = false;
+    btn.textContent = '📦 Import';
 }
 
 function hideImportModal() {

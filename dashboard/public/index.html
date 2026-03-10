@@ -178,29 +178,60 @@
     <!-- Import Modal -->
     <div class="modal hidden" id="importModal">
       <div class="modal-backdrop" onclick="hideImportModal()"></div>
-      <div class="modal-content">
-        <h3>📥 Import</h3>
-        <div class="import-dropzone" id="importDropzone" onclick="document.getElementById('importFileInput').click()"
-          ondragover="event.preventDefault(); this.classList.add('dragover')"
-          ondragleave="this.classList.remove('dragover')" ondrop="handleImportDrop(event)">
-          <span class="dropzone-icon">📦</span>
-          <span>Kéo thả file <b>.md</b> hoặc <b>.zip</b> vào đây</span>
-          <span class="text-muted">ZIP sẽ import cả ảnh đi kèm bài viết</span>
+      <div class="modal-content" style="max-width:520px">
+        <h3>📥 Import bài viết</h3>
+
+        <!-- Tabs -->
+        <div class="import-tabs">
+          <button class="import-tab active" onclick="switchImportTab('anytype')" id="tabAnytype">📦 Từ Anytype</button>
+          <button class="import-tab" onclick="switchImportTab('file')" id="tabFile">📄 File .md/.zip</button>
         </div>
-        <input type="file" id="importFileInput" accept=".md,.markdown,.zip" multiple style="display:none"
-          onchange="handleImportFiles(this.files)">
-        <div id="importFileList"></div>
-        <select id="importFolder" class="input input-select" style="margin-top:10px">
-          <option value="">📁 Danh mục (tùy chọn)</option>
-          <option value="books">📚 Books</option>
-          <option value="insights">🧠 Insights</option>
-          <option value="journal">📅 Journal</option>
-          <option value="tech">💡 Tech</option>
-          <option value="other">📌 Other</option>
-        </select>
-        <div class="modal-actions">
-          <button class="btn btn-ghost" onclick="hideImportModal()">Hủy</button>
-          <button class="btn btn-primary" id="btnImport" onclick="importFiles()" disabled>Import</button>
+
+        <!-- Tab 1: Anytype Folder -->
+        <div class="import-tab-content" id="importTabAnytype">
+          <p class="text-muted" style="font-size:12px;margin:8px 0">
+            Dán đường dẫn thư mục export từ Anytype (chứa .md + files/)
+          </p>
+          <input type="text" class="input" id="anytypeFolderPath" placeholder="C:\Users\...\Anytype.20260310.133717.21"
+            style="width:100%;margin-bottom:8px">
+          <select id="anytypeCategory" class="input input-select">
+            <option value="">📁 Tự nhận diện từ tags</option>
+            <option value="books">📚 Books</option>
+            <option value="insights">🧠 Insights</option>
+            <option value="journal">📅 Journal</option>
+            <option value="tech">💡 Tech</option>
+            <option value="other">📌 Other</option>
+          </select>
+          <div class="modal-actions">
+            <button class="btn btn-ghost" onclick="hideImportModal()">Hủy</button>
+            <button class="btn btn-primary" id="btnImportAnytype" onclick="importAnytypeFolder()">📦 Import</button>
+          </div>
+        </div>
+
+        <!-- Tab 2: File Upload -->
+        <div class="import-tab-content hidden" id="importTabFile">
+          <div class="import-dropzone" id="importDropzone" onclick="document.getElementById('importFileInput').click()"
+            ondragover="event.preventDefault(); this.classList.add('dragover')"
+            ondragleave="this.classList.remove('dragover')" ondrop="handleImportDrop(event)">
+            <span class="dropzone-icon">📄</span>
+            <span>Kéo thả file <b>.md</b> hoặc <b>.zip</b> vào đây</span>
+            <span class="text-muted">ZIP sẽ import cả ảnh đi kèm</span>
+          </div>
+          <input type="file" id="importFileInput" accept=".md,.markdown,.zip" multiple style="display:none"
+            onchange="handleImportFiles(this.files)">
+          <div id="importFileList"></div>
+          <select id="importFolder" class="input input-select" style="margin-top:10px">
+            <option value="">📁 Danh mục (tùy chọn)</option>
+            <option value="books">📚 Books</option>
+            <option value="insights">🧠 Insights</option>
+            <option value="journal">📅 Journal</option>
+            <option value="tech">💡 Tech</option>
+            <option value="other">📌 Other</option>
+          </select>
+          <div class="modal-actions">
+            <button class="btn btn-ghost" onclick="hideImportModal()">Hủy</button>
+            <button class="btn btn-primary" id="btnImport" onclick="importFiles()" disabled>Import</button>
+          </div>
         </div>
       </div>
     </div>
