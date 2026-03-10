@@ -73,6 +73,28 @@ router.get('/:filename', (req, res) => {
     }
 });
 
+// GET /api/content/read — Read a markdown file by relative path
+router.post('/read', (req, res) => {
+    try {
+        const { filePath } = req.body;
+        if (!filePath) return res.status(400).json({ success: false, error: 'File path required' });
+
+        // Security check
+        const absPath = path.resolve(__dirname, '..', '..', filePath);
+        if (!absPath.startsWith(CONTENT_DIR)) {
+            return res.status(403).json({ success: false, error: 'Access denied' });
+        }
+
+        if (!fs.existsSync(absPath)) {
+            return res.status(404).json({ success: false, error: 'File not found' });
+        }
+        const content = fs.readFileSync(absPath, 'utf-8');
+        res.json({ success: true, content, filePath });
+    } catch (err) {
+        res.status(500).json({ success: false, error: err.message });
+    }
+});
+
 // POST /api/content/new — Create a new markdown file
 router.post('/new', (req, res) => {
     try {

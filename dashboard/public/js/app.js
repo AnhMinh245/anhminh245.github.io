@@ -151,20 +151,49 @@ function renderContentList() {
         return;
     }
 
-    list.innerHTML = filtered.map((file) => {
-        const parts = file.path.replace('content/', '').split('/');
-        const folder = parts.length > 1 ? parts.slice(0, -1).join('/') + '/' : '';
-        const isSelected = selectedFiles.has(file.path);
+    // Separate articles from system files (_index, index)
+    const articles = filtered.filter(f => !f.name.startsWith('_index') && f.name !== 'index');
+    const systemFiles = filtered.filter(f => f.name.startsWith('_index') || f.name === 'index');
 
-        return `
-      <div class="content-item ${isSelected ? 'selected' : ''}" onclick="toggleFile('${file.path}')">
-        <input type="checkbox" ${isSelected ? 'checked' : ''} onclick="event.stopPropagation(); toggleFile('${file.path}')">
+    // Update article count (only real articles)
+    document.getElementById('articleCount').textContent = `(${articles.length} bài viết)`;
+
+    let html = articles.map(file => renderFileRow(file)).join('');
+
+    if (systemFiles.length > 0) {
+        html += `<div class="system-files-divider" onclick="toggleSystemFiles()">
+            <span id="systemToggle">▸</span> Trang danh mục (${systemFiles.length})
+        </div>
+        <div class="system-files-list hidden" id="systemFilesList">
+            ${systemFiles.map(file => renderFileRow(file, true)).join('')}
+        </div>`;
+    }
+
+    list.innerHTML = html;
+}
+
+function renderFileRow(file, isSystem = false) {
+    const parts = file.path.replace('content/', '').split('/');
+    const folder = parts.length > 1 ? parts.slice(0, -1).join('/') + '/' : '';
+    const isSelected = selectedFiles.has(file.path);
+    const escapedPath = file.path.replace(/'/g, "\\'");
+    const escapedName = file.name.replace(/'/g, "\\'");
+
+    return `
+      <div class="content-item ${isSelected ? 'selected' : ''} ${isSystem ? 'system-file' : ''}" onclick="toggleFile('${escapedPath}')">
+        <input type="checkbox" ${isSelected ? 'checked' : ''} onclick="event.stopPropagation(); toggleFile('${escapedPath}')">
         <span class="file-name">${file.name}${folder ? `<span class="file-folder">${folder}</span>` : ''}</span>
         <span class="file-status ${file.status}">${statusLabel(file.status)}</span>
-        <button class="btn btn-ghost btn-preview" onclick="event.stopPropagation(); previewFile('${file.name}')">👁️</button>
-        <button class="btn btn-ghost btn-delete" onclick="event.stopPropagation(); promptDeleteSingle('${file.path}', '${file.name}')" title="Xóa bài viết">🗑️</button>
+        <button class="btn btn-ghost btn-preview" onclick="event.stopPropagation(); previewFile('${escapedPath}')" title="Preview">👁️</button>
+        <button class="btn btn-ghost btn-delete" onclick="event.stopPropagation(); promptDeleteSingle('${escapedPath}', '${escapedName}')" title="Xóa">🗑️</button>
       </div>`;
-    }).join('');
+}
+
+function toggleSystemFiles() {
+    const list = document.getElementById('systemFilesList');
+    const toggle = document.getElementById('systemToggle');
+    list.classList.toggle('hidden');
+    toggle.textContent = list.classList.contains('hidden') ? '▸' : '▾';
 }
 
 function statusLabel(status) {
@@ -279,9 +308,13 @@ function updateDeployButton() {
 // ========================================
 // Preview Panel
 // ========================================
-async function previewFile(filename) {
+async function previewFile(filePath) {
     try {
-        const res = await fetch(`/api/content/${filename}`);
+        const res = await fetch('/api/content/read', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filePath })
+        });
         const data = await res.json();
         if (data.success) {
             const frame = document.getElementById('previewFrame');
@@ -289,32 +322,50 @@ async function previewFile(filename) {
             placeholder.classList.add('hidden');
             frame.classList.remove('hidden');
 
-            // Render simple markdown preview
+            // Strip frontmatter
+            const content = data.content.replace(/^---[\s\S]*?---\n/m, '');
+
+            // Render with marked.js via CDN
             const html = `<!DOCTYPE html>
-        <html><head>
-        <style>body{font-family:Inter,sans-serif;padding:24px;max-width:700px;margin:0 auto;line-height:1.7;color:#333;}
-        h1,h2,h3{margin-top:1.5em;} pre{background:#f5f5f5;padding:12px;border-radius:6px;overflow-x:auto;}
-        code{background:#f5f5f5;padding:2px 4px;border-radius:3px;font-size:0.9em;}</style>
-        </head><body>${simpleMarkdown(data.content)}</body></html>`;
+<html><head>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"><\/script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', sans-serif; padding: 28px 32px; max-width: 760px; margin: 0 auto; line-height: 1.75; color: #e6edf3; background: #0d1117; }
+h1 { font-size: 1.8em; border-bottom: 1px solid #21262d; padding-bottom: 8px; margin: 1.2em 0 0.6em; }
+h2 { font-size: 1.4em; border-bottom: 1px solid #21262d; padding-bottom: 6px; margin: 1.2em 0 0.5em; color: #58a6ff; }
+h3 { font-size: 1.15em; margin: 1em 0 0.4em; color: #79c0ff; }
+a { color: #58a6ff; text-decoration: none; }
+a:hover { text-decoration: underline; }
+p { margin: 0.6em 0; }
+blockquote { border-left: 3px solid #58a6ff; margin: 1em 0; padding: 0.5em 1em; background: rgba(88,166,255,0.06); border-radius: 0 6px 6px 0; color: #8b949e; }
+blockquote p { margin: 0.3em 0; }
+pre { background: #161b22; padding: 14px 18px; border-radius: 8px; overflow-x: auto; border: 1px solid #30363d; }
+code { background: #161b22; padding: 2px 6px; border-radius: 4px; font-size: 0.88em; font-family: 'Consolas', 'Fira Code', monospace; color: #79c0ff; }
+pre code { background: none; padding: 0; color: #e6edf3; }
+table { width: 100%; border-collapse: collapse; margin: 1em 0; }
+th { background: #161b22; font-weight: 600; text-align: left; padding: 8px 12px; border: 1px solid #30363d; color: #58a6ff; }
+td { padding: 8px 12px; border: 1px solid #21262d; }
+tr:nth-child(even) { background: rgba(255,255,255,0.02); }
+img { max-width: 100%; border-radius: 8px; margin: 0.5em 0; }
+ul, ol { padding-left: 1.5em; margin: 0.5em 0; }
+li { margin: 0.25em 0; }
+hr { border: none; border-top: 1px solid #21262d; margin: 1.5em 0; }
+details { margin: 0.5em 0; background: #161b22; padding: 8px 12px; border-radius: 6px; }
+summary { cursor: pointer; font-weight: 600; }
+strong { color: #f0f6fc; }
+</style>
+</head><body>
+<div id="content"></div>
+<script>
+document.getElementById('content').innerHTML = marked.parse(${JSON.stringify(content)});
+<\/script>
+</body></html>`;
             frame.srcdoc = html;
         }
     } catch (err) {
         toast('Cannot load preview: ' + err.message, 'error');
     }
-}
-
-function simpleMarkdown(md) {
-    return md
-        .replace(/^---[\s\S]*?---\n/m, '') // strip frontmatter
-        .replace(/^### (.+)$/gm, '<h3>$1</h3>')
-        .replace(/^## (.+)$/gm, '<h2>$1</h2>')
-        .replace(/^# (.+)$/gm, '<h1>$1</h1>')
-        .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-        .replace(/\*(.+?)\*/g, '<em>$1</em>')
-        .replace(/`(.+?)`/g, '<code>$1</code>')
-        .replace(/\n\n/g, '</p><p>')
-        .replace(/^/g, '<p>').replace(/$/g, '</p>')
-        .replace(/<p><h/g, '<h').replace(/<\/h(\d)><\/p>/g, '</h$1>');
 }
 
 async function togglePreview() {
