@@ -224,12 +224,16 @@ function selectNone() {
 }
 
 function updateBulkDeleteButton() {
-    const btn = document.getElementById('btnBulkDelete');
+    const btnDel = document.getElementById('btnBulkDelete');
+    const btnExport = document.getElementById('btnExport');
     if (selectedFiles.size > 0) {
-        btn.classList.remove('hidden');
-        btn.textContent = `🗑️ Xóa (${selectedFiles.size})`;
+        btnDel.classList.remove('hidden');
+        btnDel.textContent = `🗑️ Xóa (${selectedFiles.size})`;
+        btnExport.classList.remove('hidden');
+        btnExport.textContent = `📤 Export (${selectedFiles.size})`;
     } else {
-        btn.classList.add('hidden');
+        btnDel.classList.add('hidden');
+        btnExport.classList.add('hidden');
     }
 }
 
@@ -534,7 +538,7 @@ document.addEventListener('keydown', (e) => {
     if (e.key === 'Enter' && !document.getElementById('newPostModal').classList.contains('hidden')) {
         createNewPost();
     }
-    if (e.key === 'Escape') { hideNewPostModal(); hideImportModal(); }
+    if (e.key === 'Escape') { hideNewPostModal(); hideImportModal(); hideDeleteModal(); }
 });
 
 // ========================================
@@ -559,7 +563,9 @@ function hideImportModal() {
 function handleImportDrop(e) {
     e.preventDefault();
     e.currentTarget.classList.remove('dragover');
-    const files = Array.from(e.dataTransfer.files).filter(f => f.name.endsWith('.md') || f.name.endsWith('.markdown'));
+    const files = Array.from(e.dataTransfer.files).filter(f =>
+        f.name.endsWith('.md') || f.name.endsWith('.markdown') || f.name.endsWith('.zip')
+    );
     if (files.length > 0) addImportFiles(files);
 }
 
@@ -606,13 +612,38 @@ async function importFiles() {
     btn.disabled = true;
     btn.innerHTML = '<span class="spinner"></span> Importing...';
 
-    let success = 0, failed = 0;
+    // Check if any file is a ZIP
+    const zipFiles = pendingImportFiles.filter(f => f.name.endsWith('.zip'));
+    const mdFiles = pendingImportFiles.filter(f => !f.name.endsWith('.zip'));
 
-    for (const file of pendingImportFiles) {
+    let success = 0, failed = 0, imgCount = 0;
+
+    // Handle ZIP files via /api/import/zip
+    for (const file of zipFiles) {
+        try {
+            const base64 = await readFileAsBase64(file);
+            const res = await fetch('/api/import/zip', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ zipBase64: base64, folder })
+            });
+            const data = await res.json();
+            if (data.success) {
+                success += data.summary.markdown;
+                imgCount += data.summary.images;
+            } else {
+                failed++;
+            }
+        } catch (err) {
+            failed++;
+        }
+    }
+
+    // Handle regular .md files
+    for (const file of mdFiles) {
         try {
             const content = await readFileAsText(file);
             const title = extractTitleFromMarkdown(content, file.name);
-
             const res = await fetch('/api/content/new', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
@@ -626,7 +657,10 @@ async function importFiles() {
         }
     }
 
-    toast(`Imported: ${success} th\u00e0nh c\u00f4ng${failed > 0 ? `, ${failed} l\u1ed7i` : ''}`, success > 0 ? 'success' : 'error');
+    let msg = `Imported: ${success} bài viết`;
+    if (imgCount > 0) msg += ` + ${imgCount} ảnh`;
+    if (failed > 0) msg += `, ${failed} lỗi`;
+    toast(msg, success > 0 ? 'success' : 'error');
     hideImportModal();
     loadContent();
 }
@@ -640,6 +674,18 @@ function readFileAsText(file) {
     });
 }
 
+function readFileAsBase64(file) {
+    return new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onload = () => {
+            const dataUrl = reader.result;
+            resolve(dataUrl.split(',')[1]); // strip data:...;base64, prefix
+        };
+        reader.onerror = () => reject(reader.error);
+        reader.readAsDataURL(file);
+    });
+}
+
 function extractTitleFromMarkdown(content, filename) {
     // Try to get title from frontmatter
     const fmMatch = content.match(/^---\s*\n[\s\S]*?title:\s*["']?(.+?)["']?\s*\n[\s\S]*?---/m);
@@ -649,6 +695,44 @@ function extractTitleFromMarkdown(content, filename) {
     if (h1Match) return h1Match[1];
     // Fall back to filename
     return filename.replace(/\.(md|markdown)$/, '').replace(/[-_]/g, ' ');
+}
+
+// ========================================
+// Export
+// ========================================
+async function exportSelected() {
+    if (selectedFiles.size === 0) return;
+
+    const filePaths = Array.from(selectedFiles);
+    toast(`Đang tạo ZIP cho ${filePaths.length} bài viết...`, 'info');
+
+    try {
+        const res = await fetch('/api/export', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filePaths })
+        });
+
+        if (!res.ok) {
+            const err = await res.json();
+            throw new Error(err.error || 'Export failed');
+        }
+
+        // Download the ZIP
+        const blob = await res.blob();
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = res.headers.get('Content-Disposition')?.match(/filename="(.+)"/)?.[1] || 'export.zip';
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        URL.revokeObjectURL(url);
+
+        toast(`Xuất thành công ${filePaths.length} bài viết + ảnh đính kèm`, 'success');
+    } catch (err) {
+        toast('Export lỗi: ' + err.message, 'error');
+    }
 }
 
 // ========================================

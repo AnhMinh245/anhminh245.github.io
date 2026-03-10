@@ -7,12 +7,13 @@ const contentRoutes = require('./routes/api-content');
 const deployRoutes = require('./routes/api-deploy');
 const previewRoutes = require('./routes/api-preview');
 const ciRoutes = require('./routes/api-ci');
+const exportRoutes = require('./routes/api-export');
 
 const app = express();
 const PORT = process.env.DASHBOARD_PORT || 3000;
 
 // Middleware
-app.use(express.json());
+app.use(express.json({ limit: '50mb' }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // API Routes
@@ -21,6 +22,8 @@ app.use('/api/content', contentRoutes);
 app.use('/api/deploy', deployRoutes);
 app.use('/api/preview', previewRoutes);
 app.use('/api/ci', ciRoutes);
+app.use('/api/export', exportRoutes);
+app.use('/api/import', exportRoutes);
 
 // Settings API
 app.get('/api/settings', (req, res) => {
