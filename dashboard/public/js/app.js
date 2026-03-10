@@ -377,8 +377,122 @@ document.addEventListener('keydown', (e) => {
     if (e.key === 'Enter' && !document.getElementById('newPostModal').classList.contains('hidden')) {
         createNewPost();
     }
-    if (e.key === 'Escape') hideNewPostModal();
+    if (e.key === 'Escape') { hideNewPostModal(); hideImportModal(); }
 });
+
+// ========================================
+// Import Modal
+// ========================================
+let pendingImportFiles = [];
+
+function showImportModal() {
+    pendingImportFiles = [];
+    document.getElementById('importFileList').innerHTML = '';
+    document.getElementById('importFolder').value = '';
+    document.getElementById('btnImport').disabled = true;
+    document.getElementById('importFileInput').value = '';
+    document.getElementById('importModal').classList.remove('hidden');
+}
+
+function hideImportModal() {
+    document.getElementById('importModal').classList.add('hidden');
+    pendingImportFiles = [];
+}
+
+function handleImportDrop(e) {
+    e.preventDefault();
+    e.currentTarget.classList.remove('dragover');
+    const files = Array.from(e.dataTransfer.files).filter(f => f.name.endsWith('.md') || f.name.endsWith('.markdown'));
+    if (files.length > 0) addImportFiles(files);
+}
+
+function handleImportFiles(fileList) {
+    addImportFiles(Array.from(fileList));
+}
+
+function addImportFiles(files) {
+    for (const f of files) {
+        if (!pendingImportFiles.find(p => p.name === f.name)) {
+            pendingImportFiles.push(f);
+        }
+    }
+    renderImportFileList();
+}
+
+function removeImportFile(index) {
+    pendingImportFiles.splice(index, 1);
+    renderImportFileList();
+}
+
+function renderImportFileList() {
+    const container = document.getElementById('importFileList');
+    const btn = document.getElementById('btnImport');
+    if (pendingImportFiles.length === 0) {
+        container.innerHTML = '';
+        btn.disabled = true;
+        return;
+    }
+    btn.disabled = false;
+    btn.textContent = `Import ${pendingImportFiles.length} file`;
+    container.innerHTML = `<div class="import-files">${pendingImportFiles.map((f, i) =>
+        `<div class="import-file-item">
+            <span>\ud83d\udcc4 ${f.name}</span>
+            <span class="text-muted">${(f.size / 1024).toFixed(1)} KB</span>
+            <button class="btn btn-ghost btn-sm" onclick="removeImportFile(${i})">\u274c</button>
+        </div>`
+    ).join('')}</div>`;
+}
+
+async function importFiles() {
+    const folder = document.getElementById('importFolder').value;
+    const btn = document.getElementById('btnImport');
+    btn.disabled = true;
+    btn.innerHTML = '<span class="spinner"></span> Importing...';
+
+    let success = 0, failed = 0;
+
+    for (const file of pendingImportFiles) {
+        try {
+            const content = await readFileAsText(file);
+            const title = extractTitleFromMarkdown(content, file.name);
+
+            const res = await fetch('/api/content/new', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ title, folder, content })
+            });
+            const data = await res.json();
+            if (data.success) success++;
+            else failed++;
+        } catch (err) {
+            failed++;
+        }
+    }
+
+    toast(`Imported: ${success} th\u00e0nh c\u00f4ng${failed > 0 ? `, ${failed} l\u1ed7i` : ''}`, success > 0 ? 'success' : 'error');
+    hideImportModal();
+    loadContent();
+}
+
+function readFileAsText(file) {
+    return new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onload = () => resolve(reader.result);
+        reader.onerror = () => reject(reader.error);
+        reader.readAsText(file);
+    });
+}
+
+function extractTitleFromMarkdown(content, filename) {
+    // Try to get title from frontmatter
+    const fmMatch = content.match(/^---\s*\n[\s\S]*?title:\s*["']?(.+?)["']?\s*\n[\s\S]*?---/m);
+    if (fmMatch) return fmMatch[1];
+    // Try first heading
+    const h1Match = content.match(/^#\s+(.+)$/m);
+    if (h1Match) return h1Match[1];
+    // Fall back to filename
+    return filename.replace(/\.(md|markdown)$/, '').replace(/[-_]/g, ' ');
+}
 
 // ========================================
 // Utilities

@@ -50,6 +50,7 @@
             <div class="panel-actions">
               <button class="btn btn-ghost btn-sm" onclick="selectAll()">Chọn tất cả</button>
               <button class="btn btn-ghost btn-sm" onclick="selectNone()">Bỏ chọn</button>
+              <button class="btn btn-secondary btn-sm" onclick="showImportModal()">📥 Import</button>
               <button class="btn btn-secondary btn-sm" onclick="showNewPostModal()">➕ Mới</button>
             </div>
           </div>
@@ -142,6 +143,36 @@
 
     <!-- Toast notifications -->
     <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Import Modal -->
+    <div class="modal hidden" id="importModal">
+      <div class="modal-backdrop" onclick="hideImportModal()"></div>
+      <div class="modal-content">
+        <h3>📥 Import Markdown</h3>
+        <div class="import-dropzone" id="importDropzone" onclick="document.getElementById('importFileInput').click()"
+          ondragover="event.preventDefault(); this.classList.add('dragover')"
+          ondragleave="this.classList.remove('dragover')" ondrop="handleImportDrop(event)">
+          <span class="dropzone-icon">📄</span>
+          <span>Kéo thả file .md vào đây hoặc click để chọn</span>
+          <span class="text-muted">Hỗ trợ nhiều file cùng lúc</span>
+        </div>
+        <input type="file" id="importFileInput" accept=".md,.markdown" multiple style="display:none"
+          onchange="handleImportFiles(this.files)">
+        <div id="importFileList"></div>
+        <select id="importFolder" class="input input-select" style="margin-top:10px">
+          <option value="">📁 Danh mục (tùy chọn)</option>
+          <option value="books">📚 Books</option>
+          <option value="insights">🧠 Insights</option>
+          <option value="journal">📅 Journal</option>
+          <option value="tech">💡 Tech</option>
+          <option value="other">📌 Other</option>
+        </select>
+        <div class="modal-actions">
+          <button class="btn btn-ghost" onclick="hideImportModal()">Hủy</button>
+          <button class="btn btn-primary" id="btnImport" onclick="importFiles()" disabled>Import</button>
+        </div>
+      </div>
+    </div>
   </div>
 
   <script src="/js/app.js"></script>

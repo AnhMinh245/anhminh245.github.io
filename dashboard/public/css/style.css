@@ -393,6 +393,52 @@ body {
   border-radius: 0 0 var(--radius-lg) var(--radius-lg);
 }
 
+/* Import */
+.import-dropzone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 24px;
+  border: 2px dashed var(--border);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all var(--transition);
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+
+.import-dropzone:hover,
+.import-dropzone.dragover {
+  border-color: var(--accent);
+  background: var(--blue-bg);
+}
+
+.dropzone-icon {
+  font-size: 28px;
+}
+
+.import-files {
+  margin-top: 10px;
+}
+
+.import-file-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 8px;
+  font-size: 13px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.import-file-item:last-child {
+  border-bottom: none;
+}
+
+.import-file-item span:first-child {
+  flex: 1;
+}
+
 /* CI List */
 .ci-list {
   display: flex;
