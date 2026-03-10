@@ -4,7 +4,6 @@ date: 2026-03-09
 tags:
   - tech
   - datadog
-description: "Sau lab này bạn sẽ biết cách:"
 ---
 
 # Datadog Quick Start

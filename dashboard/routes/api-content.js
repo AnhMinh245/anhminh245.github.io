@@ -209,4 +209,45 @@ router.post('/delete', async (req, res) => {
     }
 });
 
+// POST /api/content/update-description — Update frontmatter description
+router.post('/update-description', (req, res) => {
+    try {
+        const { filePath, description } = req.body;
+        if (!filePath) return res.status(400).json({ success: false, error: 'File path required' });
+
+        const absPath = path.resolve(__dirname, '..', '..', filePath);
+        if (!absPath.startsWith(CONTENT_DIR)) {
+            return res.status(403).json({ success: false, error: 'Access denied' });
+        }
+        if (!fs.existsSync(absPath)) {
+            return res.status(404).json({ success: false, error: 'File not found' });
+        }
+
+        let content = fs.readFileSync(absPath, 'utf-8');
+        const fmMatch = content.match(/^(---\n[\s\S]*?\n---)\n([\s\S]*)$/);
+        if (!fmMatch) {
+            return res.status(400).json({ success: false, error: 'No frontmatter found' });
+        }
+
+        let frontmatter = fmMatch[1];
+        const body = fmMatch[2];
+
+        // Remove existing description line
+        frontmatter = frontmatter.replace(/\ndescription:\s*".*?"/, '');
+        frontmatter = frontmatter.replace(/\ndescription:\s*'.*?'/, '');
+        frontmatter = frontmatter.replace(/\ndescription:\s*[^\n]+/, '');
+
+        // Add description if not empty
+        if (description && description.trim()) {
+            const escaped = description.trim().replace(/"/g, '\\"');
+            frontmatter = frontmatter.replace(/\n---$/, `\ndescription: "${escaped}"\n---`);
+        }
+
+        fs.writeFileSync(absPath, frontmatter + '\n' + body, 'utf-8');
+        res.json({ success: true, description: description?.trim() || '' });
+    } catch (err) {
+        res.status(500).json({ success: false, error: err.message });
+    }
+});
+
 module.exports = router;

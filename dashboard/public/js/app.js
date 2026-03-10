@@ -185,6 +185,7 @@ function renderFileRow(file, isSystem = false) {
         <span class="file-name">${file.name}${folder ? `<span class="file-folder">${folder}</span>` : ''}</span>
         <span class="file-status ${file.status}">${statusLabel(file.status)}</span>
         <button class="btn btn-ghost btn-preview" onclick="event.stopPropagation(); previewFile('${escapedPath}')" title="Preview">👁️</button>
+        <button class="btn btn-ghost btn-edit-desc" onclick="event.stopPropagation(); editDescription('${escapedPath}')" title="Sửa mô tả">✏️</button>
         <button class="btn btn-ghost btn-delete" onclick="event.stopPropagation(); promptDeleteSingle('${escapedPath}', '${escapedName}')" title="Xóa">🗑️</button>
       </div>`;
 }
@@ -754,6 +755,104 @@ function extractTitleFromMarkdown(content, filename) {
     if (h1Match) return h1Match[1];
     // Fall back to filename
     return filename.replace(/\.(md|markdown)$/, '').replace(/[-_]/g, ' ');
+}
+
+// ========================================
+// Description Editing
+// ========================================
+async function editDescription(filePath) {
+    try {
+        // Read current content to extract existing description
+        const res = await fetch('/api/content/read', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filePath })
+        });
+        const data = await res.json();
+        if (!data.success) {
+            toast('Lỗi đọc file: ' + data.error, 'error');
+            return;
+        }
+
+        // Extract current description from frontmatter
+        let currentDesc = '';
+        const fmMatch = data.content.match(/^---\n([\s\S]*?)\n---/);
+        if (fmMatch) {
+            const descMatch = fmMatch[1].match(/description:\s*["']?(.*?)["']?\s*$/);
+            if (descMatch) currentDesc = descMatch[1];
+        }
+
+        // Show modal
+        const title = extractTitleFromMarkdown(data.content, filePath.split('/').pop());
+        showDescriptionModal(filePath, title, currentDesc);
+    } catch (err) {
+        toast('Lỗi: ' + err.message, 'error');
+    }
+}
+
+function showDescriptionModal(filePath, title, currentDesc) {
+    // Create modal if doesn't exist
+    let modal = document.getElementById('descModal');
+    if (!modal) {
+        modal = document.createElement('div');
+        modal.id = 'descModal';
+        modal.className = 'modal';
+        modal.innerHTML = `
+            <div class="modal-backdrop" onclick="hideDescModal()"></div>
+            <div class="modal-content" style="max-width:500px">
+                <h3 id="descModalTitle">✏️ Sửa mô tả</h3>
+                <p id="descModalSubtitle" style="margin:0 0 8px;color:var(--text-secondary);font-size:0.85rem"></p>
+                <textarea id="descInput" rows="4" placeholder="Nhập mô tả bài viết... (để trống = tự động)" style="width:100%;padding:8px;border:1px solid var(--border);border-radius:var(--radius);font-size:0.9rem;resize:vertical;font-family:inherit"></textarea>
+                <p style="margin:4px 0 12px;font-size:0.75rem;color:var(--text-secondary)">💡 Để trống để sử dụng mô tả tự động từ nội dung bài viết.</p>
+                <div style="display:flex;gap:8px;justify-content:flex-end">
+                    <button class="btn btn-secondary" onclick="hideDescModal()">Hủy</button>
+                    <button class="btn btn-primary" id="descSaveBtn" onclick="saveDescription()">Lưu</button>
+                </div>
+            </div>`;
+        document.body.appendChild(modal);
+    }
+
+    document.getElementById('descModalSubtitle').textContent = title;
+    document.getElementById('descInput').value = currentDesc;
+    modal.dataset.filePath = filePath;
+    modal.classList.remove('hidden');
+    document.getElementById('descInput').focus();
+}
+
+function hideDescModal() {
+    const modal = document.getElementById('descModal');
+    if (modal) modal.classList.add('hidden');
+}
+
+async function saveDescription() {
+    const modal = document.getElementById('descModal');
+    const filePath = modal.dataset.filePath;
+    const description = document.getElementById('descInput').value;
+    const btn = document.getElementById('descSaveBtn');
+
+    btn.disabled = true;
+    btn.textContent = 'Đang lưu...';
+
+    try {
+        const res = await fetch('/api/content/update-description', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filePath, description })
+        });
+        const data = await res.json();
+        if (data.success) {
+            toast(description.trim() ? 'Đã cập nhật mô tả!' : 'Đã xóa mô tả (sẽ dùng tự động).', 'success');
+            hideDescModal();
+            loadContent(); // Refresh
+        } else {
+            toast('Lỗi: ' + data.error, 'error');
+        }
+    } catch (err) {
+        toast('Lỗi: ' + err.message, 'error');
+    } finally {
+        btn.disabled = false;
+        btn.textContent = 'Lưu';
+    }
 }
 
 // ========================================
