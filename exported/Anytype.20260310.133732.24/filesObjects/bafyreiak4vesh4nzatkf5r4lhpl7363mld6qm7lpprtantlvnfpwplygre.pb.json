@@ -1,0 +1,434 @@
+{
+ "sbType": "FileObject",
+ "snapshot": {
+  "logHeads": {
+  },
+  "data": {
+   "blocks": [
+    {
+     "id": "bafyreiak4vesh4nzatkf5r4lhpl7363mld6qm7lpprtantlvnfpwplygre",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": true,
+      "remove": true,
+      "drag": true,
+      "dropOn": true
+     },
+     "childrenIds": [
+      "header",
+      "file",
+      "info",
+      "description",
+      "fileExt",
+      "widthInPixels",
+      "heightInPixels",
+      "sizeInBytes",
+      "origin",
+      "addedDate"
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "smartblock": {
+
+     }
+    },
+    {
+     "id": "header",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": true,
+      "remove": true,
+      "drag": true,
+      "dropOn": true
+     },
+     "childrenIds": [
+      "title",
+      "featuredRelations"
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "layout": {
+      "style": "Header"
+     }
+    },
+    {
+     "id": "file",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": true,
+      "remove": true,
+      "drag": true,
+      "dropOn": true
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "file": {
+      "hash": "",
+      "name": "image_1773047636579_0",
+      "type": "Image",
+      "mime": "image/png",
+      "size": "362604",
+      "addedAt": "1773047636",
+      "targetObjectId": "bafyreiak4vesh4nzatkf5r4lhpl7363mld6qm7lpprtantlvnfpwplygre",
+      "state": "Done",
+      "style": "Auto"
+     }
+    },
+    {
+     "id": "info",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": true,
+      "remove": true,
+      "drag": true,
+      "dropOn": true
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "File Information",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 0,
+          "to": 16
+         },
+         "type": "Bold",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "description",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": true,
+      "remove": true,
+      "drag": true,
+      "dropOn": true
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "relation": {
+      "key": "description"
+     }
+    },
+    {
+     "id": "fileExt",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": true,
+      "remove": true,
+      "drag": true,
+      "dropOn": true
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "relation": {
+      "key": "fileExt"
+     }
+    },
+    {
+     "id": "widthInPixels",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": true,
+      "remove": true,
+      "drag": true,
+      "dropOn": true
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "relation": {
+      "key": "widthInPixels"
+     }
+    },
+    {
+     "id": "heightInPixels",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": true,
+      "remove": true,
+      "drag": true,
+      "dropOn": true
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "relation": {
+      "key": "heightInPixels"
+     }
+    },
+    {
+     "id": "sizeInBytes",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": true,
+      "remove": true,
+      "drag": true,
+      "dropOn": true
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "relation": {
+      "key": "sizeInBytes"
+     }
+    },
+    {
+     "id": "origin",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": true,
+      "remove": true,
+      "drag": true,
+      "dropOn": true
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "relation": {
+      "key": "origin"
+     }
+    },
+    {
+     "id": "addedDate",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": true,
+      "remove": true,
+      "drag": true,
+      "dropOn": true
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "relation": {
+      "key": "addedDate"
+     }
+    },
+    {
+     "id": "title",
+     "fields": {
+       "_detailsKey": [
+          "name",
+          "done"
+         ]
+      },
+     "restrictions": {
+      "read": false,
+      "edit": true,
+      "remove": true,
+      "drag": true,
+      "dropOn": true
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "",
+      "style": "Title",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "featuredRelations",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": true,
+      "remove": true,
+      "drag": true,
+      "dropOn": true
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "featuredRelations": {
+
+     }
+    }
+   ],
+   "details": {
+     "addedDate": 1773047636,
+     "backlinks": [
+        "bafyreibuway3rc4pfbqbspuzdxvtqyvtzxzm4dq4dtclmvkhssftzg4riy"
+       ],
+     "createdDate": 1773047636,
+     "createdInContext": "bafyreibuway3rc4pfbqbspuzdxvtqyvtzxzm4dq4dtclmvkhssftzg4riy",
+     "createdInContextRef": "69ae8f54e11c71005311e695",
+     "creator": "_participant_bafyreihkelp7ljuvnh2znrup2r2z4q33qbtegpe6fzs5grmwpfiqz2q4e4_2s07itt5u9svl_A8cnL7DgUwamLZnTWaTeK8CVmQdysdMaASGVu3WLjAUfMsde",
+     "fileBackupStatus": 4,
+     "fileExt": "png",
+     "fileId": "bafybeigswx65rvigdum2tzkuklo5yjoofelauhykoajvlsokofmiihyyam",
+     "fileIndexingStatus": 1,
+     "fileMimeType": "image/png",
+     "fileSourceChecksum": "MMPJN34GANBOMJ8EJTJN5TA3NDN7GFTUE9ST4K6T7IM19HBPNAOG",
+     "fileSyncStatus": 1,
+     "fileVariantChecksums": [
+        "MMPJN34GANBOMJ8EJTJN5TA3NDN7GFTUE9ST4K6T7IM19HBPNAOG",
+        "MMPJN34GANBOMJ8EJTJN5TA3NDN7GFTUE9ST4K6T7IM19HBPNAOG",
+        "P78GE0Q5GOA9PUI6AK403OFV2KCS0IRM83H62HV7F384AJFKHN3G",
+        "RF4P5957OLUP6GKD6OB3R5E7L2QJAPD0O8OK9O1Q74P8J5FVTF7G"
+       ],
+     "fileVariantIds": [
+        "bafybeibe72qsuxr6di4c3mhky3arw5pvavikyj33wdzpcy3ymaousaniiu",
+        "bafybeihm7p556nlo35oz3vhitn2n6yy5duah2eswetntkz2brzsipibgmi",
+        "bafybeihddu7wkfpyxyt42x2hq4numyzvmrggrnaadtg3zrd5ineqsfw64y",
+        "bafybeib2orpmciuaafb5synq7sqtt6tig2ksfyv3fmk4hcqyp2bdx5ex4q"
+       ],
+     "fileVariantKeys": [
+        "bc5k62pgj6uzuicaad2w4jcotajj7unwncwm5ztrzci7yscvyor3a",
+        "b3zitb5mqissmovhgk3nds6geoqvuyny2sm6dhzkiqixct2omgibq",
+        "bxciz53nhqop4lyxca7635gzs7bscc4a6hcppmie3xckz223w3pwa",
+        "b26yh6o7tjlyqgark2tggcoxsqynjutolwsomyx2eclh3jv4tab2q"
+       ],
+     "fileVariantMills": [
+        "/image/resize",
+        "/image/resize",
+        "/image/resize",
+        "/image/exif"
+       ],
+     "fileVariantOptions": [
+        "77aUeoeWD8t7zu4QovgeoFKDoCZTtmwvrYADtANdSpS3",
+        "9JVSe7aupcLMxJpz4MTKtM4HVcZpXEmvsPiyBx7L8L7D",
+        "CassDcqf192MnceweJKGJvhZfrV9kB3GJRbvNPWm6raa",
+        "G7x9bf74kcvU7aBVnToCMAeVhcsuxuHag8gKgav6cGcN"
+       ],
+     "fileVariantPaths": [
+        "/0/original/",
+        "/0/large/",
+        "/0/small/",
+        "/0/exif/"
+       ],
+     "fileVariantWidths": [
+        600,
+        600,
+        320,
+        0
+       ],
+     "heightInPixels": 1406,
+     "iconImage": "bafyreiak4vesh4nzatkf5r4lhpl7363mld6qm7lpprtantlvnfpwplygre",
+     "id": "bafyreiak4vesh4nzatkf5r4lhpl7363mld6qm7lpprtantlvnfpwplygre",
+     "lastModifiedBy": "_participant_bafyreihkelp7ljuvnh2znrup2r2z4q33qbtegpe6fzs5grmwpfiqz2q4e4_2s07itt5u9svl_A8cnL7DgUwamLZnTWaTeK8CVmQdysdMaASGVu3WLjAUfMsde",
+     "lastModifiedDate": 1773047640,
+     "layout": 8,
+     "links": [
+       ],
+     "mentions": [
+       ],
+     "name": "image_1773047636579_0",
+     "origin": 1,
+     "resolvedLayout": 8,
+     "restrictions": [
+        6,
+        5,
+        7,
+        8,
+        10,
+        3
+       ],
+     "sizeInBytes": 362604,
+     "snippet": "File Information",
+     "source": "files\\image_1773047636579_0.png",
+     "spaceId": "bafyreihkelp7ljuvnh2znrup2r2z4q33qbtegpe6fzs5grmwpfiqz2q4e4.2s07itt5u9svl",
+     "syncDate": 1773110674,
+     "syncError": 0,
+     "syncStatus": 0,
+     "type": "bafyreicdc5janp6jt3wbl3sfjhdaeqvplct7ignsj4sb5vwd3jcez5ccam",
+     "widthInPixels": 600
+    },
+   "fileKeys": null,
+   "extraRelations": [
+   ],
+   "objectTypes": [
+    "ot-image"
+   ],
+   "collections": null,
+   "removedCollectionKeys": [
+   ],
+   "relationLinks": [
+   ],
+   "key": "",
+   "originalCreatedTimestamp": "0",
+   "fileInfo": {
+    "fileId": "bafybeigswx65rvigdum2tzkuklo5yjoofelauhykoajvlsokofmiihyyam",
+    "encryptionKeys": [
+     {
+      "path": "/0/original/",
+      "key": "bc5k62pgj6uzuicaad2w4jcotajj7unwncwm5ztrzci7yscvyor3a"
+     },
+     {
+      "path": "/0/large/",
+      "key": "b3zitb5mqissmovhgk3nds6geoqvuyny2sm6dhzkiqixct2omgibq"
+     },
+     {
+      "path": "/0/small/",
+      "key": "bxciz53nhqop4lyxca7635gzs7bscc4a6hcppmie3xckz223w3pwa"
+     },
+     {
+      "path": "/0/exif/",
+      "key": "b26yh6o7tjlyqgark2tggcoxsqynjutolwsomyx2eclh3jv4tab2q"
+     }
+    ]
+   }
+  },
+  "fileKeys": [
+  ]
+ }
+}

@@ -1,0 +1,380 @@
+{
+ "sbType": "STType",
+ "snapshot": {
+  "logHeads": {
+  },
+  "data": {
+   "blocks": [
+    {
+     "id": "bafyreiftyez4od5g2zrr7hh56chsj5kj4w66nfdx2bzmnh7gzknyeo62b4",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+      "header",
+      "dataview"
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "smartblock": {
+
+     }
+    },
+    {
+     "id": "header",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": true,
+      "remove": true,
+      "drag": true,
+      "dropOn": true
+     },
+     "childrenIds": [
+      "title"
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "layout": {
+      "style": "Header"
+     }
+    },
+    {
+     "id": "dataview",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "dataview": {
+      "source": [
+      ],
+      "views": [
+       {
+        "id": "all",
+        "type": "Table",
+        "name": "All",
+        "sorts": [
+         {
+          "RelationKey": "lastModifiedDate",
+          "type": "Desc",
+          "customOrder": [
+          ],
+          "format": "longtext",
+          "includeTime": false,
+          "id": "67daad6e2bf7cb67453ef0ba",
+          "emptyPlacement": "NotSpecified",
+          "noCollate": false
+         }
+        ],
+        "filters": [
+        ],
+        "relations": [
+         {
+          "key": "name",
+          "isVisible": true,
+          "width": 343,
+          "dateIncludeTime": false,
+          "timeFormat": "Format12",
+          "dateFormat": "MonthAbbrBeforeDay",
+          "formula": "None",
+          "align": "AlignLeft"
+         },
+         {
+          "key": "type",
+          "isVisible": false,
+          "width": 279,
+          "dateIncludeTime": false,
+          "timeFormat": "Format12",
+          "dateFormat": "MonthAbbrBeforeDay",
+          "formula": "None",
+          "align": "AlignLeft"
+         },
+         {
+          "key": "createdDate",
+          "isVisible": false,
+          "width": 0,
+          "dateIncludeTime": false,
+          "timeFormat": "Format12",
+          "dateFormat": "MonthAbbrBeforeDay",
+          "formula": "None",
+          "align": "AlignLeft"
+         },
+         {
+          "key": "creator",
+          "isVisible": false,
+          "width": 0,
+          "dateIncludeTime": false,
+          "timeFormat": "Format12",
+          "dateFormat": "MonthAbbrBeforeDay",
+          "formula": "None",
+          "align": "AlignLeft"
+         },
+         {
+          "key": "lastModifiedDate",
+          "isVisible": false,
+          "width": 0,
+          "dateIncludeTime": false,
+          "timeFormat": "Format12",
+          "dateFormat": "MonthAbbrBeforeDay",
+          "formula": "None",
+          "align": "AlignLeft"
+         },
+         {
+          "key": "lastModifiedBy",
+          "isVisible": false,
+          "width": 0,
+          "dateIncludeTime": false,
+          "timeFormat": "Format12",
+          "dateFormat": "MonthAbbrBeforeDay",
+          "formula": "None",
+          "align": "AlignLeft"
+         },
+         {
+          "key": "lastOpenedDate",
+          "isVisible": false,
+          "width": 0,
+          "dateIncludeTime": false,
+          "timeFormat": "Format12",
+          "dateFormat": "MonthAbbrBeforeDay",
+          "formula": "None",
+          "align": "AlignLeft"
+         },
+         {
+          "key": "backlinks",
+          "isVisible": false,
+          "width": 0,
+          "dateIncludeTime": false,
+          "timeFormat": "Format12",
+          "dateFormat": "MonthAbbrBeforeDay",
+          "formula": "None",
+          "align": "AlignLeft"
+         },
+         {
+          "key": "tag",
+          "isVisible": false,
+          "width": 0,
+          "dateIncludeTime": false,
+          "timeFormat": "Format12",
+          "dateFormat": "MonthAbbrBeforeDay",
+          "formula": "None",
+          "align": "AlignLeft"
+         },
+         {
+          "key": "description",
+          "isVisible": true,
+          "width": 380,
+          "dateIncludeTime": false,
+          "timeFormat": "Format12",
+          "dateFormat": "MonthAbbrBeforeDay",
+          "formula": "None",
+          "align": "AlignLeft"
+         }
+        ],
+        "coverRelationKey": "",
+        "hideIcon": false,
+        "cardSize": "Small",
+        "coverFit": false,
+        "groupRelationKey": "",
+        "groupBackgroundColors": false,
+        "pageLimit": 0,
+        "defaultTemplateId": "",
+        "defaultObjectTypeId": "",
+        "endRelationKey": "",
+        "wrapContent": false,
+        "listSize": "Compact"
+       }
+      ],
+      "activeView": "",
+      "relations": [
+      ],
+      "groupOrders": [
+      ],
+      "objectOrders": [
+      ],
+      "relationLinks": [
+       {
+        "key": "name",
+        "format": "shorttext"
+       },
+       {
+        "key": "type",
+        "format": "object"
+       },
+       {
+        "key": "createdDate",
+        "format": "date"
+       },
+       {
+        "key": "creator",
+        "format": "object"
+       },
+       {
+        "key": "lastModifiedDate",
+        "format": "date"
+       },
+       {
+        "key": "lastModifiedBy",
+        "format": "object"
+       },
+       {
+        "key": "lastOpenedDate",
+        "format": "date"
+       },
+       {
+        "key": "backlinks",
+        "format": "object"
+       },
+       {
+        "key": "tag",
+        "format": "tag"
+       },
+       {
+        "key": "description",
+        "format": "longtext"
+       }
+      ],
+      "TargetObjectId": "bafyreiftyez4od5g2zrr7hh56chsj5kj4w66nfdx2bzmnh7gzknyeo62b4",
+      "isCollection": false
+     }
+    },
+    {
+     "id": "title",
+     "fields": {
+       "_detailsKey": [
+          "name",
+          "done"
+         ]
+      },
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": true,
+      "drag": true,
+      "dropOn": true
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "",
+      "style": "Title",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    }
+   ],
+   "details": {
+     "addedDate": 0,
+     "backlinks": [
+        "bafyreiagdhqlfl4s6rnxwqbd5vkxpsrgeckka2hcqfl6k3irr2g6ugm4da",
+        "bafyreihehwf5ansrvnuah4fbzbnnhcrb2yeps5wzv2hy2dqvmmgrod3lzi",
+        "bafyreihtrts3pxy3xrscpinvzmv6eted6wojqjrbeinmtore45foame4si"
+       ],
+     "createdDate": 1742384494,
+     "creator": "_participant_bafyreihkelp7ljuvnh2znrup2r2z4q33qbtegpe6fzs5grmwpfiqz2q4e4_2s07itt5u9svl_A8cnL7DgUwamLZnTWaTeK8CVmQdysdMaASGVu3WLjAUfMsde",
+     "iconName": "person",
+     "iconOption": 3,
+     "id": "bafyreiftyez4od5g2zrr7hh56chsj5kj4w66nfdx2bzmnh7gzknyeo62b4",
+     "importType": 3,
+     "internalFlags": [
+       ],
+     "isHidden": false,
+     "isReadonly": true,
+     "lastModifiedBy": "_participant_bafyreihkelp7ljuvnh2znrup2r2z4q33qbtegpe6fzs5grmwpfiqz2q4e4_2s07itt5u9svl_A8cnL7DgUwamLZnTWaTeK8CVmQdysdMaASGVu3WLjAUfMsde",
+     "lastModifiedDate": 1772215169,
+     "layout": 4,
+     "links": [
+       ],
+     "mentions": [
+       ],
+     "name": "Space member",
+     "oldAnytypeID": "bafyreihaczcii4dxdljppjl7lspemyp2xo37bxfhk62sslnqko4uvzsqcu",
+     "origin": 6,
+     "pluralName": "Space members",
+     "recommendedFeaturedRelations": [
+        "bafyreia63tymb76irkv2gvb75yudpcnopy7m5uwqqy55horr54gih4v26y",
+        "bafyreiag2o43ukapsq5itcaagftvygl55z5wxs5bfx3kq6rudrd7s5yysm",
+        "bafyreibfnjjt6wrsi2hwy7clzomprtuau53g55grkmpgbo7xz4ddfewqle"
+       ],
+     "recommendedHiddenRelations": [
+        "bafyreicd7vs2kejbfexxfduielsw7uyukesz3xy4jfjhtb7rbnsvca3274",
+        "bafyreihtrts3pxy3xrscpinvzmv6eted6wojqjrbeinmtore45foame4si",
+        "bafyreifxh2idwdbvjqhmvpssvtlgxv4uqhdppjbiyujs3rvxvuepuompcu"
+       ],
+     "recommendedLayout": 19,
+     "recommendedRelations": [
+        "bafyreihdeozy64squq46kgzgqjg2a4ykiim3t7xj7f4xjps7lmt3g3gv6y",
+        "bafyreihehwf5ansrvnuah4fbzbnnhcrb2yeps5wzv2hy2dqvmmgrod3lzi",
+        "bafyreidxicnhto3vtzek5bylrwq42ewgkxpwym7hoc23xdavogwvz6gm4a"
+       ],
+     "resolvedLayout": 4,
+     "restrictions": [
+        6,
+        5,
+        10,
+        7,
+        1,
+        4,
+        9,
+        3
+       ],
+     "revision": 4,
+     "setOf": [
+        "bafyreiftyez4od5g2zrr7hh56chsj5kj4w66nfdx2bzmnh7gzknyeo62b4"
+       ],
+     "smartblockTypes": [
+        534
+       ],
+     "snippet": "",
+     "sourceFilePath": "bafyreidirvzoiw6plie4rq3t4i6jddxirgmc54cku7qbiqkckzh27uri4m.827c7vhsil21/bafyreihaczcii4dxdljppjl7lspemyp2xo37bxfhk62sslnqko4uvzsqcu",
+     "sourceObject": "_otparticipant",
+     "spaceId": "bafyreihkelp7ljuvnh2znrup2r2z4q33qbtegpe6fzs5grmwpfiqz2q4e4.2s07itt5u9svl",
+     "syncDate": 1772250770,
+     "syncError": 0,
+     "syncStatus": 0,
+     "type": "bafyreid7sy52ap2ruq6ffgc4syaeqnmrwfr6pzizv4ny5kvajgbqc7f4je",
+     "uniqueKey": "ot-participant"
+    },
+   "fileKeys": null,
+   "extraRelations": [
+   ],
+   "objectTypes": [
+    "ot-objectType"
+   ],
+   "collections": null,
+   "removedCollectionKeys": [
+   ],
+   "relationLinks": [
+   ],
+   "key": "participant",
+   "originalCreatedTimestamp": "0",
+   "fileInfo": null
+  },
+  "fileKeys": [
+  ]
+ }
+}

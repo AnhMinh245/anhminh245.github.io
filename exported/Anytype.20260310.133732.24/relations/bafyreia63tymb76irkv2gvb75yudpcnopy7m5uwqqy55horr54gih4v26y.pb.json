@@ -1,0 +1,186 @@
+{
+ "sbType": "STRelation",
+ "snapshot": {
+  "logHeads": {
+  },
+  "data": {
+   "blocks": [
+    {
+     "id": "bafyreia63tymb76irkv2gvb75yudpcnopy7m5uwqqy55horr54gih4v26y",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+      "header"
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "smartblock": {
+
+     }
+    },
+    {
+     "id": "header",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": true,
+      "remove": true,
+      "drag": true,
+      "dropOn": true
+     },
+     "childrenIds": [
+      "title",
+      "featuredRelations"
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "layout": {
+      "style": "Header"
+     }
+    },
+    {
+     "id": "title",
+     "fields": {
+       "_detailsKey": [
+          "name",
+          "done"
+         ]
+      },
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": true,
+      "drag": true,
+      "dropOn": true
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "",
+      "style": "Title",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "featuredRelations",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": true,
+      "drag": true,
+      "dropOn": true
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "featuredRelations": {
+
+     }
+    }
+   ],
+   "details": {
+     "addedDate": 0,
+     "apiObjectKey": "type",
+     "backlinks": [
+        "bafyreiagayx4vunmxx4hato4gnz6fj5s7w2mxjskzmfkiktquuyrcwhjtu",
+        "bafyreiaukme26767cj5zp7u4hazwzpdlxfohvxx2pt5cfqkdrecn3owe6i",
+        "bafyreiblroto5zwlc5sjq7redteng5b6guclpcibauc63b23vuiwqribvm",
+        "bafyreibtrnlj7hnnqe3lpwfca637m4opgaxhe5snqqlv5jlpu6tq5rssoa",
+        "bafyreic7b3ok5wbpjquzp7u7ioe5wimdgoi7mheoeoigyodyokbxz6d5tu",
+        "bafyreical5onr6dd2gvnyyjdhzpifsjstz24xslnucctqfox6fn6k72nbq",
+        "bafyreicbb4kyf6rps2yrhoextxoj6q7evs56vybu4ndglftszkx3oekksm",
+        "bafyreicdc5janp6jt3wbl3sfjhdaeqvplct7ignsj4sb5vwd3jcez5ccam",
+        "bafyreicks7anlanpewmvbkrqtlarnafesx7g225ugbqnc56mtsk3kcnzze",
+        "bafyreicyzduox5hehvdnough6qmlw4stceqf5boj7jkfhxouwomykz3zqi",
+        "bafyreid7sy52ap2ruq6ffgc4syaeqnmrwfr6pzizv4ny5kvajgbqc7f4je",
+        "bafyreidfy6v3gm4nnrr2qsaoyn6ucgtouwpcfmmr3wvjwr2p367xs5wzqq",
+        "bafyreiduee3vmocbwwneac2jnpltvdypmsv7iy2my6smoxxawq37gvmkrq",
+        "bafyreiduwzlssrmuax6yopum2ezezaiqzqgt75dpqb3wzijcp2x35yxiw4",
+        "bafyreiehcmmnuwyjgud5y5zyva5iua4jygpvdjvbdhznhs4ti35vnoczsa",
+        "bafyreiemepogclyx4ulzgbtbo37lttgjwedkw3ma2fto2h72aijt3gy7j4",
+        "bafyreifq32f7bm7hb2w56uhtpj3kcduldakvageqxsovt2kjepkkaqnacq",
+        "bafyreiftyez4od5g2zrr7hh56chsj5kj4w66nfdx2bzmnh7gzknyeo62b4",
+        "bafyreig2j345z5nc375dqrfzegqp6td2i3zpjt3477obq2a57tvujakzlq",
+        "bafyreig3pcvb6lakvkvpg7k3joqwhzrisjcb257obedsim3u6h4h4lmh5q",
+        "bafyreigawfazszgeqivoqpsdjxzadtunp3uqafwv5akyfhuupoaereqimu"
+       ],
+     "createdDate": 1772215169,
+     "creator": "_participant_bafyreihkelp7ljuvnh2znrup2r2z4q33qbtegpe6fzs5grmwpfiqz2q4e4_2s07itt5u9svl_A8cnL7DgUwamLZnTWaTeK8CVmQdysdMaASGVu3WLjAUfMsde",
+     "description": "Relation that stores the object's type",
+     "id": "bafyreia63tymb76irkv2gvb75yudpcnopy7m5uwqqy55horr54gih4v26y",
+     "internalFlags": [
+       ],
+     "isHidden": false,
+     "isReadonly": true,
+     "lastModifiedBy": "_participant_bafyreihkelp7ljuvnh2znrup2r2z4q33qbtegpe6fzs5grmwpfiqz2q4e4_2s07itt5u9svl_",
+     "layout": 5,
+     "links": [
+       ],
+     "mentions": [
+       ],
+     "name": "Object type",
+     "origin": 7,
+     "relationDefaultValue": null,
+     "relationFormat": 100,
+     "relationFormatIncludeTime": false,
+     "relationFormatObjectTypes": [
+        "bafyreid7sy52ap2ruq6ffgc4syaeqnmrwfr6pzizv4ny5kvajgbqc7f4je"
+       ],
+     "relationKey": "type",
+     "relationMaxCount": 1,
+     "relationReadonlyValue": true,
+     "resolvedLayout": 5,
+     "restrictions": [
+        2,
+        5,
+        4,
+        6,
+        10,
+        1,
+        7,
+        3
+       ],
+     "revision": 0,
+     "snippet": "",
+     "sourceObject": "_brtype",
+     "spaceId": "bafyreihkelp7ljuvnh2znrup2r2z4q33qbtegpe6fzs5grmwpfiqz2q4e4.2s07itt5u9svl",
+     "syncDate": 1772250773,
+     "syncError": 0,
+     "syncStatus": 0,
+     "type": "bafyreiaukme26767cj5zp7u4hazwzpdlxfohvxx2pt5cfqkdrecn3owe6i",
+     "uniqueKey": "rel-type"
+    },
+   "fileKeys": null,
+   "extraRelations": [
+   ],
+   "objectTypes": [
+    "ot-relation"
+   ],
+   "collections": null,
+   "removedCollectionKeys": [
+   ],
+   "relationLinks": [
+   ],
+   "key": "type",
+   "originalCreatedTimestamp": "0",
+   "fileInfo": null
+  },
+  "fileKeys": [
+  ]
+ }
+}

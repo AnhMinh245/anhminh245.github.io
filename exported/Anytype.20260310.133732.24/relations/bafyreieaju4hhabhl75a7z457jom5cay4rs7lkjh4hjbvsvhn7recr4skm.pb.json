@@ -1,0 +1,165 @@
+{
+ "sbType": "STRelation",
+ "snapshot": {
+  "logHeads": {
+  },
+  "data": {
+   "blocks": [
+    {
+     "id": "bafyreieaju4hhabhl75a7z457jom5cay4rs7lkjh4hjbvsvhn7recr4skm",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+      "header"
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "smartblock": {
+
+     }
+    },
+    {
+     "id": "header",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": true,
+      "remove": true,
+      "drag": true,
+      "dropOn": true
+     },
+     "childrenIds": [
+      "title",
+      "featuredRelations"
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "layout": {
+      "style": "Header"
+     }
+    },
+    {
+     "id": "title",
+     "fields": {
+       "_detailsKey": [
+          "name",
+          "done"
+         ]
+      },
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": true,
+      "drag": true,
+      "dropOn": true
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "",
+      "style": "Title",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "featuredRelations",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": true,
+      "drag": true,
+      "dropOn": true
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "featuredRelations": {
+
+     }
+    }
+   ],
+   "details": {
+     "addedDate": 0,
+     "apiObjectKey": "relation_max_count",
+     "backlinks": [
+        "bafyreiaukme26767cj5zp7u4hazwzpdlxfohvxx2pt5cfqkdrecn3owe6i"
+       ],
+     "createdDate": 1772215169,
+     "creator": "_participant_bafyreihkelp7ljuvnh2znrup2r2z4q33qbtegpe6fzs5grmwpfiqz2q4e4_2s07itt5u9svl_A8cnL7DgUwamLZnTWaTeK8CVmQdysdMaASGVu3WLjAUfMsde",
+     "description": "Relation allows multi values",
+     "id": "bafyreieaju4hhabhl75a7z457jom5cay4rs7lkjh4hjbvsvhn7recr4skm",
+     "internalFlags": [
+       ],
+     "isHidden": true,
+     "isReadonly": true,
+     "lastModifiedBy": "_participant_bafyreihkelp7ljuvnh2znrup2r2z4q33qbtegpe6fzs5grmwpfiqz2q4e4_2s07itt5u9svl_",
+     "layout": 5,
+     "links": [
+       ],
+     "mentions": [
+       ],
+     "name": "Max values",
+     "origin": 7,
+     "relationDefaultValue": null,
+     "relationFormat": 2,
+     "relationFormatIncludeTime": false,
+     "relationFormatObjectTypes": [
+       ],
+     "relationKey": "relationMaxCount",
+     "relationMaxCount": 1,
+     "relationReadonlyValue": false,
+     "resolvedLayout": 5,
+     "restrictions": [
+        2,
+        1,
+        5,
+        7,
+        4,
+        10,
+        3,
+        6
+       ],
+     "revision": 1,
+     "snippet": "",
+     "sourceObject": "_brrelationMaxCount",
+     "spaceId": "bafyreihkelp7ljuvnh2znrup2r2z4q33qbtegpe6fzs5grmwpfiqz2q4e4.2s07itt5u9svl",
+     "syncDate": 1772250776,
+     "syncError": 0,
+     "syncStatus": 0,
+     "type": "bafyreiaukme26767cj5zp7u4hazwzpdlxfohvxx2pt5cfqkdrecn3owe6i",
+     "uniqueKey": "rel-relationMaxCount"
+    },
+   "fileKeys": null,
+   "extraRelations": [
+   ],
+   "objectTypes": [
+    "ot-relation"
+   ],
+   "collections": null,
+   "removedCollectionKeys": [
+   ],
+   "relationLinks": [
+   ],
+   "key": "relationMaxCount",
+   "originalCreatedTimestamp": "0",
+   "fileInfo": null
+  },
+  "fileKeys": [
+  ]
+ }
+}

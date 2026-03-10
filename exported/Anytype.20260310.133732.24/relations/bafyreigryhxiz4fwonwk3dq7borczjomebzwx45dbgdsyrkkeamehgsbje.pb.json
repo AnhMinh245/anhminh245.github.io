@@ -1,0 +1,164 @@
+{
+ "sbType": "STRelation",
+ "snapshot": {
+  "logHeads": {
+  },
+  "data": {
+   "blocks": [
+    {
+     "id": "bafyreigryhxiz4fwonwk3dq7borczjomebzwx45dbgdsyrkkeamehgsbje",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+      "header"
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "smartblock": {
+
+     }
+    },
+    {
+     "id": "header",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": true,
+      "remove": true,
+      "drag": true,
+      "dropOn": true
+     },
+     "childrenIds": [
+      "title",
+      "featuredRelations"
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "layout": {
+      "style": "Header"
+     }
+    },
+    {
+     "id": "title",
+     "fields": {
+       "_detailsKey": [
+          "name",
+          "done"
+         ]
+      },
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": true,
+      "drag": true,
+      "dropOn": true
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "",
+      "style": "Title",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "featuredRelations",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": true,
+      "drag": true,
+      "dropOn": true
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "featuredRelations": {
+
+     }
+    }
+   ],
+   "details": {
+     "addedDate": 0,
+     "apiObjectKey": "file_indexing_status",
+     "backlinks": [
+       ],
+     "createdDate": 1772215169,
+     "creator": "_participant_bafyreihkelp7ljuvnh2znrup2r2z4q33qbtegpe6fzs5grmwpfiqz2q4e4_2s07itt5u9svl_A8cnL7DgUwamLZnTWaTeK8CVmQdysdMaASGVu3WLjAUfMsde",
+     "description": "File indexing status",
+     "id": "bafyreigryhxiz4fwonwk3dq7borczjomebzwx45dbgdsyrkkeamehgsbje",
+     "internalFlags": [
+       ],
+     "isHidden": true,
+     "isReadonly": true,
+     "lastModifiedBy": "_participant_bafyreihkelp7ljuvnh2znrup2r2z4q33qbtegpe6fzs5grmwpfiqz2q4e4_2s07itt5u9svl_",
+     "layout": 5,
+     "links": [
+       ],
+     "mentions": [
+       ],
+     "name": "File indexing status",
+     "origin": 7,
+     "relationDefaultValue": null,
+     "relationFormat": 2,
+     "relationFormatIncludeTime": false,
+     "relationFormatObjectTypes": [
+       ],
+     "relationKey": "fileIndexingStatus",
+     "relationMaxCount": 1,
+     "relationReadonlyValue": true,
+     "resolvedLayout": 5,
+     "restrictions": [
+        7,
+        3,
+        4,
+        6,
+        10,
+        5,
+        2,
+        1
+       ],
+     "revision": 0,
+     "snippet": "",
+     "sourceObject": "_brfileIndexingStatus",
+     "spaceId": "bafyreihkelp7ljuvnh2znrup2r2z4q33qbtegpe6fzs5grmwpfiqz2q4e4.2s07itt5u9svl",
+     "syncDate": 1772250778,
+     "syncError": 0,
+     "syncStatus": 0,
+     "type": "bafyreiaukme26767cj5zp7u4hazwzpdlxfohvxx2pt5cfqkdrecn3owe6i",
+     "uniqueKey": "rel-fileIndexingStatus"
+    },
+   "fileKeys": null,
+   "extraRelations": [
+   ],
+   "objectTypes": [
+    "ot-relation"
+   ],
+   "collections": null,
+   "removedCollectionKeys": [
+   ],
+   "relationLinks": [
+   ],
+   "key": "fileIndexingStatus",
+   "originalCreatedTimestamp": "0",
+   "fileInfo": null
+  },
+  "fileKeys": [
+  ]
+ }
+}

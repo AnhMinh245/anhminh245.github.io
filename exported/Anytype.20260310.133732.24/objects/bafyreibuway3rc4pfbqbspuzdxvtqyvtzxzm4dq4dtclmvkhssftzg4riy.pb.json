@@ -1,0 +1,6699 @@
+{
+ "sbType": "Page",
+ "snapshot": {
+  "logHeads": {
+  },
+  "data": {
+   "blocks": [
+    {
+     "id": "bafyreibuway3rc4pfbqbspuzdxvtqyvtzxzm4dq4dtclmvkhssftzg4riy",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+      "header",
+      "div-69ae959ee11c71005311e803",
+      "div-69ae959ee11c71005311e804",
+      "69ae95e9e11c71005311e808",
+      "69ae9662e11c71005311e81b",
+      "69ae968ce11c71005311e828",
+      "69ae968ce11c71005311e829",
+      "69ae968ce11c71005311e82a",
+      "69ae964ce11c71005311e816",
+      "69ae968ee11c71005311e82c",
+      "69ae96dae11c71005311e837",
+      "69ae96e0e11c71005311e83f",
+      "69ae96e6e11c71005311e843",
+      "69ae96efe11c71005311e84b",
+      "69ae96efe11c71005311e84c",
+      "69ae96ffe11c71005311e84f",
+      "69ae96fbe11c71005311e84e",
+      "69ae984fe11c71005311e862",
+      "69ae985ae11c71005311e868",
+      "69ae98ace11c71005311e87c",
+      "69ae98afe11c71005311e87e",
+      "69ae98fae11c71005311e896",
+      "69ae9907e11c71005311e8a1",
+      "69ae990fe11c71005311e8a6",
+      "69ae9908e11c71005311e8a3",
+      "69ae992ae11c71005311e8cc",
+      "69ae992ae11c71005311e8cd",
+      "69ae992ae11c71005311e8ce",
+      "69ae992ae11c71005311e8cf",
+      "69ae992ae11c71005311e8d0",
+      "69ae992ae11c71005311e8d1",
+      "69ae992ae11c71005311e8d2",
+      "69ae992ae11c71005311e8d3",
+      "69ae992ae11c71005311e8d4",
+      "69ae992ae11c71005311e8d5",
+      "69ae992ce11c71005311e8d7"
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "smartblock": {
+
+     }
+    },
+    {
+     "id": "header",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": true,
+      "remove": true,
+      "drag": true,
+      "dropOn": true
+     },
+     "childrenIds": [
+      "title",
+      "featuredRelations"
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "layout": {
+      "style": "Header"
+     }
+    },
+    {
+     "id": "div-69ae959ee11c71005311e803",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+      "div-69ae8ffee11c71005311e6df",
+      "div-69ae8ffee11c71005311e6e0",
+      "69ae9047e11c71005311e6f2",
+      "69ae9076e11c71005311e703",
+      "69ae907fe11c71005311e706",
+      "69ae9078e11c71005311e705",
+      "69ae909fe11c71005311e70f",
+      "69ae90a2e11c71005311e711",
+      "69ae9130e11c71005311e72c",
+      "69ae910be11c71005311e728",
+      "69ae915ee11c71005311e732",
+      "69ae9178e11c71005311e735",
+      "69ae91b0e11c71005311e73f",
+      "69ae91d6e11c71005311e744",
+      "69ae920de11c71005311e74f",
+      "69ae9221e11c71005311e751",
+      "69ae9255e11c71005311e75c",
+      "69ae9274e11c71005311e766",
+      "69ae9275e11c71005311e768",
+      "69ae9296e11c71005311e770"
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "layout": {
+      "style": "Div"
+     }
+    },
+    {
+     "id": "div-69ae959ee11c71005311e804",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+      "69ae929fe11c71005311e778",
+      "69ae92a4e11c71005311e77a",
+      "69ae92e7e11c71005311e78d",
+      "69ae92c2e11c71005311e787",
+      "69ae9323e11c71005311e799",
+      "69ae932ae11c71005311e79b",
+      "69ae9353e11c71005311e7a3",
+      "69ae9361e11c71005311e7ad",
+      "69ae950ce11c71005311e7c5",
+      "69ae9362e11c71005311e7af",
+      "69ae950fe11c71005311e7cb",
+      "69ae9521e11c71005311e7cd",
+      "69ae9552e11c71005311e7d8",
+      "69ae956de11c71005311e7dc",
+      "69ae9574e11c71005311e7e4",
+      "69ae9579e11c71005311e7e6",
+      "69ae9593e11c71005311e7f0",
+      "69ae959ee11c71005311e7fe",
+      "69ae959ee11c71005311e7ff",
+      "69ae959ee11c71005311e800",
+      "69ae959ee11c71005311e801"
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "layout": {
+      "style": "Div"
+     }
+    },
+    {
+     "id": "69ae95e9e11c71005311e808",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "4. Browse the Event Details, located at the bottom of the Monitor Status page.",
+      "style": "Header3",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae9662e11c71005311e81b",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "file": {
+      "hash": "",
+      "name": "image_1773049442164_0.png",
+      "type": "Image",
+      "mime": "image/png",
+      "size": "151930",
+      "addedAt": "0",
+      "targetObjectId": "bafyreige362rk23f35nwgy2atcb3n7xup5f3smw27ztwan4cjkl7wiytlm",
+      "state": "Done",
+      "style": "Embed"
+     }
+    },
+    {
+     "id": "69ae968ce11c71005311e828",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "You'll see the Message Template and Recipients.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae968ce11c71005311e829",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "The message in this monitor is simple, but as you work with monitors,\nyou'll learn how to include variables, link to dashboards and runbooks,\nand send notifications to third party apps such as Slack and PagerDuty.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae968ce11c71005311e82a",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "Whenever there is a change in status, your team will receive a notification about the Monitor Status at eng-discounts@company.com.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 104,
+          "to": 129
+         },
+         "type": "Keyboard",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae964ce11c71005311e816",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "file": {
+      "hash": "",
+      "name": "image_1773049420398_0.png",
+      "type": "Image",
+      "mime": "image/png",
+      "size": "455619",
+      "addedAt": "0",
+      "targetObjectId": "bafyreicuo66ytpn7ra3oyr7vvogfe2lfmn4wh6ik2a6nel7v33dwzzvwfq",
+      "state": "Done",
+      "style": "Embed"
+     }
+    },
+    {
+     "id": "69ae968ee11c71005311e82c",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "5. Browse the details for Monitor Behavior.",
+      "style": "Header3",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 26,
+          "to": 42
+         },
+         "type": "Bold",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae96dae11c71005311e837",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "file": {
+      "hash": "",
+      "name": "image_1773049562482_0.png",
+      "type": "Image",
+      "mime": "image/png",
+      "size": "281476",
+      "addedAt": "0",
+      "targetObjectId": "bafyreigt3s3tkrhrihbrk4krcv4nslsmnfuzprj5ni5up33245zxhkvonq",
+      "state": "Done",
+      "style": "Embed"
+     }
+    },
+    {
+     "id": "69ae96e0e11c71005311e83f",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "You'll see a bar graph indicating the status over time and two timeseries graphs for the calculated query metric.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae96e6e11c71005311e843",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae96efe11c71005311e84b",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "As a member of the store-discounts team, you now know where to start\nlooking in Datadog for key data and insights about the store-discounts\nservice.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae96efe11c71005311e84c",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "To do some optional exercises, click the Try it yourself! (optional) heading below. To complete the lab, click the Lab summary heading instead.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 41,
+          "to": 68
+         },
+         "type": "Bold",
+         "param": ""
+        },
+        {
+         "range": {
+          "from": 115,
+          "to": 126
+         },
+         "type": "Bold",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae96ffe11c71005311e84f",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "div": {
+      "style": "Line"
+     }
+    },
+    {
+     "id": "69ae96fbe11c71005311e84e",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "Try it yourself! (optional)",
+      "style": "Header1",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae984fe11c71005311e862",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "1. Find and open your saved view in Logs.",
+      "style": "Header2",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae985ae11c71005311e868",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+      "69ae988be11c71005311e871",
+      "69ae989de11c71005311e875"
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "Solution",
+      "style": "Toggle",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae98ace11c71005311e87c",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "2. Find the Manage Monitors page and search for the store-discounts monitors.",
+      "style": "Header2",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae98afe11c71005311e87e",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+      "69ae98dfe11c71005311e887",
+      "69ae98e4e11c71005311e88b",
+      "69ae98ede11c71005311e893",
+      "69ae98fce11c71005311e898"
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "Solution",
+      "style": "Toggle",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae98fae11c71005311e896",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae9907e11c71005311e8a1",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "Click the Lab summary heading below to complete the lab.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 10,
+          "to": 21
+         },
+         "type": "Bold",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae990fe11c71005311e8a6",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "div": {
+      "style": "Line"
+     }
+    },
+    {
+     "id": "69ae9908e11c71005311e8a3",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "Lab summary",
+      "style": "Header1",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae992ae11c71005311e8cc",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "In this lab, you did the following:",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae992ae11c71005311e8cd",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "Explored OOTB and custom dashboards from Dashboards List",
+      "style": "Marked",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae992ae11c71005311e8ce",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "Searched and visualized log data in Logs",
+      "style": "Marked",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae992ae11c71005311e8cf",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "Viewed service details in Software Catalog",
+      "style": "Marked",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae992ae11c71005311e8d0",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "Interpreted a monitor in Manage Monitors",
+      "style": "Marked",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae992ae11c71005311e8d1",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "You used the following tools to find the data and assets:",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae992ae11c71005311e8d2",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "The main navigation menu",
+      "style": "Marked",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae992ae11c71005311e8d3",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "The Go to... quick navigation tool",
+      "style": "Marked",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 4,
+          "to": 12
+         },
+         "type": "Bold",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae992ae11c71005311e8d4",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "Links and menus for correlated data and assets on product pages",
+      "style": "Marked",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae992ae11c71005311e8d5",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "This is just the start of your journey with Datadog! To learn more\nabout Dashboards, Logs, Software Catalog, and Monitors, take the Datadog Foundation course",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 132,
+          "to": 150
+         },
+         "type": "Link",
+         "param": "https://learn.datadoghq.com/courses/datadog-foundation"
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae992ce11c71005311e8d7",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": ".",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "title",
+     "fields": {
+       "_detailsKey": [
+          "name",
+          "done"
+         ]
+      },
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": true,
+      "drag": true,
+      "dropOn": true
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "",
+      "style": "Title",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "featuredRelations",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": true,
+      "drag": true,
+      "dropOn": true
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "featuredRelations": {
+
+     }
+    },
+    {
+     "id": "div-69ae8ffee11c71005311e6df",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+      "div-69ae8cbee11c71005311e530",
+      "div-69ae8cbee11c71005311e531",
+      "69ae8cf1e11c71005311e53f",
+      "69ae8cf9e11c71005311e547",
+      "69ae8d09e11c71005311e550",
+      "69ae8d12e11c71005311e557",
+      "69ae8d39e11c71005311e55b",
+      "69ae8d3ee11c71005311e55e",
+      "69ae8d4ee11c71005311e56b",
+      "69ae8dd8e11c71005311e592",
+      "69ae8e1ee11c71005311e627",
+      "69ae8e1ee11c71005311e628",
+      "69ae8e2de11c71005311e62f",
+      "69ae8e41e11c71005311e636",
+      "69ae8e4ae11c71005311e63d",
+      "69ae8e4ce11c71005311e63f",
+      "69ae8e65e11c71005311e64e",
+      "69ae8e65e11c71005311e64f",
+      "69ae8e65e11c71005311e650"
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "layout": {
+      "style": "Div"
+     }
+    },
+    {
+     "id": "div-69ae8ffee11c71005311e6e0",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+      "69ae8ea4e11c71005311e657",
+      "69ae8eb0e11c71005311e661",
+      "69ae8ec5e11c71005311e665",
+      "69ae8ecce11c71005311e668",
+      "69ae8efae11c71005311e673",
+      "69ae8f05e11c71005311e67a",
+      "69ae8f18e11c71005311e683",
+      "69ae8f43e11c71005311e691",
+      "69ae8f54e11c71005311e695",
+      "69ae8f58e11c71005311e698",
+      "69ae8f63e11c71005311e6a0",
+      "69ae8f80e11c71005311e6ad",
+      "69ae8f95e11c71005311e6b5",
+      "69ae8f96e11c71005311e6b8",
+      "69ae8fa7e11c71005311e6c5",
+      "69ae8fc0e11c71005311e6c9",
+      "69ae8fcbe11c71005311e6d7",
+      "69ae8fcbe11c71005311e6d8",
+      "69ae8fffe11c71005311e6e2",
+      "69ae8fcbe11c71005311e6d9",
+      "69ae8fcbe11c71005311e6da",
+      "69ae9048e11c71005311e6f4",
+      "69ae902fe11c71005311e6ee",
+      "69ae902fe11c71005311e6ef"
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "layout": {
+      "style": "Div"
+     }
+    },
+    {
+     "id": "69ae9047e11c71005311e6f2",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "21. Close the panel.",
+      "style": "Header3",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae9076e11c71005311e703",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "As you browsed the store-discounts logs, you saw that they have trace\ndata from Application Performance Monitoring (APM) correlated to them.\nYou want to learn more about the service and the other services it\ninteracts with. Software Catalog provides an overview of that\ninformation. Click the Find service details heading below to continue.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 293,
+          "to": 313
+         },
+         "type": "Bold",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae907fe11c71005311e706",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "div": {
+      "style": "Line"
+     }
+    },
+    {
+     "id": "69ae9078e11c71005311e705",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "Find service details",
+      "style": "Header1",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae909fe11c71005311e70f",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "Software Catalog provides an overview of services in your systems. You\ncan find important details about team ownership, service reliability,\napplication performance, application security, costs, and delivery.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae90a2e11c71005311e711",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "1. Using the main menu or the Go to… tool, navigate to Automation \u003e Internal Developer Portal \u003e Software Catalog.",
+      "style": "Header3",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 30,
+          "to": 34
+         },
+         "type": "Bold",
+         "param": ""
+        },
+        {
+         "range": {
+          "from": 53,
+          "to": 110
+         },
+         "type": "Bold",
+         "param": ""
+        },
+        {
+         "range": {
+          "from": 53,
+          "to": 110
+         },
+         "type": "Link",
+         "param": "https://app.datadoghq.com/services?lens=Ownership"
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae9130e11c71005311e72c",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "file": {
+      "hash": "",
+      "name": "image_1773048112088_0.png",
+      "type": "Image",
+      "mime": "image/png",
+      "size": "391186",
+      "addedAt": "0",
+      "targetObjectId": "bafyreicc2xosdx2ip2wtfaaunwptunpx3ciiqcule3ykf3s6bn2rblbp7q",
+      "state": "Done",
+      "style": "Embed"
+     }
+    },
+    {
+     "id": "69ae910be11c71005311e728",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "The page will open on the Service List and the Ownership tab. You'll also see tabs for Reliability, Performance, Security, Costs, and Delivery.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 26,
+          "to": 38
+         },
+         "type": "Bold",
+         "param": ""
+        },
+        {
+         "range": {
+          "from": 47,
+          "to": 56
+         },
+         "type": "Bold",
+         "param": ""
+        },
+        {
+         "range": {
+          "from": 87,
+          "to": 98
+         },
+         "type": "Bold",
+         "param": ""
+        },
+        {
+         "range": {
+          "from": 100,
+          "to": 111
+         },
+         "type": "Bold",
+         "param": ""
+        },
+        {
+         "range": {
+          "from": 113,
+          "to": 121
+         },
+         "type": "Bold",
+         "param": ""
+        },
+        {
+         "range": {
+          "from": 123,
+          "to": 128
+         },
+         "type": "Bold",
+         "param": ""
+        },
+        {
+         "range": {
+          "from": 134,
+          "to": 142
+         },
+         "type": "Bold",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae915ee11c71005311e732",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "file": {
+      "hash": "",
+      "name": "image_1773048158649_0.png",
+      "type": "Image",
+      "mime": "image/png",
+      "size": "706281",
+      "addedAt": "0",
+      "targetObjectId": "bafyreicjathyq3htiqzr2z7eld4bo27tsvbsptviyjt4a2xj4xhlmye3eq",
+      "state": "Done",
+      "style": "Embed"
+     }
+    },
+    {
+     "id": "69ae9178e11c71005311e735",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "2. Above the list of services, click the env:* menu and select env:quickstart-course to filter the list to the services for Storedog.",
+      "style": "Header3",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 41,
+          "to": 46
+         },
+         "type": "Keyboard",
+         "param": ""
+        },
+        {
+         "range": {
+          "from": 63,
+          "to": 84
+         },
+         "type": "Keyboard",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae91b0e11c71005311e73f",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "file": {
+      "hash": "",
+      "name": "image_1773048240725_0.png",
+      "type": "Image",
+      "mime": "image/png",
+      "size": "600762",
+      "addedAt": "0",
+      "targetObjectId": "bafyreientpz4braaynsd5bkta3vqkn2hfrkdrdo6nfjnqp3w4p66hdgzqe",
+      "state": "Done",
+      "style": "Embed"
+     }
+    },
+    {
+     "id": "69ae91d6e11c71005311e744",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "3. For the store-discounts service, hover over the icons in the columns to see the available details. The icons under Telemetry are shortcuts to the available data for the service. You may need to scroll to the right to see all available columns.",
+      "style": "Header3",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 11,
+          "to": 26
+         },
+         "type": "Bold",
+         "param": ""
+        },
+        {
+         "range": {
+          "from": 118,
+          "to": 127
+         },
+         "type": "Bold",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae920de11c71005311e74f",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "file": {
+      "hash": "",
+      "name": "image_1773048333972_0.png",
+      "type": "Image",
+      "mime": "image/png",
+      "size": "218291",
+      "addedAt": "0",
+      "targetObjectId": "bafyreigbl45zjrpia3kb6keo24ludbr7s6qwi2ui4u2upar6vzcas3prfa",
+      "state": "Done",
+      "style": "Embed"
+     }
+    },
+    {
+     "id": "69ae9221e11c71005311e751",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "4. Click the Performance tab above the list of services. For each service, you'll see key APM metrics for requests, latency, and\nerror rate. You'll also see the number and status of any monitors for each service. You may need to scroll to the right to see all available columns.",
+      "style": "Header3",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 13,
+          "to": 24
+         },
+         "type": "Bold",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae9255e11c71005311e75c",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "file": {
+      "hash": "",
+      "name": "image_1773048405503_0.png",
+      "type": "Image",
+      "mime": "image/png",
+      "size": "478571",
+      "addedAt": "0",
+      "targetObjectId": "bafyreiehfsbxwk3vbccclivftmvthq63ocby3kumvjfa7byfdk3q7uftfi",
+      "state": "Done",
+      "style": "Embed"
+     }
+    },
+    {
+     "id": "69ae9274e11c71005311e766",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "You can navigate directly to the Performance tab of Software Catalog Catalog using APM \u003e Software Catalog in the main navigation menu.",
+      "style": "Quote",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 33,
+          "to": 44
+         },
+         "type": "Bold",
+         "param": ""
+        },
+        {
+         "range": {
+          "from": 83,
+          "to": 86
+         },
+         "type": "Bold",
+         "param": ""
+        },
+        {
+         "range": {
+          "from": 89,
+          "to": 105
+         },
+         "type": "Bold",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae9275e11c71005311e768",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "5. Click the store-discounts service. A panel will open in the Performance tab of the service details.",
+      "style": "Header3",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 13,
+          "to": 28
+         },
+         "type": "Bold",
+         "param": ""
+        },
+        {
+         "range": {
+          "from": 63,
+          "to": 74
+         },
+         "type": "Bold",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae9296e11c71005311e770",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "file": {
+      "hash": "",
+      "name": "image_1773048470460_0.png",
+      "type": "Image",
+      "mime": "image/png",
+      "size": "491772",
+      "addedAt": "0",
+      "targetObjectId": "bafyreihx6j5ixo6qchgjtivqmdwnxdrbkvyj35nfrfnbdwka7fehqh2gam",
+      "state": "Done",
+      "style": "Embed"
+     }
+    },
+    {
+     "id": "69ae929fe11c71005311e778",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "Here you can get a quick view of key visualizations for service\nperformance. In the top right of the panel, you also have the option to\ngo to the Service Page in APM to view more details about the service's\nperformance.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae92a4e11c71005311e77a",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "6. Click the Ownership tab. You'll see information about the service, such as linked Documentation, Runbooks, and Dashboards in addition to the links you saw earlier for Team, On-call, and Contacts.",
+      "style": "Header3",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 13,
+          "to": 22
+         },
+         "type": "Bold",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae92e7e11c71005311e78d",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "file": {
+      "hash": "",
+      "name": "image_1773048551661_0.png",
+      "type": "Image",
+      "mime": "image/png",
+      "size": "487961",
+      "addedAt": "0",
+      "targetObjectId": "bafyreif6zzxsdzjdptrclszjgaylkaqcm3zwipopmf35rsoiqdogyynnfm",
+      "state": "Done",
+      "style": "Embed"
+     }
+    },
+    {
+     "id": "69ae92c2e11c71005311e787",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "7. In the lower half of the panel, you can find more information related to service setup, linked dashboards, service dependencies, and more.",
+      "style": "Header3",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae9323e11c71005311e799",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "file": {
+      "hash": "",
+      "name": "image_1773048611013_0.png",
+      "type": "Image",
+      "mime": "image/png",
+      "size": "687789",
+      "addedAt": "0",
+      "targetObjectId": "bafyreidzbmwh5tv7udt3o6mheuvzf6c3vjnq7ncwbjpsij3ldzbeazo5ha",
+      "state": "Done",
+      "style": "Embed"
+     }
+    },
+    {
+     "id": "69ae932ae11c71005311e79b",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "8. In the top right of the panel, click the arrow next to Service Page. This opens a menu for related pages you can navigate to. Leave this menu open.",
+      "style": "Header3",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 58,
+          "to": 70
+         },
+         "type": "Bold",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae9353e11c71005311e7a3",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "file": {
+      "hash": "",
+      "name": "image_1773048659267_0.png",
+      "type": "Image",
+      "mime": "image/png",
+      "size": "86452",
+      "addedAt": "0",
+      "targetObjectId": "bafyreifi2o3em72hvoyupbq5nziuwfhjcc44vf5yvf3bvuorogtj4e7k3u",
+      "state": "Done",
+      "style": "Embed"
+     }
+    },
+    {
+     "id": "69ae9361e11c71005311e7ad",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "Software Catalog is a centralized view of services that your teams are\nmonitoring with Datadog. As you saw in Dashboards and Logs, you're also\nable to navigate to correlated data and assets, such as monitors, from\nSoftware Catalog. From here, you can try exploring a monitor for the\nstore-discounts service. Click the Interpret a monitor heading below to continue.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 318,
+          "to": 337
+         },
+         "type": "Bold",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae950ce11c71005311e7c5",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "div": {
+      "style": "Line"
+     }
+    },
+    {
+     "id": "69ae9362e11c71005311e7af",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "Interpret a monitor",
+      "style": "Header1",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae950fe11c71005311e7cb",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "A monitor is an alert that notifies you and your team when a\nuser-defined threshold for a metric has been exceeded or if the status\nof an asset in Datadog (such as an SLO or a synthetics test) has\nchanged. For example, a member of the store-discounts team has created\nan APM Monitor that notifies the team if the error rate of the service\nexceeds a certain value.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae9521e11c71005311e7cd",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "1. In the Service Page menu options, click Monitors. A new tab will open with the Manage Monitors list filtered to service:store-discounts.",
+      "style": "Header3",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 115,
+          "to": 138
+         },
+         "type": "Keyboard",
+         "param": ""
+        },
+        {
+         "range": {
+          "from": 10,
+          "to": 22
+         },
+         "type": "Bold",
+         "param": ""
+        },
+        {
+         "range": {
+          "from": 43,
+          "to": 51
+         },
+         "type": "Bold",
+         "param": ""
+        },
+        {
+         "range": {
+          "from": 82,
+          "to": 97
+         },
+         "type": "Bold",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae9552e11c71005311e7d8",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "file": {
+      "hash": "",
+      "name": "image_1773049170815_0.png",
+      "type": "Image",
+      "mime": "image/png",
+      "size": "765499",
+      "addedAt": "0",
+      "targetObjectId": "bafyreidbiptsm4xzvbgf64vbhe5arl7y2d77t34xiw7g4iz3twbeugvb4y",
+      "state": "Done",
+      "style": "Embed"
+     }
+    },
+    {
+     "id": "69ae956de11c71005311e7dc",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "file": {
+      "hash": "",
+      "name": "image_1773049197275_0.png",
+      "type": "Image",
+      "mime": "image/png",
+      "size": "587352",
+      "addedAt": "0",
+      "targetObjectId": "bafyreialufon424gz35ufixls6fna2a3gzc4maigah6ox3utf7x33qjisa",
+      "state": "Done",
+      "style": "Embed"
+     }
+    },
+    {
+     "id": "69ae9574e11c71005311e7e4",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "Notice that some monitors have an ALERT or WARN status.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae9579e11c71005311e7e6",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "2. Click the monitor named Service store-discounts has a high error rate to open the monitor's status page.",
+      "style": "Header3",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 27,
+          "to": 72
+         },
+         "type": "Keyboard",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae9593e11c71005311e7f0",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "file": {
+      "hash": "",
+      "name": "image_1773049235613_0.png",
+      "type": "Image",
+      "mime": "image/png",
+      "size": "542172",
+      "addedAt": "0",
+      "targetObjectId": "bafyreiclgguvdiaewalio45bxhmye2mn654akjd3q3vu2y5bbfukmknq34",
+      "state": "Done",
+      "style": "Embed"
+     }
+    },
+    {
+     "id": "69ae959ee11c71005311e7fe",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "Within the header you will be able to see the Monitor Status, Type,\nCreation Date and Author. You will also see Associated Teams and\nServices if they are available.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae959ee11c71005311e7ff",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "On the right, you can view the Query details, Evaluation, and\nNotification Count with listed recipients. You can hover over the query\nto see the full query details if needed.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae959ee11c71005311e800",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "The query reads as: \"Taking the sum over the last 10 min, if the sum\nof the errors divided by the sum of the requests (that is, the error\nrate) is greater than 0.05, the status is ALERT.\"",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae959ee11c71005311e801",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "Notice that the query includes the env and service tags for store-discounts. This ensures that data for only this service is being queried and alerted on by this monitor.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 35,
+          "to": 38
+         },
+         "type": "Keyboard",
+         "param": ""
+        },
+        {
+         "range": {
+          "from": 43,
+          "to": 50
+         },
+         "type": "Keyboard",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae988be11c71005311e871",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "Go to Logs \u003e Search \u0026 Analytics \u003e Explorer using the main navigation menu or the quick navigation tool. Click Views in the top left. Select your saved view in the list.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 6,
+          "to": 42
+         },
+         "type": "Link",
+         "param": "https://app.datadoghq.com/logs"
+        },
+        {
+         "range": {
+          "from": 6,
+          "to": 42
+         },
+         "type": "Bold",
+         "param": ""
+        },
+        {
+         "range": {
+          "from": 110,
+          "to": 115
+         },
+         "type": "Bold",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae989de11c71005311e875",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "file": {
+      "hash": "",
+      "name": "image_1773050013454_0.png",
+      "type": "Image",
+      "mime": "image/png",
+      "size": "883199",
+      "addedAt": "0",
+      "targetObjectId": "bafyreifactgkdfvxgh5vq2vkcrcrtmnonrkijazexrolbdmc5lvsrtqh74",
+      "state": "Done",
+      "style": "Embed"
+     }
+    },
+    {
+     "id": "69ae98dfe11c71005311e887",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "Go to Monitoring \u003e Monitor List.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 6,
+          "to": 31
+         },
+         "type": "Link",
+         "param": "https://app.datadoghq.com/monitors/manage"
+        },
+        {
+         "range": {
+          "from": 6,
+          "to": 31
+         },
+         "type": "Bold",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae98e4e11c71005311e88b",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "file": {
+      "hash": "",
+      "name": "image_1773050084979_0.png",
+      "type": "Image",
+      "mime": "image/png",
+      "size": "114548",
+      "addedAt": "0",
+      "targetObjectId": "bafyreietsh5wiuu7zwsjxj26tug6rz6yucgrtj3mvtav3ijsir5egfmqky",
+      "state": "Done",
+      "style": "Embed"
+     }
+    },
+    {
+     "id": "69ae98ede11c71005311e893",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "In the facets list, select store-discounts under Service.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 27,
+          "to": 42
+         },
+         "type": "Keyboard",
+         "param": ""
+        },
+        {
+         "range": {
+          "from": 49,
+          "to": 56
+         },
+         "type": "Bold",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae98fce11c71005311e898",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "file": {
+      "hash": "",
+      "name": "image_1773050108204_0.png",
+      "type": "Image",
+      "mime": "image/png",
+      "size": "567157",
+      "addedAt": "0",
+      "targetObjectId": "bafyreie2wdltys344zssk22jnyxj523llo3zl4tqrjzaneeuckqieb4nsa",
+      "state": "Done",
+      "style": "Embed"
+     }
+    },
+    {
+     "id": "div-69ae8cbee11c71005311e530",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+      "div-69ae8930e11c71005311e43a",
+      "div-69ae8930e11c71005311e43b",
+      "69ae894fe11c71005311e448",
+      "69ae8979e11c71005311e44c",
+      "69ae898ce11c71005311e458",
+      "69ae898ce11c71005311e459",
+      "69ae8a66e11c71005311e469",
+      "69ae8a78e11c71005311e470",
+      "69ae8a90e11c71005311e479",
+      "69ae8a90e11c71005311e47a",
+      "69ae8ab5e11c71005311e481",
+      "69ae8ac4e11c71005311e488",
+      "69ae8ac6e11c71005311e48a",
+      "69ae8acde11c71005311e490",
+      "69ae8b13e11c71005311e49b",
+      "69ae8b1fe11c71005311e4a3",
+      "69ae8b36e11c71005311e4a9",
+      "69ae8b29e11c71005311e4a5",
+      "69ae8b66e11c71005311e4b6"
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "layout": {
+      "style": "Div"
+     }
+    },
+    {
+     "id": "div-69ae8cbee11c71005311e531",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+      "69ae8b66e11c71005311e4b7",
+      "69ae8b66e11c71005311e4b8",
+      "69ae8b84e11c71005311e4c0",
+      "69ae8b91e11c71005311e4c8",
+      "69ae8b98e11c71005311e4d0",
+      "69ae8bafe11c71005311e4d6",
+      "69ae8bb0e11c71005311e4d8",
+      "69ae8bcee11c71005311e4e0",
+      "69ae8bd5e11c71005311e4e3",
+      "69ae8be4e11c71005311e4f0",
+      "69ae8be5e11c71005311e4f2",
+      "69ae8bfae11c71005311e4ff",
+      "69ae8bfae11c71005311e500",
+      "69ae8c14e11c71005311e504",
+      "69ae8c27e11c71005311e50b",
+      "69ae8c4de11c71005311e50d",
+      "69ae8ca6e11c71005311e522",
+      "69ae8c95e11c71005311e51b",
+      "69ae8cb1e11c71005311e526",
+      "69ae8cb3e11c71005311e527",
+      "69ae8cd5e11c71005311e53a",
+      "69ae8cd5e11c71005311e53b"
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "layout": {
+      "style": "Div"
+     }
+    },
+    {
+     "id": "69ae8cf1e11c71005311e53f",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "file": {
+      "hash": "",
+      "name": "image_1773047025210_0.png",
+      "type": "Image",
+      "mime": "image/png",
+      "size": "362984",
+      "addedAt": "0",
+      "targetObjectId": "bafyreihd6f4hp2umk2hp263kzrdmwt5uxuedcyhbuve5czztawa5mfpn6a",
+      "state": "Done",
+      "style": "Embed"
+     }
+    },
+    {
+     "id": "69ae8cf9e11c71005311e547",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "Click the X in the top right of the panel to close it.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8d09e11c71005311e550",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "8. In the facets list, under Status, select Error.",
+      "style": "Header3",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 44,
+          "to": 49
+         },
+         "type": "Keyboard",
+         "param": ""
+        },
+        {
+         "range": {
+          "from": 29,
+          "to": 35
+         },
+         "type": "Bold",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8d12e11c71005311e557",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "status:error is now also listed in the search field above the list of logs.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 0,
+          "to": 12
+         },
+         "type": "Keyboard",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8d39e11c71005311e55b",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "file": {
+      "hash": "",
+      "name": "image_1773047097340_0.png",
+      "type": "Image",
+      "mime": "image/png",
+      "size": "959098",
+      "addedAt": "0",
+      "targetObjectId": "bafyreicvgtngvyhmissug4mumo7rc7tngozgxwppsvrnfntexclu6gnq7e",
+      "state": "Done",
+      "style": "Embed"
+     }
+    },
+    {
+     "id": "69ae8d3ee11c71005311e55e",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "9. Click one of the logs with CONTENT displayed as An error occurred while getting discounts.",
+      "style": "Header3",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 51,
+          "to": 93
+         },
+         "type": "Keyboard",
+         "param": ""
+        },
+        {
+         "range": {
+          "from": 30,
+          "to": 37
+         },
+         "type": "Bold",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8d4ee11c71005311e56b",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "Notice that the status in the top left of the panel is ERROR.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 55,
+          "to": 60
+         },
+         "type": "Keyboard",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8dd8e11c71005311e592",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "file": {
+      "hash": "",
+      "name": "image_1773047256083_0.png",
+      "type": "Image",
+      "mime": "image/png",
+      "size": "366807",
+      "addedAt": "0",
+      "targetObjectId": "bafyreihlmoxjz3tgiqbyvfiymp25ijqurpr4xgtu2l6wtvnbqi52fqktqq",
+      "state": "Done",
+      "style": "Embed"
+     }
+    },
+    {
+     "id": "69ae8e1ee11c71005311e627",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "To quickly view the details of other logs in the list, you can use the up and down arrow keys of your keyboard.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8e1ee11c71005311e628",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "Close the panel.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8e2de11c71005311e62f",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "10. In the search field, hover over status:error and click the X that appears.",
+      "style": "Header3",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 36,
+          "to": 48
+         },
+         "type": "Keyboard",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8e41e11c71005311e636",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "file": {
+      "hash": "",
+      "name": "image_1773047361876_0.png",
+      "type": "Image",
+      "mime": "image/png",
+      "size": "21920",
+      "addedAt": "0",
+      "targetObjectId": "bafyreifi3uqlk6k3zm6ipoxrwvql2ju5qmvinzr36oyqi5iap5yftkmk5q",
+      "state": "Done",
+      "style": "Embed"
+     }
+    },
+    {
+     "id": "69ae8e4ae11c71005311e63d",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "You can also create visualizations using logs. In this case, you want to\ncreate a visualization showing the percentage of error logs.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8e4ce11c71005311e63f",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "11. Below the search field, do the following to view the timeseries chart for the counts by status:",
+      "style": "Header3",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8e65e11c71005311e64e",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "Set Visualize as to Timeseries",
+      "style": "Marked",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 20,
+          "to": 30
+         },
+         "type": "Keyboard",
+         "param": ""
+        },
+        {
+         "range": {
+          "from": 4,
+          "to": 16
+         },
+         "type": "Bold",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8e65e11c71005311e64f",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "Leave Show Count of as all logs",
+      "style": "Marked",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 23,
+          "to": 31
+         },
+         "type": "Keyboard",
+         "param": ""
+        },
+        {
+         "range": {
+          "from": 6,
+          "to": 19
+         },
+         "type": "Bold",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8e65e11c71005311e650",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "Set by to Status",
+      "style": "Marked",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 10,
+          "to": 16
+         },
+         "type": "Keyboard",
+         "param": ""
+        },
+        {
+         "range": {
+          "from": 4,
+          "to": 6
+         },
+         "type": "Bold",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8ea4e11c71005311e657",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "file": {
+      "hash": "",
+      "name": "image_1773047460009_0.png",
+      "type": "Image",
+      "mime": "image/png",
+      "size": "562472",
+      "addedAt": "0",
+      "targetObjectId": "bafyreiemzxrdv46s264ob6nhtgpm4ifilwqywyxgx3gaxr4lkqrwdtqkdy",
+      "state": "Done",
+      "style": "Embed"
+     }
+    },
+    {
+     "id": "69ae8eb0e11c71005311e661",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "Hover over the bars to see the count values. You can see the counts of\nlogs, but not the percentages. You'll have to try another visualization\ntype.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8ec5e11c71005311e665",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "file": {
+      "hash": "",
+      "name": "image_1773047493502_0.png",
+      "type": "Image",
+      "mime": "image/png",
+      "size": "103464",
+      "addedAt": "0",
+      "targetObjectId": "bafyreidexk2yqhumdm3jyx3wn4rbtzuyj2u2zfy32fjxh27qw2dehdrubm",
+      "state": "Done",
+      "style": "Embed"
+     }
+    },
+    {
+     "id": "69ae8ecce11c71005311e668",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "12. Set Visualize as to Pie Chart.",
+      "style": "Header3",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 24,
+          "to": 33
+         },
+         "type": "Keyboard",
+         "param": ""
+        },
+        {
+         "range": {
+          "from": 8,
+          "to": 20
+         },
+         "type": "Bold",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8efae11c71005311e673",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "file": {
+      "hash": "",
+      "name": "image_1773047546791_0.png",
+      "type": "Image",
+      "mime": "image/png",
+      "size": "584169",
+      "addedAt": "0",
+      "targetObjectId": "bafyreih3zfyiulundcuibe4ixn4rucvbki73o34fnazntqs2nolqtnm6t4",
+      "state": "Done",
+      "style": "Embed"
+     }
+    },
+    {
+     "id": "69ae8f05e11c71005311e67a",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "The pie chart displays the breakdown of count and percentage of logs by\nstatus over the time range selected. You can save this visualization for\nfuture use.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8f18e11c71005311e683",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "13. In the top left, above the search field, click Views to open the Saved Views list.",
+      "style": "Header3",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 51,
+          "to": 56
+         },
+         "type": "Bold",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8f43e11c71005311e691",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "You'll see that some OOTB Saved Views are listed. Datadog installed these based on the log configurations for Storedog.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8f54e11c71005311e695",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "file": {
+      "hash": "",
+      "name": "image_1773047636579_0.png",
+      "type": "Image",
+      "mime": "image/png",
+      "size": "362604",
+      "addedAt": "0",
+      "targetObjectId": "bafyreiak4vesh4nzatkf5r4lhpl7363mld6qm7lpprtantlvnfpwplygre",
+      "state": "Done",
+      "style": "Embed"
+     }
+    },
+    {
+     "id": "69ae8f58e11c71005311e698",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "14. At the top of the list, click Save as new view.",
+      "style": "Header3",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 34,
+          "to": 50
+         },
+         "type": "Bold",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8f63e11c71005311e6a0",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "15. In the New View field that appeared, copy and paste the following name:",
+      "style": "Header3",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 11,
+          "to": 19
+         },
+         "type": "Bold",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8f80e11c71005311e6ad",
+     "fields": {
+       "lang": "bash"
+      },
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "store-discounts status percentages",
+      "style": "Code",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8f95e11c71005311e6b5",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "file": {
+      "hash": "",
+      "name": "image_1773047701203_0.png",
+      "type": "Image",
+      "mime": "image/png",
+      "size": "71018",
+      "addedAt": "0",
+      "targetObjectId": "bafyreidtqnqnp7ivvemtv2pephr2t6aad3a7fcmvecu5efcirod2l4i554",
+      "state": "Done",
+      "style": "Embed"
+     }
+    },
+    {
+     "id": "69ae8f96e11c71005311e6b8",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "16. Click Save.",
+      "style": "Header3",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 10,
+          "to": 14
+         },
+         "type": "Bold",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8fa7e11c71005311e6c5",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "Your new view will appear at the top of the list.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8fc0e11c71005311e6c9",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "file": {
+      "hash": "",
+      "name": "image_1773047744104_0.png",
+      "type": "Image",
+      "mime": "image/png",
+      "size": "175053",
+      "addedAt": "0",
+      "targetObjectId": "bafyreiaydabteg5dpuv2zmrm5lfs2mtff3rgnasiv4en3o2pfysz45uw3u",
+      "state": "Done",
+      "style": "Embed"
+     }
+    },
+    {
+     "id": "69ae8fcbe11c71005311e6d7",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "17. Click Hide above the list of Saved Views to close this panel.",
+      "style": "Header3",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 10,
+          "to": 14
+         },
+         "type": "Bold",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8fcbe11c71005311e6d8",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "18. The store-discounts logs look simple. To see more complex logs, set Visualize as to List.",
+      "style": "Header3",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 88,
+          "to": 92
+         },
+         "type": "Keyboard",
+         "param": ""
+        },
+        {
+         "range": {
+          "from": 72,
+          "to": 84
+         },
+         "type": "Bold",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8fffe11c71005311e6e2",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "file": {
+      "hash": "",
+      "name": "image_1773047807040_0.png",
+      "type": "Image",
+      "mime": "image/png",
+      "size": "1010190",
+      "addedAt": "0",
+      "targetObjectId": "bafyreifkvcaivxcc3wn6bn3ema4noq6si5h5skxyvr4uog65b2lpjxxvpa",
+      "state": "Done",
+      "style": "Embed"
+     }
+    },
+    {
+     "id": "69ae8fcbe11c71005311e6d9",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "19. In the facets list, select webserver under Service.",
+      "style": "Header3",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 31,
+          "to": 40
+         },
+         "type": "Keyboard",
+         "param": ""
+        },
+        {
+         "range": {
+          "from": 47,
+          "to": 54
+         },
+         "type": "Bold",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8fcbe11c71005311e6da",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "20. Click one of the logs. View the log content and browse the Fields \u0026 Attributes.",
+      "style": "Header3",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 63,
+          "to": 82
+         },
+         "type": "Bold",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae9048e11c71005311e6f4",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "file": {
+      "hash": "",
+      "name": "image_1773047880812_0.png",
+      "type": "Image",
+      "mime": "image/png",
+      "size": "648785",
+      "addedAt": "0",
+      "targetObjectId": "bafyreicd7jjbnkxn53cn4i4gwp3eg77c6ka2wzh43ewaj6n7mbe5eovmta",
+      "state": "Done",
+      "style": "Embed"
+     }
+    },
+    {
+     "id": "69ae902fe11c71005311e6ee",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "This log content is more complex than those for the store-discounts\nservice, but Datadog was able to extract all its details into an\neasy-to-read format.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae902fe11c71005311e6ef",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "As you work more with logs in Datadog, you'll learn how to create\nfacets from event attributes so that you can search, filter, and group\nyour logs using details extracted from the logs themselves.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "div-69ae8930e11c71005311e43a",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+      "69ae855ee11c71005311e340",
+      "69af86da917d881cb416406c",
+      "69ae85ffe11c71005311e360",
+      "69ae85ffe11c71005311e361",
+      "69ae85ffe11c71005311e362",
+      "69ae85ffe11c71005311e363",
+      "69ae85ffe11c71005311e364",
+      "69ae85ffe11c71005311e365",
+      "69ae85ffe11c71005311e366",
+      "69ae8608e11c71005311e36d",
+      "69ae860fe11c71005311e374",
+      "69ae8613e11c71005311e377",
+      "69ae8623e11c71005311e37c",
+      "69ae8640e11c71005311e395",
+      "69ae8640e11c71005311e396",
+      "69ae8640e11c71005311e397",
+      "69ae8640e11c71005311e399",
+      "69ae8640e11c71005311e39a",
+      "69ae868fe11c71005311e3a8",
+      "69ae8695e11c71005311e3aa"
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "layout": {
+      "style": "Div"
+     }
+    },
+    {
+     "id": "div-69ae8930e11c71005311e43b",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+      "69ae86a6e11c71005311e3b2",
+      "69ae86a6e11c71005311e3b3",
+      "69ae8716e11c71005311e3c4",
+      "69ae8706e11c71005311e3bd",
+      "69ae8717e11c71005311e3c6",
+      "69ae8724e11c71005311e3ce",
+      "69ae873fe11c71005311e3d5",
+      "69ae874fe11c71005311e3dc",
+      "69ae8772e11c71005311e3e3",
+      "69ae8784e11c71005311e3ea",
+      "69ae879ee11c71005311e3ee",
+      "69ae87b3e11c71005311e3f5",
+      "69ae87b9e11c71005311e3fc",
+      "69ae87efe11c71005311e403",
+      "69ae87fbe11c71005311e405",
+      "69ae882ee11c71005311e410",
+      "69ae8837e11c71005311e417",
+      "69ae8884e11c71005311e41d",
+      "69ae88ade11c71005311e42b",
+      "69ae892ee11c71005311e437",
+      "69ae8938e11c71005311e43d"
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "layout": {
+      "style": "Div"
+     }
+    },
+    {
+     "id": "69ae894fe11c71005311e448",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "8. Browse the dashboard. Scroll from left to right and from top to bottom to view the full dashboard.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 0,
+          "to": 2
+         },
+         "type": "Bold",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8979e11c71005311e44c",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "file": {
+      "hash": "",
+      "name": "image_1773046137011_0.png",
+      "type": "Image",
+      "mime": "image/png",
+      "size": "553451",
+      "addedAt": "0",
+      "targetObjectId": "bafyreiemsq4rmczxhwemzwrofxz35icpltg2a3mwbs2yll5qu43egplnpe",
+      "state": "Done",
+      "style": "Embed"
+     }
+    },
+    {
+     "id": "69ae898ce11c71005311e458",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "You'll see visualizations for data related to Containers, CPU Core\nLoad, Memory, and more. (The Events visualization below the Docker logo\nwill be blank.)",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae898ce11c71005311e459",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "At a glance, you can't easily find data for the store-discounts\nservice in the dashboard. You can use the dashboard filters to narrow\nthe scope of the dashboard.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8a66e11c71005311e469",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "9. Below the dashboard title, click the scope menu. Type service:store-discounts and select that option.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 57,
+          "to": 80
+         },
+         "type": "Keyboard",
+         "param": ""
+        },
+        {
+         "range": {
+          "from": 0,
+          "to": 2
+         },
+         "type": "Bold",
+         "param": ""
+        },
+        {
+         "range": {
+          "from": 40,
+          "to": 45
+         },
+         "type": "Bold",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8a78e11c71005311e470",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "file": {
+      "hash": "",
+      "name": "image_1773046392118_0.png",
+      "type": "Image",
+      "mime": "image/png",
+      "size": "47928",
+      "addedAt": "0",
+      "targetObjectId": "bafyreidtgroysqjkelpe7ygpwk3x47lo72krdis7lcawsigoenli7wek4q",
+      "state": "Done",
+      "style": "Embed"
+     }
+    },
+    {
+     "id": "69ae8a90e11c71005311e479",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "Notice that the filters and filter options are different in this\ndashboard compared to those in the Storedog2.0 dashboard. As you\ncontinue to work with Dashboards in Datadog, you'll see the different\nways you can customize visualizations and filters in dashboards.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8a90e11c71005311e47a",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "After setting the filter, the visualizations are displaying data for\nthe store-discounts service only. You may need to scroll down in this\ndashboard to see the CPU Core Load and Memory charts in the screenshot\nbelow.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8ab5e11c71005311e481",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "file": {
+      "hash": "",
+      "name": "image_1773046453503_0.png",
+      "type": "Image",
+      "mime": "image/png",
+      "size": "470260",
+      "addedAt": "0",
+      "targetObjectId": "bafyreiavxqo3jtds7qwdr3xxhv6j2duak3opabyiwawxrhxjyqafnpzwri",
+      "state": "Done",
+      "style": "Embed"
+     }
+    },
+    {
+     "id": "69ae8ac4e11c71005311e488",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "Overall, the health of the store-discounts container looks good! The container isn't affecting the performance of the service.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8ac6e11c71005311e48a",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "10. Click the star icon next to the dashboard title to add this dashboard to your favorites.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 0,
+          "to": 3
+         },
+         "type": "Bold",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8acde11c71005311e490",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "11. In the main navigation menu, hover over Dashboards. In the Dashboards submenu, you'll see Docker - Overview and Storedog 2.0 listed in a new section for Starred Dashboards \u0026 Notebooks, as shown below.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 0,
+          "to": 3
+         },
+         "type": "Bold",
+         "param": ""
+        },
+        {
+         "range": {
+          "from": 44,
+          "to": 54
+         },
+         "type": "Bold",
+         "param": ""
+        },
+        {
+         "range": {
+          "from": 94,
+          "to": 111
+         },
+         "type": "Bold",
+         "param": ""
+        },
+        {
+         "range": {
+          "from": 116,
+          "to": 128
+         },
+         "type": "Bold",
+         "param": ""
+        },
+        {
+         "range": {
+          "from": 157,
+          "to": 187
+         },
+         "type": "Bold",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8b13e11c71005311e49b",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "file": {
+      "hash": "",
+      "name": "image_1773046547612_0.png",
+      "type": "Image",
+      "mime": "image/png",
+      "size": "379931",
+      "addedAt": "0",
+      "targetObjectId": "bafyreifbfqiuwkyiishznkvqb6r6niy7zkxhajx6os5vx7baz3mxkk3na4",
+      "state": "Done",
+      "style": "Embed"
+     }
+    },
+    {
+     "id": "69ae8b1fe11c71005311e4a3",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "You've browsed and bookmarked the dashboards. Your teammates mentioned\nthat you can also work with log data in Datadog. Click the Search for logs heading below to continue.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 130,
+          "to": 145
+         },
+         "type": "Bold",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8b36e11c71005311e4a9",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "div": {
+      "style": "Line"
+     }
+    },
+    {
+     "id": "69ae8b29e11c71005311e4a5",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "Search for logs",
+      "style": "Header1",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8b66e11c71005311e4b6",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "Log Management in Datadog brings together and processes all your logs\ninto standardized, structured formats. In Logs, you can search and\nanalyze logs to learn more about and troubleshoot your systems. You can\nalso save your searches for future reference.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8b66e11c71005311e4b7",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "As a member of the store-discounts team, you're interested in seeing what logs are available for the store-discounts service.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8b66e11c71005311e4b8",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "You used the main navigation menu to find Dashboard List. This time,\nyou'll use Datadog's quick navigation tool to go to Log Explorer to\nstart exploring logs.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8b84e11c71005311e4c0",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "1. In the main navigation menu, click Go to… to open the quick navigation tool.",
+      "style": "Header3",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 38,
+          "to": 42
+         },
+         "type": "Bold",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8b91e11c71005311e4c8",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "file": {
+      "hash": "",
+      "name": "image_1773046672999_0.png",
+      "type": "Image",
+      "mime": "image/png",
+      "size": "33861",
+      "addedAt": "0",
+      "targetObjectId": "bafyreihc4gype6d4l3sdj552sulrpo67yflaccgvgktpyh4wfhgg2lxtkm",
+      "state": "Done",
+      "style": "Embed"
+     }
+    },
+    {
+     "id": "69ae8b98e11c71005311e4d0",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "2. Browse the modal that opens. You'll see the list of products and pages that you can easily navigate to using this menu.",
+      "style": "Header3",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8bafe11c71005311e4d6",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "file": {
+      "hash": "",
+      "name": "image_1773046703546_0.png",
+      "type": "Image",
+      "mime": "image/png",
+      "size": "194485",
+      "addedAt": "0",
+      "targetObjectId": "bafyreiffx244s64hcdvnvyj6wdgwas6p5de3zmh3d3fkqjobpbtxdkfyoa",
+      "state": "Done",
+      "style": "Embed"
+     }
+    },
+    {
+     "id": "69ae8bb0e11c71005311e4d8",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "3. Type Logs into the search field. The options that appear for Logs match those you would see in the Logs submenu in the main navigation.",
+      "style": "Header3",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 8,
+          "to": 12
+         },
+         "type": "Keyboard",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8bcee11c71005311e4e0",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "file": {
+      "hash": "",
+      "name": "image_1773046734832_0.png",
+      "type": "Image",
+      "mime": "image/png",
+      "size": "146129",
+      "addedAt": "0",
+      "targetObjectId": "bafyreidmzo7vmht2i4lqpbkg4qro2wcrjzc5mapey4gkaivom4kzfpxypm",
+      "state": "Done",
+      "style": "Embed"
+     }
+    },
+    {
+     "id": "69ae8bd5e11c71005311e4e3",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "4. Select Logs from the list.",
+      "style": "Header3",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 10,
+          "to": 14
+         },
+         "type": "Bold",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8be4e11c71005311e4f0",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "If you're redirected to a Get started with logs page because you're working in a new account, click on the Server tab to the left, then click on Explore Your Logs on the bottom-right of the page to enable the Logs view.",
+      "style": "Quote",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 26,
+          "to": 47
+         },
+         "type": "Bold",
+         "param": ""
+        },
+        {
+         "range": {
+          "from": 107,
+          "to": 113
+         },
+         "type": "Bold",
+         "param": ""
+        },
+        {
+         "range": {
+          "from": 145,
+          "to": 162
+         },
+         "type": "Bold",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8be5e11c71005311e4f2",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "5. Browse the list of logs. You'll see logs from different services.",
+      "style": "Header3",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8bfae11c71005311e4ff",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "Above the search field, you'll see a time picker that you can use to select the time over which you want to view log data.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8bfae11c71005311e500",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "On the left of the list, you'll find a list of facets that you can use to filter the list.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8c14e11c71005311e504",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "file": {
+      "hash": "",
+      "name": "image_1773046804394_0.png",
+      "type": "Image",
+      "mime": "image/png",
+      "size": "1381441",
+      "addedAt": "0",
+      "targetObjectId": "bafyreiez3szk6sztuvg4vb5tf55otkgvjs2gdze7vispwlf22ncjcloq6e",
+      "state": "Done",
+      "style": "Embed"
+     }
+    },
+    {
+     "id": "69ae8c27e11c71005311e50b",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "file": {
+      "hash": "",
+      "name": "image_1773046823719_0.png",
+      "type": "Image",
+      "mime": "image/png",
+      "size": "1205062",
+      "addedAt": "0",
+      "targetObjectId": "bafyreia3gts24pi6ev6afjz5tgxwtmpom23vrb52zsfgncqxh2kbb63x5a",
+      "state": "Done",
+      "style": "Embed"
+     }
+    },
+    {
+     "id": "69ae8c4de11c71005311e50d",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "6. In the facets list on the left, under Service, select store-discounts.",
+      "style": "Header3",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 57,
+          "to": 72
+         },
+         "type": "Keyboard",
+         "param": ""
+        },
+        {
+         "range": {
+          "from": 41,
+          "to": 48
+         },
+         "type": "Bold",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8ca6e11c71005311e522",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "service:store-discounts appears in the search field above the list of logs. The list will only display logs for this service.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 0,
+          "to": 23
+         },
+         "type": "Keyboard",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8c95e11c71005311e51b",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "file": {
+      "hash": "",
+      "name": "image_1773046933894_0.png",
+      "type": "Image",
+      "mime": "image/png",
+      "size": "768413",
+      "addedAt": "0",
+      "targetObjectId": "bafyreiggberwtrcbe2yizbuuhejgvicrkoafvbb3vkqzt6fg4s5zimjan4",
+      "state": "Done",
+      "style": "Embed"
+     }
+    },
+    {
+     "id": "69ae8cb1e11c71005311e526",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "file": {
+      "hash": "",
+      "name": "image_1773046961567_0.png",
+      "type": "Image",
+      "mime": "image/png",
+      "size": "1032586",
+      "addedAt": "0",
+      "targetObjectId": "bafyreibn3woh3wofwsuho6zlhhfm2kdz3fubhkdw32uh3p5idi2xsejcsm",
+      "state": "Done",
+      "style": "Embed"
+     }
+    },
+    {
+     "id": "69ae8cb3e11c71005311e527",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "7. Click one of the logs with CONTENT displayed as Discounts available: ###. The log details panel will open.",
+      "style": "Header3",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 51,
+          "to": 75
+         },
+         "type": "Keyboard",
+         "param": ""
+        },
+        {
+         "range": {
+          "from": 30,
+          "to": 37
+         },
+         "type": "Bold",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8cd5e11c71005311e53a",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "The top of the panel displays all tags associated with the log as well as the log content.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8cd5e11c71005311e53b",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "Below the log content, you'll see tabs for Fields \u0026 Attributes, Trace, Metrics, and Processes. Check the content for each tab to see what data is correlated to the log.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 43,
+          "to": 62
+         },
+         "type": "Bold",
+         "param": ""
+        },
+        {
+         "range": {
+          "from": 64,
+          "to": 69
+         },
+         "type": "Bold",
+         "param": ""
+        },
+        {
+         "range": {
+          "from": 71,
+          "to": 78
+         },
+         "type": "Bold",
+         "param": ""
+        },
+        {
+         "range": {
+          "from": 84,
+          "to": 93
+         },
+         "type": "Bold",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae855ee11c71005311e340",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "Introduction",
+      "style": "Header1",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69af86da917d881cb416406c",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae85ffe11c71005311e360",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "Assume your company has an e-commerce app called Storedog. The app is\ndeployed on Docker and is made up of a few microservices including\nstore-frontend, store-backend, store-discounts, and store-ads. Your\ncompany recently started using Datadog to monitor Storedog's health and\nperformance.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae85ffe11c71005311e361",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "You just joined the team that manages the store-discounts service,\nand you want to start working with the data asap. This quick hands-on\nlab will help you get started. You'll learn different ways to navigate\nDatadog to do the following:",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae85ffe11c71005311e362",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "Explore dashboards from Dashboards List",
+      "style": "Numbered",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae85ffe11c71005311e363",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "Search and visualize log data in Logs",
+      "style": "Numbered",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae85ffe11c71005311e364",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "Find application service details in Software Catalog",
+      "style": "Numbered",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae85ffe11c71005311e365",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "Interpret a monitor in Manage Monitors",
+      "style": "Numbered",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae85ffe11c71005311e366",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "In Datadog, you'll see that all the data from your systems have tags. Tags are simple key:value\npairs that provide metadata about your data. You can search, filter,\nand group your data using tags. Datadog correlates data that has the\nsame tags across the platform. You can also assign tags to monitors and\nother assets that you create in Datadog. The image below shows the list\nof tags for a metric in Datadog. (You can click the image to enlarge\nit.)",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 86,
+          "to": 95
+         },
+         "type": "Keyboard",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8608e11c71005311e36d",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "file": {
+      "hash": "",
+      "name": "image_1773045256544_0.png",
+      "type": "Image",
+      "mime": "image/png",
+      "size": "159981",
+      "addedAt": "0",
+      "targetObjectId": "bafyreiflscwzanuzt3g5jnd3hxendw5qjlljjvxei5q7mfjzqld7kh6id4",
+      "state": "Done",
+      "style": "Embed"
+     }
+    },
+    {
+     "id": "69ae860fe11c71005311e374",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "In this lab, the data from Storedog has the tag env:quickstart-course\nto indicate that this data is from the quickstart-course environment.\nData that is specifically from the store-discounts service also has the\ntag service:store-discounts. Both of these tags are listed\nin the example image above. You'll use these tags as you search for data\nand monitors in the lab.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 48,
+          "to": 69
+         },
+         "type": "Keyboard",
+         "param": ""
+        },
+        {
+         "range": {
+          "from": 216,
+          "to": 239
+         },
+         "type": "Keyboard",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8613e11c71005311e377",
+     "fields": {
+       "lang": "bash"
+      },
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "Your Datadog credentials for logging in to https://app.datadoghq.com are as follows:\nUsername:       ebo44cutuv@ddtraining.datadoghq.com\nPassword:       4dDe327f+8\nAPI Key:        87ac4b6c3db50ebc95a4ee230fae29bb\nAccount expires in 13 days and 20 hours\n\nThis training account is a trial account that's available for 14 days. After the trial account expires, you will be automatically provisioned a new trial account that you can use to continue your learning. These credentials will only work for Datadog Learning Center labs.\n\n======\n\nIf these lab credentials do not work, click the Help tab above this lab terminal for troubleshooting tips.\n\nroot@lab-host:~/lab# ",
+      "style": "Code",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8623e11c71005311e37c",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "Log in to Datadog",
+      "style": "Header1",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8640e11c71005311e395",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "A Datadog trial account has been created and assigned to you for this\nlab. The credentials for the account are displayed in the terminal next\nto these instructions.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8640e11c71005311e396",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "In a new browser tab, go to https://app.datadoghq.com/account/login and use the credentials in the terminal to log in to the Datadog trial account.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 28,
+          "to": 67
+         },
+         "type": "Link",
+         "param": "https://app.datadoghq.com/account/login"
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8640e11c71005311e397",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "Note: If you're unable to log in to Datadog with these credentials, click the Help tab above the terminal for instructions on how to get new credentials.",
+      "style": "Quote",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 78,
+          "to": 82
+         },
+         "type": "Bold",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8640e11c71005311e399",
+     "fields": null,
+     "restrictions": null,
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "Once you're logged in to Datadog, click the Explore a dashboard heading below.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 44,
+          "to": 63
+         },
+         "type": "Bold",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8640e11c71005311e39a",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "Note: As you navigate the Datadog UI, some pages may have a large gradient image at the top containing some overview information about the page.You can close these images by clicking the X in the top right corner.",
+      "style": "Quote",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae868fe11c71005311e3a8",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "file": {
+      "hash": "",
+      "name": "image_1773045391508_0.png",
+      "type": "Image",
+      "mime": "image/png",
+      "size": "932973",
+      "addedAt": "0",
+      "targetObjectId": "bafyreia6j7hqusqkqq2auejmr3hm2lu5plt6e2ay3vlcrolbzbaecam4yq",
+      "state": "Done",
+      "style": "Embed"
+     }
+    },
+    {
+     "id": "69ae8695e11c71005311e3aa",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "Explore a dashboard",
+      "style": "Header1",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae86a6e11c71005311e3b2",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "Dashboards are a great place to start looking for data insights.\nDashboards allow you to visualize data from across your entire system in\none place. Datadog provides hundreds of out-of-the box (OOTB)\ndashboards for common technologies and use cases. You can also create\ncustom dashboards based on your team's needs.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae86a6e11c71005311e3b3",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "One of your teammates created a custom dashboard called Storedog 2.0\nthat brings together data and insights for Storedog from across Datadog.\nYou'll use this dashboard to start learning more about the\nstore-discounts service.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8716e11c71005311e3c4",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "1.In the main menu, hover over Dashboards and select Dashboard List as shown in the screenshots below.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 0,
+          "to": 2
+         },
+         "type": "Bold",
+         "param": ""
+        },
+        {
+         "range": {
+          "from": 31,
+          "to": 41
+         },
+         "type": "Bold",
+         "param": ""
+        },
+        {
+         "range": {
+          "from": 53,
+          "to": 67
+         },
+         "type": "Bold",
+         "param": ""
+        },
+        {
+         "range": {
+          "from": 53,
+          "to": 67
+         },
+         "type": "Link",
+         "param": "https://app.datadoghq.com/dashboard/lists"
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8706e11c71005311e3bd",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "file": {
+      "hash": "",
+      "name": "image_1773045510684_0.png",
+      "type": "Image",
+      "mime": "image/png",
+      "size": "149847",
+      "addedAt": "0",
+      "targetObjectId": "bafyreib4anh674vf2zuqa6mgxjnddvh76sflphujykir2trzcoxbd5vzju",
+      "state": "Done",
+      "style": "Embed"
+     }
+    },
+    {
+     "id": "69ae8717e11c71005311e3c6",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "2. Browse the list that opens.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 0,
+          "to": 2
+         },
+         "type": "Bold",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8724e11c71005311e3ce",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "The list is populated with OOTB dashboards that were automatically\ninstalled by Datadog based on Storedog's configuration. There's also one\ncustom dashboard called Storedog 2.0 (indicated in the image below).",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae873fe11c71005311e3d5",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "file": {
+      "hash": "",
+      "name": "image_1773045567035_0.png",
+      "type": "Image",
+      "mime": "image/png",
+      "size": "415687",
+      "addedAt": "0",
+      "targetObjectId": "bafyreihd34w4r6nchieebbgmscaa5k4qldvxrtgkj5wcsh7a33n6bqydxu",
+      "state": "Done",
+      "style": "Embed"
+     }
+    },
+    {
+     "id": "69ae874fe11c71005311e3dc",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "3. Select Storedog 2.0 from the list to open and browse the dashboard.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 0,
+          "to": 2
+         },
+         "type": "Bold",
+         "param": ""
+        },
+        {
+         "range": {
+          "from": 10,
+          "to": 22
+         },
+         "type": "Bold",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8772e11c71005311e3e3",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "file": {
+      "hash": "",
+      "name": "image_1773045618169_0.png",
+      "type": "Image",
+      "mime": "image/png",
+      "size": "516185",
+      "addedAt": "0",
+      "targetObjectId": "bafyreie3mdziu5sbfwgkvk5j232gi6v2f7expx3b6oxxtghqbbsfgypvce",
+      "state": "Done",
+      "style": "Embed"
+     }
+    },
+    {
+     "id": "69ae8784e11c71005311e3ea",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "The building blocks of a dashboard are called widgets. The dashboard has\nthree groups of widgets: Overall Performance, Infrastructure \u0026\nNetwork, and Databases.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae879ee11c71005311e3ee",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "file": {
+      "hash": "",
+      "name": "image_1773045662290_0.png",
+      "type": "Image",
+      "mime": "image/png",
+      "size": "395640",
+      "addedAt": "0",
+      "targetObjectId": "bafyreid4szw5dfviynynpczzvzjc64o5prwy5esk67blrzdkc6p3laukqy",
+      "state": "Done",
+      "style": "Embed"
+     }
+    },
+    {
+     "id": "69ae87b3e11c71005311e3f5",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "file": {
+      "hash": "",
+      "name": "image_1773045683309_0.png",
+      "type": "Image",
+      "mime": "image/png",
+      "size": "346892",
+      "addedAt": "0",
+      "targetObjectId": "bafyreig2xe7kirabrj5isg4f2p4cjq5spl5jzu64dh4u5fvwwkjos75xjq",
+      "state": "Done",
+      "style": "Embed"
+     }
+    },
+    {
+     "id": "69ae87b9e11c71005311e3fc",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "4. Click the data in one of the dashboard widgets. As shown below, a menu\nwill open with details about the metric as well as options to navigate\nto correlated data in other parts of Datadog. Across Datadog, you can\nclick the data in any chart and see options to view related data.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 0,
+          "to": 2
+         },
+         "type": "Bold",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae87efe11c71005311e403",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "file": {
+      "hash": "",
+      "name": "image_1773045743654_0.png",
+      "type": "Image",
+      "mime": "image/png",
+      "size": "197727",
+      "addedAt": "0",
+      "targetObjectId": "bafyreihyf7dflvg42hsqhoynot7q3djgrqgw4gu35clu6f75cyifs3ih6a",
+      "state": "Done",
+      "style": "Embed"
+     }
+    },
+    {
+     "id": "69ae87fbe11c71005311e405",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "5. To focus on data for the store-discounts service, update the filters below the dashboard title as shown in the image. Click env and select quickstart-course. Click service and select store-discounts.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 142,
+          "to": 159
+         },
+         "type": "Keyboard",
+         "param": ""
+        },
+        {
+         "range": {
+          "from": 186,
+          "to": 201
+         },
+         "type": "Keyboard",
+         "param": ""
+        },
+        {
+         "range": {
+          "from": 0,
+          "to": 2
+         },
+         "type": "Bold",
+         "param": ""
+        },
+        {
+         "range": {
+          "from": 127,
+          "to": 130
+         },
+         "type": "Bold",
+         "param": ""
+        },
+        {
+         "range": {
+          "from": 167,
+          "to": 174
+         },
+         "type": "Bold",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae882ee11c71005311e410",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "file": {
+      "hash": "",
+      "name": "image_1773045806757_0.png",
+      "type": "Image",
+      "mime": "image/png",
+      "size": "646702",
+      "addedAt": "0",
+      "targetObjectId": "bafyreicijfjq74ru23sgvyhvzr46j6oa67zpbrr4fjwzrnywodzfj7pa2e",
+      "state": "Done",
+      "style": "Embed"
+     }
+    },
+    {
+     "id": "69ae8837e11c71005311e417",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "Notice that the data in the SLO: Python service high errors, the Monitors Status, and the Error Rate % widgets indicate that the store-discounts service has a high error rate. (SLO stands for Service Level Objective.) You decide to investigate these errors more.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 28,
+          "to": 59
+         },
+         "type": "Bold",
+         "param": ""
+        },
+        {
+         "range": {
+          "from": 65,
+          "to": 80
+         },
+         "type": "Bold",
+         "param": ""
+        },
+        {
+         "range": {
+          "from": 90,
+          "to": 103
+         },
+         "type": "Bold",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8884e11c71005311e41d",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "6. Next to the dashboard title, click the star icon to add the dashboard to your favorites. This is a great dashboard! You'll want to find it easily as you continue to work at Storedog.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 0,
+          "to": 2
+         },
+         "type": "Bold",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae88ade11c71005311e42b",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "7. The Overall Performance widget group includes a list of Related links,\nas shown in the image below. You ask a teammate about the list of\ndashboard links. These dashboards are all OOTB dashboards that Datadog\nautomatically added to the account because your team is using the\nspecific services and tools or Datadog products. Your team member listed\nthe links here for easy access. You're curious to see what information\nis included in the Docker - Overview dashboard and decide to explore it.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 0,
+          "to": 2
+         },
+         "type": "Bold",
+         "param": ""
+        },
+        {
+         "range": {
+          "from": 59,
+          "to": 72
+         },
+         "type": "Bold",
+         "param": ""
+        },
+        {
+         "range": {
+          "from": 440,
+          "to": 457
+         },
+         "type": "Bold",
+         "param": ""
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae892ee11c71005311e437",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "text": {
+      "text": "Click the Docker - Overview dashboard link in your Storedog 2.0 dashboard (indicated in the image below) to open the Docker - Overview dashboard.",
+      "style": "Paragraph",
+      "marks": {
+       "marks": [
+        {
+         "range": {
+          "from": 10,
+          "to": 37
+         },
+         "type": "Link",
+         "param": "https://app.datadoghq.com/screen/integration/52/docker---overview"
+        }
+       ]
+      },
+      "checked": false,
+      "color": "",
+      "iconEmoji": "",
+      "iconImage": ""
+     }
+    },
+    {
+     "id": "69ae8938e11c71005311e43d",
+     "fields": null,
+     "restrictions": {
+      "read": false,
+      "edit": false,
+      "remove": false,
+      "drag": false,
+      "dropOn": false
+     },
+     "childrenIds": [
+     ],
+     "backgroundColor": "",
+     "align": "AlignLeft",
+     "verticalAlign": "VerticalAlignTop",
+     "file": {
+      "hash": "",
+      "name": "image_1773046072728_0.png",
+      "type": "Image",
+      "mime": "image/png",
+      "size": "143313",
+      "addedAt": "0",
+      "targetObjectId": "bafyreif3x5gpmxnrddt7o5rh2lywvamkausiskffeouryzwcpbksakb5pi",
+      "state": "Done",
+      "style": "Embed"
+     }
+    }
+   ],
+   "details": {
+     "backlinks": [
+       ],
+     "createdDate": 1773045070,
+     "creator": "_participant_bafyreihkelp7ljuvnh2znrup2r2z4q33qbtegpe6fzs5grmwpfiqz2q4e4_2s07itt5u9svl_A8cnL7DgUwamLZnTWaTeK8CVmQdysdMaASGVu3WLjAUfMsde",
+     "id": "bafyreibuway3rc4pfbqbspuzdxvtqyvtzxzm4dq4dtclmvkhssftzg4riy",
+     "internalFlags": [
+       ],
+     "lastModifiedBy": "_participant_bafyreihkelp7ljuvnh2znrup2r2z4q33qbtegpe6fzs5grmwpfiqz2q4e4_2s07itt5u9svl_A8cnL7DgUwamLZnTWaTeK8CVmQdysdMaASGVu3WLjAUfMsde",
+     "lastModifiedDate": 1773124537,
+     "lastOpenedDate": 1773124530,
+     "links": [
+        "bafyreiflscwzanuzt3g5jnd3hxendw5qjlljjvxei5q7mfjzqld7kh6id4",
+        "bafyreia6j7hqusqkqq2auejmr3hm2lu5plt6e2ay3vlcrolbzbaecam4yq",
+        "bafyreib4anh674vf2zuqa6mgxjnddvh76sflphujykir2trzcoxbd5vzju",
+        "bafyreihd34w4r6nchieebbgmscaa5k4qldvxrtgkj5wcsh7a33n6bqydxu",
+        "bafyreie3mdziu5sbfwgkvk5j232gi6v2f7expx3b6oxxtghqbbsfgypvce",
+        "bafyreid4szw5dfviynynpczzvzjc64o5prwy5esk67blrzdkc6p3laukqy",
+        "bafyreig2xe7kirabrj5isg4f2p4cjq5spl5jzu64dh4u5fvwwkjos75xjq",
+        "bafyreihyf7dflvg42hsqhoynot7q3djgrqgw4gu35clu6f75cyifs3ih6a",
+        "bafyreicijfjq74ru23sgvyhvzr46j6oa67zpbrr4fjwzrnywodzfj7pa2e",
+        "bafyreif3x5gpmxnrddt7o5rh2lywvamkausiskffeouryzwcpbksakb5pi",
+        "bafyreiemsq4rmczxhwemzwrofxz35icpltg2a3mwbs2yll5qu43egplnpe",
+        "bafyreidtgroysqjkelpe7ygpwk3x47lo72krdis7lcawsigoenli7wek4q",
+        "bafyreiavxqo3jtds7qwdr3xxhv6j2duak3opabyiwawxrhxjyqafnpzwri",
+        "bafyreifbfqiuwkyiishznkvqb6r6niy7zkxhajx6os5vx7baz3mxkk3na4",
+        "bafyreihc4gype6d4l3sdj552sulrpo67yflaccgvgktpyh4wfhgg2lxtkm",
+        "bafyreiffx244s64hcdvnvyj6wdgwas6p5de3zmh3d3fkqjobpbtxdkfyoa",
+        "bafyreidmzo7vmht2i4lqpbkg4qro2wcrjzc5mapey4gkaivom4kzfpxypm",
+        "bafyreiez3szk6sztuvg4vb5tf55otkgvjs2gdze7vispwlf22ncjcloq6e",
+        "bafyreia3gts24pi6ev6afjz5tgxwtmpom23vrb52zsfgncqxh2kbb63x5a",
+        "bafyreiggberwtrcbe2yizbuuhejgvicrkoafvbb3vkqzt6fg4s5zimjan4",
+        "bafyreibn3woh3wofwsuho6zlhhfm2kdz3fubhkdw32uh3p5idi2xsejcsm",
+        "bafyreihd6f4hp2umk2hp263kzrdmwt5uxuedcyhbuve5czztawa5mfpn6a",
+        "bafyreicvgtngvyhmissug4mumo7rc7tngozgxwppsvrnfntexclu6gnq7e",
+        "bafyreihlmoxjz3tgiqbyvfiymp25ijqurpr4xgtu2l6wtvnbqi52fqktqq",
+        "bafyreifi3uqlk6k3zm6ipoxrwvql2ju5qmvinzr36oyqi5iap5yftkmk5q",
+        "bafyreiemzxrdv46s264ob6nhtgpm4ifilwqywyxgx3gaxr4lkqrwdtqkdy",
+        "bafyreidexk2yqhumdm3jyx3wn4rbtzuyj2u2zfy32fjxh27qw2dehdrubm",
+        "bafyreih3zfyiulundcuibe4ixn4rucvbki73o34fnazntqs2nolqtnm6t4",
+        "bafyreiak4vesh4nzatkf5r4lhpl7363mld6qm7lpprtantlvnfpwplygre",
+        "bafyreidtqnqnp7ivvemtv2pephr2t6aad3a7fcmvecu5efcirod2l4i554",
+        "bafyreiaydabteg5dpuv2zmrm5lfs2mtff3rgnasiv4en3o2pfysz45uw3u",
+        "bafyreifkvcaivxcc3wn6bn3ema4noq6si5h5skxyvr4uog65b2lpjxxvpa",
+        "bafyreicd7jjbnkxn53cn4i4gwp3eg77c6ka2wzh43ewaj6n7mbe5eovmta",
+        "bafyreicc2xosdx2ip2wtfaaunwptunpx3ciiqcule3ykf3s6bn2rblbp7q",
+        "bafyreicjathyq3htiqzr2z7eld4bo27tsvbsptviyjt4a2xj4xhlmye3eq",
+        "bafyreientpz4braaynsd5bkta3vqkn2hfrkdrdo6nfjnqp3w4p66hdgzqe",
+        "bafyreigbl45zjrpia3kb6keo24ludbr7s6qwi2ui4u2upar6vzcas3prfa",
+        "bafyreiehfsbxwk3vbccclivftmvthq63ocby3kumvjfa7byfdk3q7uftfi",
+        "bafyreihx6j5ixo6qchgjtivqmdwnxdrbkvyj35nfrfnbdwka7fehqh2gam",
+        "bafyreif6zzxsdzjdptrclszjgaylkaqcm3zwipopmf35rsoiqdogyynnfm",
+        "bafyreidzbmwh5tv7udt3o6mheuvzf6c3vjnq7ncwbjpsij3ldzbeazo5ha",
+        "bafyreifi2o3em72hvoyupbq5nziuwfhjcc44vf5yvf3bvuorogtj4e7k3u",
+        "bafyreidbiptsm4xzvbgf64vbhe5arl7y2d77t34xiw7g4iz3twbeugvb4y",
+        "bafyreialufon424gz35ufixls6fna2a3gzc4maigah6ox3utf7x33qjisa",
+        "bafyreiclgguvdiaewalio45bxhmye2mn654akjd3q3vu2y5bbfukmknq34",
+        "bafyreige362rk23f35nwgy2atcb3n7xup5f3smw27ztwan4cjkl7wiytlm",
+        "bafyreicuo66ytpn7ra3oyr7vvogfe2lfmn4wh6ik2a6nel7v33dwzzvwfq",
+        "bafyreigt3s3tkrhrihbrk4krcv4nslsmnfuzprj5ni5up33245zxhkvonq",
+        "bafyreifactgkdfvxgh5vq2vkcrcrtmnonrkijazexrolbdmc5lvsrtqh74",
+        "bafyreietsh5wiuu7zwsjxj26tug6rz6yucgrtj3mvtav3ijsir5egfmqky",
+        "bafyreie2wdltys344zssk22jnyxj523llo3zl4tqrjzaneeuckqieb4nsa"
+       ],
+     "mentions": [
+       ],
+     "name": "Datadog Quick Start",
+     "resolvedLayout": 0,
+     "snippet": "Introduction\nAssume your company has an e-commerce app called Storedog. The app is\ndeployed on Docker and is made up of a few microservices including\nstore-frontend, store-backend, store-discounts, and store-ads. Your\ncompany recently started using Datadog to monitor Storedog's health and …",
+     "spaceId": "bafyreihkelp7ljuvnh2znrup2r2z4q33qbtegpe6fzs5grmwpfiqz2q4e4.2s07itt5u9svl",
+     "syncDate": 1773124538,
+     "syncError": 0,
+     "syncStatus": 0,
+     "tag": [
+        "bafyreienpw6dyvrqnc4vqqsfqufcikyehriyd4r5znricedxok5gcsosii",
+        "bafyreidia4m5pemgzrlczmg7snaa7nacg2udhzfzwb2bl2g3k7ofmszc4e",
+        "bafyreid4csj3sdtx5llfo3gzq2og3chti6z7xi6jo7ztezek6ladcmqgo4"
+       ],
+     "type": "bafyreicks7anlanpewmvbkrqtlarnafesx7g225ugbqnc56mtsk3kcnzze"
+    },
+   "fileKeys": null,
+   "extraRelations": [
+   ],
+   "objectTypes": [
+    "ot-page"
+   ],
+   "collections": null,
+   "removedCollectionKeys": [
+   ],
+   "relationLinks": [
+   ],
+   "key": "",
+   "originalCreatedTimestamp": "0",
+   "fileInfo": null
+  },
+  "fileKeys": [
+  ]
+ }
+}

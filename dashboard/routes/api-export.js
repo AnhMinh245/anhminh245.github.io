@@ -56,8 +56,8 @@ router.post('/anytype-folder', async (req, res) => {
             const title = parsed.title || mdFile.replace('.md', '');
             const slug = slugify(title);
 
-            // Clean the markdown body
-            const cleanedBody = cleanMarkdownBody(parsed.body);
+            // Clean the markdown body (pass category to fix image paths)
+            const cleanedBody = cleanMarkdownBody(parsed.body, targetCategory);
 
             // Extract description from body
             const description = extractDescription(cleanedBody);
@@ -324,7 +324,7 @@ function parseAnytypeFrontmatter(raw) {
 /**
  * Clean Anytype markdown body for Quartz
  */
-function cleanMarkdownBody(md) {
+function cleanMarkdownBody(md, category) {
     // Remove the duplicate frontmatter block that appears in body
     md = md.replace(/^---\n[\s\S]*?\n---\n?/m, '');
 
@@ -333,8 +333,16 @@ function cleanMarkdownBody(md) {
     md = md.replace(/^(\d+)\.\*\*/gm, '$1. **');
     md = md.replace(/^(\d+\.\s+)\*\*\s+/gm, '$1**');
 
-    // Fix image paths: files\image → files/image (for web)
+    // Fix image paths: files\image → {category}/files/image (content-root-relative for Quartz)
     md = md.replace(/files\\/g, 'files/');
+    if (category) {
+        // Rewrite relative image refs to content-root-relative
+        // files/image.png → tech/files/image.png
+        md = md.replace(
+            /(!\[[^\]]*\]\()files\//g,
+            `$1${category}/files/`
+        );
+    }
 
     // Fix trailing whitespace on lines
     md = md.replace(/\s{3,}$/gm, '');

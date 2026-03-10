@@ -40,7 +40,7 @@ API Key:  87ac4b6c3db50ebc95a4ee230fae29bb
 
 > **Lưu ý:** Đây là tài khoản trial 14 ngày, chỉ dùng được trong Datadog Learning Center labs.
 
-![Login page](files/image_1773045391508_0.png)
+![](tech/files/image_1773045391508_0.png)
 
 ---
 
@@ -61,7 +61,7 @@ API Key:  87ac4b6c3db50ebc95a4ee230fae29bb
 
 > Menu chính → hover **Dashboards** → chọn**[Dashboard List](https://app.datadoghq.com/dashboard/lists)**
 
-![Dashboard menu](files/image_1773045510684_0.png)
+![](tech/files/image_1773045510684_0.png)
 
 **Bước 2 — Xem danh sách dashboard**
 
@@ -69,31 +69,31 @@ Danh sách gồm:
 - Các OOTB dashboards (tự động cài theo cấu hình Storedog)
 - 1 custom dashboard: **Storedog 2.0**
 
-![Dashboard list](files/image_1773045567035_0.png)
+![](tech/files/image_1773045567035_0.png)
 
 **Bước 3 — Mở Storedog 2.0**
 
-![Storedog 2.0 overview](files/image_1773045618169_0.png)
+![](tech/files/image_1773045618169_0.png)
 
 Dashboard có **3 nhóm widget:**
 - **Overall Performance**
 - **Infrastructure & Network**
 - **Databases**
 
-![Widget groups 1](files/image_1773045662290_0.png)
-![Widget groups 2](files/image_1773045683309_0.png)
+![](tech/files/image_1773045662290_0.png)
+![](tech/files/image_1773045683309_0.png)
 
 **Bước 4 — Tương tác với widget**
 
 > Click vào bất kỳ data point nào trong chart → menu hiện ra với options điều hướng đến dữ liệu liên quan
 
-![Widget click menu](files/image_1773045743654_0.png)
+![](tech/files/image_1773045743654_0.png)
 
 **Bước 5 — Lọc theo service store-discounts**
 
 > Bên dưới tiêu đề dashboard → Click **env** → chọn `quickstart-course` → Click**service** → chọn `store-discounts`
 
-![Dashboard filter](files/image_1773045806757_0.png)
+![](tech/files/image_1773045806757_0.png)
 
 > ⚠️ **Quan sát:** Sau khi lọc, widgets**SLO: Python service high errors**,**Monitors Status**, và**Error Rate %** cho thấy store-discounts có error rate cao → cần điều tra.**Bước 6 — Đánh dấu yêu thích (★)**
 
@@ -101,21 +101,21 @@ Dashboard có **3 nhóm widget:**
 
 > Trong widget **Overall Performance** → click link**[Docker - Overview](https://app.datadoghq.com/screen/integration/52/docker---overview)**
 
-![Related links](files/image_1773046072728_0.png)
-![Docker dashboard](files/image_1773046137011_0.png)
+![](tech/files/image_1773046072728_0.png)
+![](tech/files/image_1773046137011_0.png)
 
 Dashboard này hiển thị: **Containers**,**CPU Core Load**,**Memory**, v.v.**Bước 8 — Lọc Docker dashboard theo store-discounts**
 
 > Bên dưới tiêu đề → click menu **scope** → gõ `service:store-discounts` → chọn
 
-![Scope filter](files/image_1773046392118_0.png)
-![Filtered result](files/image_1773046453503_0.png)
+![](tech/files/image_1773046392118_0.png)
+![](tech/files/image_1773046453503_0.png)
 
 > ✅ **Kết quả:** Sức khỏe container store-discounts tốt, không ảnh hưởng đến performance của service.**Bước 9 — Đánh dấu Docker - Overview và kiểm tra Starred**
 
 > Click **★** → vào menu**Dashboards** → xem section**Starred Dashboards & Notebooks**
 
-![Starred dashboards](files/image_1773046547612_0.png)
+![](tech/files/image_1773046547612_0.png)
 
 ### ✏️ Điểm ôn tập — Dashboards
 
@@ -144,9 +144,9 @@ Dashboard này hiển thị: **Containers**,**CPU Core Load**,**Memory**, v.v.**
 
 > Menu chính → click **Go to…** → search `Logs` → chọn**Logs**
 
-![Go to tool](files/image_1773046672999_0.png)
-![Go to search](files/image_1773046703546_0.png)
-![Go to logs result](files/image_1773046734832_0.png)
+![](tech/files/image_1773046672999_0.png)
+![](tech/files/image_1773046703546_0.png)
+![](tech/files/image_1773046734832_0.png)
 
 **Bước 2 — Khám phá Log Explorer**
 
@@ -155,8 +155,8 @@ Giao diện gồm:
 - **Facets** (bên trái): bộ lọc nhanh
 - **Log list** (giữa): danh sách logs
 
-![Log explorer](files/image_1773046804394_0.png)
-![Log list](files/image_1773046823719_0.png)
+![](tech/files/image_1773046804394_0.png)
+![](tech/files/image_1773046823719_0.png)
 
 **Bước 3 — Lọc log của store-discounts**
 
@@ -164,8 +164,8 @@ Giao diện gồm:
 
 Search field tự động thêm `service:store-discounts`
 
-![Service filter](files/image_1773046933894_0.png)
-![Filtered logs](files/image_1773046961567_0.png)
+![](tech/files/image_1773046933894_0.png)
+![](tech/files/image_1773046961567_0.png)
 
 **Bước 4 — Xem chi tiết log bình thường**
 
@@ -176,7 +176,7 @@ Panel hiện ra với:
 - **Nội dung** log
 - Tabs: **Fields & Attributes** |**Trace** |**Metrics** |**Processes**
 
-![Log detail panel](files/image_1773047025210_0.png)
+![](tech/files/image_1773047025210_0.png)
 
 **Bước 5 — Lọc log lỗi (Error)**
 
@@ -184,7 +184,7 @@ Panel hiện ra với:
 
 Search field thêm `status:error`
 
-![Error filter](files/image_1773047097340_0.png)
+![](tech/files/image_1773047097340_0.png)
 
 **Bước 6 — Xem chi tiết log lỗi**
 
@@ -192,13 +192,13 @@ Search field thêm `status:error`
 
 Status hiển thị **ERROR** ở góc trên trái panel.
 
-![Error log detail](files/image_1773047256083_0.png)
+![](tech/files/image_1773047256083_0.png)
 
 > 💡 **Tip:** Dùng phím ↑↓ để chuyển nhanh giữa các log trong list**Bước 7 — Xóa filter status:error**
 
 > Search field → hover `status:error` → click **X**
 
-![Remove filter](files/image_1773047361876_0.png)
+![](tech/files/image_1773047361876_0.png)
 
 **Bước 8 — Tạo visualization: Timeseries**
 
@@ -207,14 +207,14 @@ Status hiển thị **ERROR** ở góc trên trái panel.
 > - **Show Count of** → `all logs` (giữ nguyên)
 > - **by** → `Status`
 
-![Timeseries config](files/image_1773047460009_0.png)
-![Timeseries chart](files/image_1773047493502_0.png)
+![](tech/files/image_1773047460009_0.png)
+![](tech/files/image_1773047493502_0.png)
 
 > ℹ️ Timeseries cho thấy số lượng logs nhưng **không hiển thị %**.**Bước 9 — Chuyển sang Pie Chart để xem %**
 
 > **Visualize as** → `Pie Chart`
 
-![Pie chart](files/image_1773047546791_0.png)
+![](tech/files/image_1773047546791_0.png)
 
 Pie chart hiển thị **phân bố % logs theo status** trong khoảng thời gian đã chọn.**Bước 10 — Lưu Saved View**
 
@@ -224,19 +224,19 @@ Pie chart hiển thị **phân bố % logs theo status** trong khoảng thời g
 store-discounts status percentages
 ```
 
-![Saved views list](files/image_1773047636579_0.png)
-![Name the view](files/image_1773047701203_0.png)
-![View saved](files/image_1773047744104_0.png)
+![](tech/files/image_1773047636579_0.png)
+![](tech/files/image_1773047701203_0.png)
+![](tech/files/image_1773047744104_0.png)
 
 **Bước 11 — Khám phá log phức tạp hơn (webserver)**
 
 > **Visualize as** → `List` → Facets →**Service** → chọn `webserver`
 
-![List view](files/image_1773047807040_0.png)
+![](tech/files/image_1773047807040_0.png)
 
 > Click một log để xem **Fields & Attributes**
 
-![Webserver log detail](files/image_1773047880812_0.png)
+![](tech/files/image_1773047880812_0.png)
 
 > ✅ **Quan sát:** Log của webserver phức tạp hơn nhưng Datadog tự động**parse** và trình bày dưới dạng dễ đọc.
 
@@ -267,20 +267,20 @@ store-discounts status percentages
 
 > Menu chính → **Automation > Internal Developer Portal > [Software Catalog](https://app.datadoghq.com/services?lens=Ownership)**
 
-![Software catalog nav](files/image_1773048112088_0.png)
-![Software catalog overview](files/image_1773048158649_0.png)
+![](tech/files/image_1773048112088_0.png)
+![](tech/files/image_1773048158649_0.png)
 
 Trang mở ở **Service List**, tab**Ownership**. Các tab khác:**Reliability**,**Performance**,**Security**,**Costs**,**Delivery**.**Bước 2 — Lọc theo môi trường quickstart-course**
 
 > Click menu `env:*` → chọn `env:quickstart-course`
 
-![Env filter](files/image_1773048240725_0.png)
+![](tech/files/image_1773048240725_0.png)
 
 **Bước 3 — Xem thông tin Ownership của store-discounts**
 
 > Hover các icon trong cột **Telemetry** để xem shortcuts đến dữ liệu của service
 
-![Ownership tab](files/image_1773048333972_0.png)
+![](tech/files/image_1773048333972_0.png)
 
 **Bước 4 — Xem tab Performance**
 
@@ -292,7 +292,7 @@ Hiển thị cho từng service:
 - **Error Rate** (%)
 - **Monitor count** và trạng thái
 
-![Performance tab](files/image_1773048405503_0.png)
+![](tech/files/image_1773048405503_0.png)
 
 > 💡 Cũng có thể vào Performance tab qua: **APM > Software Catalog**
 
@@ -300,7 +300,7 @@ Hiển thị cho từng service:
 
 > Click **store-discounts** → panel mở ở tab**Performance**
 
-![Service detail performance](files/image_1773048470460_0.png)
+![](tech/files/image_1773048470460_0.png)
 
 Panel gồm: key visualizations về performance + link đến **Service Page** trong APM**Bước 6 — Xem tab Ownership của service**
 
@@ -308,19 +308,19 @@ Panel gồm: key visualizations về performance + link đến **Service Page** 
 
 Thấy: Documentation, Runbooks, Dashboards, Team, On-call, Contacts
 
-![Ownership detail](files/image_1773048551661_0.png)
+![](tech/files/image_1773048551661_0.png)
 
 **Bước 7 — Xem thêm thông tin**
 
 > Phần dưới panel: service setup, linked dashboards, **service dependencies**
 
-![Service dependencies](files/image_1773048611013_0.png)
+![](tech/files/image_1773048611013_0.png)
 
 **Bước 8 — Điều hướng đến trang liên quan**
 
 > Góc trên phải panel → click mũi tên cạnh **Service Page** → menu hiện ra
 
-![Service page menu](files/image_1773048659267_0.png)
+![](tech/files/image_1773048659267_0.png)
 
 ### ✏️ Điểm ôn tập — Software Catalog
 
@@ -352,8 +352,8 @@ Thấy: Documentation, Runbooks, Dashboards, Team, On-call, Contacts
 
 Trang Manage Monitors mở với filter sẵn: `service:store-discounts`
 
-![Monitor list nav](files/image_1773049170815_0.png)
-![Monitor list](files/image_1773049197275_0.png)
+![](tech/files/image_1773049170815_0.png)
+![](tech/files/image_1773049197275_0.png)
 
 > ⚠️ **Quan sát:** Một số monitors có trạng thái**ALERT** hoặc**WARN**
 
@@ -361,7 +361,7 @@ Trang Manage Monitors mở với filter sẵn: `service:store-discounts`
 
 > Click monitor tên: **`Service store-discounts has a high error rate`**
 
-![Monitor status page](files/image_1773049235613_0.png)
+![](tech/files/image_1773049235613_0.png)
 
 **Cấu trúc trang Monitor Status:**
 
@@ -384,15 +384,15 @@ sum(last_10m):sum:trace.flask.request.errors{env:quickstart-course,service:store
 
 > Cuộn xuống dưới trang → phần **Event Details**
 
-![Event details](files/image_1773049442164_0.png)
-![Recipients](files/image_1773049420398_0.png)
+![](tech/files/image_1773049442164_0.png)
+![](tech/files/image_1773049420398_0.png)
 
 - **Message Template:** Nội dung notification (có thể chứa variables, link dashboard/runbook)
 - **Recipients:** Ai nhận notification → `eng-discounts@company.com`**Bước 4 — Xem Monitor Behavior**
 
 > Phần **Monitor Behavior**
 
-![Monitor behavior](files/image_1773049562482_0.png)
+![](tech/files/image_1773049562482_0.png)
 
 Gồm:
 - **Bar graph:** Lịch sử trạng thái theo thời gian
@@ -417,7 +417,7 @@ Gồm:
 
 > **Logs > Search & Analytics > [Explorer](https://app.datadoghq.com/logs)** → click**Views** (góc trên trái) → chọn view đã lưu
 
-![Find saved view](files/image_1773050013454_0.png)
+![](tech/files/image_1773050013454_0.png)
 
 </details>
 
@@ -428,8 +428,8 @@ Gồm:
 
 > **[Monitoring > Monitor List](https://app.datadoghq.com/monitors/manage)** → Facets →**Service** → chọn `store-discounts`
 
-![Monitor list page](files/image_1773050084979_0.png)
-![Monitor filtered](files/image_1773050108204_0.png)
+![](tech/files/image_1773050084979_0.png)
+![](tech/files/image_1773050108204_0.png)
 
 </details>
 
