@@ -6,6 +6,7 @@
   overflow-y: hidden;
   min-height: 1.4rem;
   flex: 0 0.5 auto;
+
   &:has(button.toc-header.collapsed) {
     flex: 0 1 1.4rem;
   }
@@ -45,22 +46,97 @@ ul.toc-content.overflow {
   padding: 0;
   max-height: calc(100% - 2rem);
   overscroll-behavior: contain;
-  list-style: none;
 
-  & > li > a {
-    color: var(--dark);
-    opacity: 0.35;
-    transition:
-      0.5s ease opacity,
-      0.3s ease color;
-    &.in-view {
-      opacity: 0.75;
+  &>li {
+    border-left: 2px solid transparent;
+    transition: border-color 0.2s ease;
+
+    &:has(> a.in-view) {
+      border-left-color: var(--secondary);
     }
   }
 
-  @for $i from 0 through 6 {
-    & .depth-#{$i} {
-      padding-left: calc(1rem * #{$i});
+  &>li>a {
+    color: var(--dark);
+    opacity: 0.5;
+    display: block;
+    padding: 3px 8px;
+    border-radius: 0 4px 4px 0;
+    text-decoration: none;
+    line-height: 1.4;
+    transition:
+      0.3s ease opacity,
+      0.2s ease color,
+      0.2s ease background-color;
+
+    &:hover {
+      opacity: 1;
+      background-color: var(--lightgray);
+    }
+
+    &.in-view {
+      opacity: 1;
+      color: var(--secondary);
+      font-weight: 500;
+    }
+  }
+
+  /* Heading level hierarchy */
+  & .depth-0 {
+    padding-left: 0;
+
+    &>a {
+      font-size: 0.85rem;
+      font-weight: 600;
+      opacity: 0.7;
+    }
+  }
+
+  & .depth-1 {
+    padding-left: 0;
+
+    &>a {
+      font-size: 0.85rem;
+      font-weight: 600;
+      opacity: 0.7;
+    }
+  }
+
+  & .depth-2 {
+    padding-left: 0.8rem;
+
+    &>a {
+      font-size: 0.8rem;
+      font-weight: 500;
+      opacity: 0.6;
+    }
+  }
+
+  & .depth-3 {
+    padding-left: 1.6rem;
+
+    &>a {
+      font-size: 0.75rem;
+      opacity: 0.5;
+    }
+  }
+
+  & .depth-4 {
+    padding-left: 2.2rem;
+
+    &>a {
+      font-size: 0.72rem;
+      opacity: 0.45;
+    }
+  }
+
+  & .depth-5,
+  & .depth-6 {
+    padding-left: 2.6rem;
+
+    &>a {
+      font-size: 0.7rem;
+      opacity: 0.4;
     }
   }
 }
