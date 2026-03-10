@@ -327,7 +327,15 @@ async function previewFile(filePath) {
             frame.classList.remove('hidden');
 
             // Strip frontmatter
-            const content = data.content.replace(/^---[\s\S]*?---\n/m, '');
+            let content = data.content.replace(/^---[\s\S]*?---\n/m, '');
+
+            // Rewrite image paths: files/img.png → /content-files/{category}/files/img.png
+            const fileDir = filePath.replace(/^content\//, '').replace(/\/[^/]+$/, '');
+            const baseUrl = '/content-files/' + fileDir + '/';
+            content = content.replace(
+                /!\[([^\]]*)\]\((?!https?:\/\/)([^)]+)\)/g,
+                (m, alt, src) => `![${alt}](${baseUrl}${src.replace(/\\/g, '/')})`
+            );
 
             // Render with marked.js via CDN
             const html = `<!DOCTYPE html>

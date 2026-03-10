@@ -15,6 +15,8 @@ const PORT = process.env.DASHBOARD_PORT || 3000;
 // Middleware
 app.use(express.json({ limit: '50mb' }));
 app.use(express.static(path.join(__dirname, 'public')));
+// Serve content files (images) for preview
+app.use('/content-files', express.static(path.join(__dirname, '..', 'content')));
 
 // API Routes
 app.use('/api/sync', syncRoutes);
