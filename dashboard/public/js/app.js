@@ -124,15 +124,21 @@ async function loadContent() {
             return;
         }
 
-        list.innerHTML = contentFiles.map((file, i) => `
+        list.innerHTML = contentFiles.map((file, i) => {
+            // Extract folder context from path
+            const parts = file.path.replace('content/', '').split('/');
+            const folder = parts.length > 1 ? parts.slice(0, -1).join('/') + '/' : '';
+            const displayName = file.name;
+
+            return `
       <div class="content-item ${selectedFiles.has(file.path) ? 'selected' : ''}" onclick="toggleFile('${file.path}')">
         <input type="checkbox" ${selectedFiles.has(file.path) ? 'checked' : ''} onclick="event.stopPropagation(); toggleFile('${file.path}')">
-        <span class="file-name">${file.name}</span>
+        <span class="file-name">${displayName}${folder ? `<span class="file-folder">${folder}</span>` : ''}</span>
         <span class="file-status ${file.status}">${statusLabel(file.status)}</span>
         <button class="btn btn-ghost btn-preview" onclick="event.stopPropagation(); previewFile('${file.name}')">Preview</button>
         <button class="btn btn-ghost btn-delete" onclick="event.stopPropagation(); deletePost('${file.path}', '${file.name}')" title="Xóa">🗑️</button>
-      </div>
-    `).join('');
+      </div>`;
+        }).join('');
 
         updateDeployButton();
     } catch (err) {
@@ -141,7 +147,7 @@ async function loadContent() {
 }
 
 function statusLabel(status) {
-    const labels = { new: '➕ new', modified: '✏️ modified', deleted: '🗑️ deleted', unmodified: '— unchanged' };
+    const labels = { new: 'NEW', modified: 'MODIFIED', deleted: 'DELETED', unmodified: 'unchanged' };
     return labels[status] || status;
 }
 
