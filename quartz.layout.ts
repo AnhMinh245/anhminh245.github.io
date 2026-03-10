@@ -80,8 +80,6 @@ export const defaultContentPageLayout: PageLayout = {
         })
       },
     }),
-  ],
-  right: [
     Component.Graph({
       localGraph: {
         depth: 2,
@@ -104,6 +102,8 @@ export const defaultContentPageLayout: PageLayout = {
         enableRadial: true,
       },
     }),
+  ],
+  right: [
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
   ],
