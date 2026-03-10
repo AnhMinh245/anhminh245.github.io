@@ -126,4 +126,27 @@ router.post('/new', (req, res) => {
     }
 });
 
+// DELETE /api/content/delete — Delete a content file
+router.post('/delete', (req, res) => {
+    try {
+        const { filePath } = req.body;
+        if (!filePath) return res.status(400).json({ success: false, error: 'File path required' });
+
+        // Security: resolve and check the file is within CONTENT_DIR
+        const absPath = path.resolve(__dirname, '..', '..', filePath);
+        if (!absPath.startsWith(CONTENT_DIR)) {
+            return res.status(403).json({ success: false, error: 'Access denied' });
+        }
+
+        if (!fs.existsSync(absPath)) {
+            return res.status(404).json({ success: false, error: 'File not found' });
+        }
+
+        fs.unlinkSync(absPath);
+        res.json({ success: true, deleted: filePath });
+    } catch (err) {
+        res.status(500).json({ success: false, error: err.message });
+    }
+});
+
 module.exports = router;

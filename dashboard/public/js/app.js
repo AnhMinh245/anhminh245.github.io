@@ -130,6 +130,7 @@ async function loadContent() {
         <span class="file-name">${file.name}</span>
         <span class="file-status ${file.status}">${statusLabel(file.status)}</span>
         <button class="btn btn-ghost btn-preview" onclick="event.stopPropagation(); previewFile('${file.name}')">Preview</button>
+        <button class="btn btn-ghost btn-delete" onclick="event.stopPropagation(); deletePost('${file.path}', '${file.name}')" title="Xóa">🗑️</button>
       </div>
     `).join('');
 
@@ -161,6 +162,28 @@ function selectAll() {
 function selectNone() {
     selectedFiles.clear();
     loadContent();
+}
+
+async function deletePost(filePath, fileName) {
+    if (!confirm(`Bạn có chắc muốn xóa "${fileName}"?\n\nFile sẽ bị xóa khỏi thư mục content. Bạn cần Deploy lại để cập nhật lên website.`)) return;
+
+    try {
+        const res = await fetch('/api/content/delete', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filePath })
+        });
+        const data = await res.json();
+        if (data.success) {
+            toast(`Đã xóa: ${fileName}`, 'success');
+            selectedFiles.delete(filePath);
+            loadContent();
+        } else {
+            toast('Lỗi xóa: ' + data.error, 'error');
+        }
+    } catch (err) {
+        toast('Lỗi: ' + err.message, 'error');
+    }
 }
 
 function updateDeployButton() {
