@@ -126,24 +126,62 @@ router.post('/new', (req, res) => {
     }
 });
 
-// DELETE /api/content/delete — Delete a content file
-router.post('/delete', (req, res) => {
+// POST /api/content/delete — Delete one or many content files, optionally auto-deploy
+router.post('/delete', async (req, res) => {
     try {
-        const { filePath } = req.body;
-        if (!filePath) return res.status(400).json({ success: false, error: 'File path required' });
+        const { filePath, filePaths, deploy } = req.body;
 
-        // Security: resolve and check the file is within CONTENT_DIR
-        const absPath = path.resolve(__dirname, '..', '..', filePath);
-        if (!absPath.startsWith(CONTENT_DIR)) {
-            return res.status(403).json({ success: false, error: 'Access denied' });
+        // Support single or bulk delete
+        const targets = filePaths || (filePath ? [filePath] : []);
+        if (targets.length === 0) {
+            return res.status(400).json({ success: false, error: 'No file path(s) provided' });
         }
 
-        if (!fs.existsSync(absPath)) {
-            return res.status(404).json({ success: false, error: 'File not found' });
+        const deleted = [];
+        const errors = [];
+
+        for (const fp of targets) {
+            try {
+                // Security: resolve and check the file is within CONTENT_DIR
+                const absPath = path.resolve(__dirname, '..', '..', fp);
+                if (!absPath.startsWith(CONTENT_DIR)) {
+                    errors.push({ path: fp, error: 'Access denied' });
+                    continue;
+                }
+                if (!fs.existsSync(absPath)) {
+                    errors.push({ path: fp, error: 'File not found' });
+                    continue;
+                }
+                fs.unlinkSync(absPath);
+                deleted.push(fp);
+            } catch (e) {
+                errors.push({ path: fp, error: e.message });
+            }
         }
 
-        fs.unlinkSync(absPath);
-        res.json({ success: true, deleted: filePath });
+        if (deleted.length === 0) {
+            return res.status(400).json({ success: false, error: errors[0]?.error || 'Nothing deleted', errors });
+        }
+
+        // Optional: auto-deploy (stage deletions + commit + push)
+        if (deploy && deleted.length > 0) {
+            try {
+                const result = await gitManager.selectiveDeploy(
+                    deleted,
+                    `Remove ${deleted.length} article(s) from website`
+                );
+                return res.json({ success: true, deleted, errors, deployed: true, commit: result.commit });
+            } catch (deployErr) {
+                // Files deleted but deploy failed — still a partial success
+                return res.json({
+                    success: true, deleted, errors,
+                    deployed: false,
+                    deployError: deployErr.message
+                });
+            }
+        }
+
+        res.json({ success: true, deleted, errors, deployed: false });
     } catch (err) {
         res.status(500).json({ success: false, error: err.message });
     }

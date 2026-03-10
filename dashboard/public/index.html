@@ -46,10 +46,16 @@
         <!-- Content Panel -->
         <section class="panel" id="contentPanel">
           <div class="panel-header">
-            <h2>📋 Nội dung</h2>
+            <h2>📋 Nội dung <span class="article-count" id="articleCount"></span></h2>
             <div class="panel-actions">
-              <button class="btn btn-ghost btn-sm" onclick="selectAll()">Chọn tất cả</button>
+              <div class="search-box">
+                <input type="text" id="searchInput" placeholder="🔍 Tìm bài viết..."
+                  oninput="filterContent(this.value)">
+              </div>
+              <button class="btn btn-ghost btn-sm" onclick="selectAll()">Tất cả</button>
               <button class="btn btn-ghost btn-sm" onclick="selectNone()">Bỏ chọn</button>
+              <button class="btn btn-danger btn-sm hidden" id="btnBulkDelete" onclick="promptBulkDelete()">🗑️
+                Xóa</button>
               <button class="btn btn-secondary btn-sm" onclick="showImportModal()">📥 Import</button>
               <button class="btn btn-secondary btn-sm" onclick="showNewPostModal()">➕ Mới</button>
             </div>
@@ -143,6 +149,29 @@
 
     <!-- Toast notifications -->
     <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Delete Confirm Modal -->
+    <div class="modal hidden" id="deleteModal">
+      <div class="modal-backdrop" onclick="hideDeleteModal()"></div>
+      <div class="modal-content modal-danger">
+        <div class="danger-icon">🗑️</div>
+        <h3 id="deleteModalTitle">Xóa bài viết</h3>
+        <p class="delete-modal-desc" id="deleteModalDesc"></p>
+        <div class="delete-options">
+          <label class="delete-option" id="optUnpublishWrap">
+            <input type="checkbox" id="optUnpublish" checked>
+            <div class="delete-option-text">
+              <strong>Gỡ khỏi website ngay</strong>
+              <span>Xóa file và tự động deploy lên GitHub</span>
+            </div>
+          </label>
+        </div>
+        <div class="modal-actions">
+          <button class="btn btn-ghost" onclick="hideDeleteModal()">Hủy</button>
+          <button class="btn btn-danger" id="btnConfirmDelete" onclick="confirmDelete()">Xóa</button>
+        </div>
+      </div>
+    </div>
 
     <!-- Import Modal -->
     <div class="modal hidden" id="importModal">

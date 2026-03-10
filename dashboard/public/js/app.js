@@ -112,6 +112,9 @@ async function syncContent() {
 // ========================================
 // Content Panel
 // ========================================
+let searchQuery = '';
+let pendingDeletePaths = [];
+
 async function loadContent() {
     const list = document.getElementById('contentList');
     try {
@@ -119,31 +122,49 @@ async function loadContent() {
         const data = await res.json();
         contentFiles = data.files || [];
 
-        if (contentFiles.length === 0) {
-            list.innerHTML = '<div class="loading">Chưa có bài viết. Hãy Sync hoặc tạo mới.</div>';
-            return;
-        }
+        // Update article count
+        document.getElementById('articleCount').textContent = `(${contentFiles.length})`;
 
-        list.innerHTML = contentFiles.map((file, i) => {
-            // Extract folder context from path
-            const parts = file.path.replace('content/', '').split('/');
-            const folder = parts.length > 1 ? parts.slice(0, -1).join('/') + '/' : '';
-            const displayName = file.name;
-
-            return `
-      <div class="content-item ${selectedFiles.has(file.path) ? 'selected' : ''}" onclick="toggleFile('${file.path}')">
-        <input type="checkbox" ${selectedFiles.has(file.path) ? 'checked' : ''} onclick="event.stopPropagation(); toggleFile('${file.path}')">
-        <span class="file-name">${displayName}${folder ? `<span class="file-folder">${folder}</span>` : ''}</span>
-        <span class="file-status ${file.status}">${statusLabel(file.status)}</span>
-        <button class="btn btn-ghost btn-preview" onclick="event.stopPropagation(); previewFile('${file.name}')">Preview</button>
-        <button class="btn btn-ghost btn-delete" onclick="event.stopPropagation(); deletePost('${file.path}', '${file.name}')" title="Xóa">🗑️</button>
-      </div>`;
-        }).join('');
-
+        renderContentList();
         updateDeployButton();
     } catch (err) {
         list.innerHTML = `<div class="loading" style="color: var(--red)">Error: ${err.message}</div>`;
     }
+}
+
+function filterContent(query) {
+    searchQuery = query.toLowerCase();
+    renderContentList();
+}
+
+function renderContentList() {
+    const list = document.getElementById('contentList');
+
+    const filtered = contentFiles.filter(file =>
+        !searchQuery ||
+        file.name.toLowerCase().includes(searchQuery) ||
+        file.path.toLowerCase().includes(searchQuery)
+    );
+
+    if (filtered.length === 0) {
+        list.innerHTML = `<div class="loading">${searchQuery ? 'Không tìm thấy bài viết nào.' : 'Chưa có bài viết. Hãy Sync hoặc tạo mới.'}</div>`;
+        return;
+    }
+
+    list.innerHTML = filtered.map((file) => {
+        const parts = file.path.replace('content/', '').split('/');
+        const folder = parts.length > 1 ? parts.slice(0, -1).join('/') + '/' : '';
+        const isSelected = selectedFiles.has(file.path);
+
+        return `
+      <div class="content-item ${isSelected ? 'selected' : ''}" onclick="toggleFile('${file.path}')">
+        <input type="checkbox" ${isSelected ? 'checked' : ''} onclick="event.stopPropagation(); toggleFile('${file.path}')">
+        <span class="file-name">${file.name}${folder ? `<span class="file-folder">${folder}</span>` : ''}</span>
+        <span class="file-status ${file.status}">${statusLabel(file.status)}</span>
+        <button class="btn btn-ghost btn-preview" onclick="event.stopPropagation(); previewFile('${file.name}')">👁️</button>
+        <button class="btn btn-ghost btn-delete" onclick="event.stopPropagation(); promptDeleteSingle('${file.path}', '${file.name}')" title="Xóa bài viết">🗑️</button>
+      </div>`;
+    }).join('');
 }
 
 function statusLabel(status) {
@@ -152,44 +173,100 @@ function statusLabel(status) {
 }
 
 function toggleFile(path) {
-    if (selectedFiles.has(path)) {
-        selectedFiles.delete(path);
-    } else {
-        selectedFiles.add(path);
-    }
-    loadContent();
+    if (selectedFiles.has(path)) selectedFiles.delete(path);
+    else selectedFiles.add(path);
+    renderContentList();
+    updateDeployButton();
+    updateBulkDeleteButton();
 }
 
 function selectAll() {
     contentFiles.forEach(f => selectedFiles.add(f.path));
-    loadContent();
+    renderContentList();
+    updateDeployButton();
+    updateBulkDeleteButton();
 }
 
 function selectNone() {
     selectedFiles.clear();
-    loadContent();
+    renderContentList();
+    updateDeployButton();
+    updateBulkDeleteButton();
 }
 
-async function deletePost(filePath, fileName) {
-    if (!confirm(`Bạn có chắc muốn xóa "${fileName}"?\n\nFile sẽ bị xóa khỏi thư mục content. Bạn cần Deploy lại để cập nhật lên website.`)) return;
+function updateBulkDeleteButton() {
+    const btn = document.getElementById('btnBulkDelete');
+    if (selectedFiles.size > 0) {
+        btn.classList.remove('hidden');
+        btn.textContent = `🗑️ Xóa (${selectedFiles.size})`;
+    } else {
+        btn.classList.add('hidden');
+    }
+}
+
+// ── Delete Modal ──
+function promptDeleteSingle(filePath, fileName) {
+    pendingDeletePaths = [filePath];
+    document.getElementById('deleteModalTitle').textContent = 'Xóa bài viết';
+    document.getElementById('deleteModalDesc').textContent =
+        `Bạn có chắc muốn xóa "${fileName}"?`;
+    document.getElementById('deleteModal').classList.remove('hidden');
+}
+
+function promptBulkDelete() {
+    pendingDeletePaths = Array.from(selectedFiles);
+    document.getElementById('deleteModalTitle').textContent = `Xóa ${pendingDeletePaths.length} bài viết`;
+    document.getElementById('deleteModalDesc').textContent =
+        `Bạn sắp xóa ${pendingDeletePaths.length} bài viết đã chọn. Hành động này không thể hoàn tác.`;
+    document.getElementById('deleteModal').classList.remove('hidden');
+}
+
+function hideDeleteModal() {
+    document.getElementById('deleteModal').classList.add('hidden');
+    pendingDeletePaths = [];
+}
+
+async function confirmDelete() {
+    const deploy = document.getElementById('optUnpublish').checked;
+    const btn = document.getElementById('btnConfirmDelete');
+
+    btn.disabled = true;
+    btn.innerHTML = '<span class="spinner"></span> Đang xóa...';
 
     try {
         const res = await fetch('/api/content/delete', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ filePath })
+            body: JSON.stringify({
+                filePaths: pendingDeletePaths,
+                deploy
+            })
         });
         const data = await res.json();
+
         if (data.success) {
-            toast(`Đã xóa: ${fileName}`, 'success');
-            selectedFiles.delete(filePath);
+            const n = data.deleted.length;
+            if (data.deployed) {
+                toast(`Đã xóa ${n} bài viết và gỡ khỏi website (commit ${data.commit})`, 'success');
+                setTimeout(loadCI, 4000);
+            } else if (data.deployError) {
+                toast(`Đã xóa ${n} bài viết nhưng deploy thất bại: ${data.deployError}`, 'info');
+            } else {
+                toast(`Đã xóa ${n} bài viết. Nhớ Deploy để cập nhật website.`, 'success');
+            }
+            data.deleted.forEach(p => selectedFiles.delete(p));
+            hideDeleteModal();
             loadContent();
+            updateBulkDeleteButton();
         } else {
-            toast('Lỗi xóa: ' + data.error, 'error');
+            toast('Lỗi: ' + data.error, 'error');
         }
     } catch (err) {
         toast('Lỗi: ' + err.message, 'error');
     }
+
+    btn.disabled = false;
+    btn.textContent = 'Xóa';
 }
 
 function updateDeployButton() {
