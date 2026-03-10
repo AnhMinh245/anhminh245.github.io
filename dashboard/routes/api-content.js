@@ -22,9 +22,9 @@ router.get('/', async (req, res) => {
             };
         });
 
-        // Add new files that aren't yet tracked
+        // Add new files that aren't yet tracked (only .md files)
         for (const change of changes) {
-            if (change.status === 'new' && !files.find(f => f.path === change.path)) {
+            if (change.status === 'new' && change.path.endsWith('.md') && !files.find(f => f.path === change.path)) {
                 files.push({
                     path: change.path,
                     name: change.name,
@@ -36,9 +36,9 @@ router.get('/', async (req, res) => {
             }
         }
 
-        // Add deleted files
+        // Add deleted files (only .md files)
         for (const change of changes) {
-            if (change.status === 'deleted') {
+            if (change.status === 'deleted' && change.path.endsWith('.md')) {
                 files.push({
                     path: change.path,
                     name: change.name,
