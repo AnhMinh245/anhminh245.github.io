@@ -65,7 +65,32 @@ export default ((opts?: Partial<GraphOptions>) => {
     const globalGraph = { ...defaultOptions.globalGraph, ...opts?.globalGraph }
     return (
       <div class={classNames(displayClass, "graph")}>
-        <h3>{i18n(cfg.locale).components.graph.title}</h3>
+        <div class="graph-header">
+          <h3>{i18n(cfg.locale).components.graph.title}</h3>
+          <div class="graph-controls">
+            <button class="graph-mode-toggle" aria-label="Toggle detail view" title="Chuyển chế độ">
+              <svg class="icon-list" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="8" y1="6" x2="21" y2="6" />
+                <line x1="8" y1="12" x2="21" y2="12" />
+                <line x1="8" y1="18" x2="21" y2="18" />
+                <line x1="3" y1="6" x2="3.01" y2="6" />
+                <line x1="3" y1="12" x2="3.01" y2="12" />
+                <line x1="3" y1="18" x2="3.01" y2="18" />
+              </svg>
+              <svg class="icon-graph hidden" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="3" />
+                <circle cx="4" cy="6" r="2" />
+                <circle cx="20" cy="6" r="2" />
+                <circle cx="4" cy="18" r="2" />
+                <circle cx="20" cy="18" r="2" />
+                <line x1="6" y1="7" x2="10" y2="10" />
+                <line x1="18" y1="7" x2="14" y2="10" />
+                <line x1="6" y1="17" x2="10" y2="14" />
+                <line x1="18" y1="17" x2="14" y2="14" />
+              </svg>
+            </button>
+          </div>
+        </div>
         <div class="graph-outer">
           <div class="graph-container" data-cfg={JSON.stringify(localGraph)}></div>
           <button class="global-graph-icon" aria-label="Global Graph">
@@ -94,6 +119,9 @@ export default ((opts?: Partial<GraphOptions>) => {
               />
             </svg>
           </button>
+        </div>
+        <div class="graph-detail hidden">
+          <div class="graph-detail-content"></div>
         </div>
         <div class="global-graph-outer">
           <div class="global-graph-container" data-cfg={JSON.stringify(globalGraph)}></div>

@@ -641,6 +641,152 @@ document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
   })
 
   document.addEventListener("keydown", shortcutHandler)
+
+  // ── Mode toggle: Graph ↔ Detail ──
+  const graphComponents = document.querySelectorAll(".graph")
+  for (const graphRoot of graphComponents) {
+    const toggleBtn = graphRoot.querySelector(".graph-mode-toggle") as HTMLElement
+    const graphOuter = graphRoot.querySelector(".graph-outer") as HTMLElement
+    const detailView = graphRoot.querySelector(".graph-detail") as HTMLElement
+    const iconList = toggleBtn?.querySelector(".icon-list") as HTMLElement
+    const iconGraph = toggleBtn?.querySelector(".icon-graph") as HTMLElement
+
+    if (!toggleBtn || !graphOuter || !detailView) continue
+
+    // Restore saved mode
+    const savedMode = localStorage.getItem("graph-mode") || "graph"
+    if (savedMode === "detail") {
+      graphOuter.classList.add("hidden")
+      detailView.classList.remove("hidden")
+      iconList?.classList.add("hidden")
+      iconGraph?.classList.remove("hidden")
+      renderDetailView(detailView, slug)
+    }
+
+    function toggleMode() {
+      const isGraphVisible = !graphOuter.classList.contains("hidden")
+      if (isGraphVisible) {
+        // Switch to detail
+        graphOuter.classList.add("hidden")
+        detailView.classList.remove("hidden")
+        iconList?.classList.add("hidden")
+        iconGraph?.classList.remove("hidden")
+        localStorage.setItem("graph-mode", "detail")
+        renderDetailView(detailView, slug)
+      } else {
+        // Switch to graph
+        graphOuter.classList.remove("hidden")
+        detailView.classList.add("hidden")
+        iconList?.classList.remove("hidden")
+        iconGraph?.classList.add("hidden")
+        localStorage.setItem("graph-mode", "graph")
+      }
+    }
+
+    toggleBtn.addEventListener("click", toggleMode)
+    window.addCleanup(() => toggleBtn.removeEventListener("click", toggleMode))
+  }
+
+  async function renderDetailView(container: HTMLElement, currentSlug: FullSlug) {
+    const contentEl = container.querySelector(".graph-detail-content") as HTMLElement
+    if (!contentEl) return
+
+    const curSimple = simplifySlug(currentSlug)
+    const data: Map<SimpleSlug, ContentDetails> = new Map(
+      Object.entries<ContentDetails>(await fetchData).map(([k, v]) => [
+        simplifySlug(k as FullSlug),
+        v,
+      ]),
+    )
+
+    const currentPage = data.get(curSimple)
+    const outgoing: { slug: SimpleSlug; title: string }[] = []
+    const incoming: { slug: SimpleSlug; title: string }[] = []
+    const pageTags: string[] = currentPage?.tags ?? []
+
+    // Find outgoing links
+    if (currentPage?.links) {
+      for (const dest of currentPage.links) {
+        if (data.has(dest) && dest !== curSimple) {
+          outgoing.push({ slug: dest, title: data.get(dest)?.title ?? dest })
+        }
+      }
+    }
+
+    // Find backlinks (other pages linking to this one)
+    for (const [pageSlug, details] of data.entries()) {
+      if (pageSlug === curSimple) continue
+      if (details.links?.includes(curSimple)) {
+        incoming.push({ slug: pageSlug, title: details.title ?? pageSlug })
+      }
+    }
+
+    let html = ""
+
+    // Linked pages
+    html += `<div class="detail-section">`
+    html += `<div class="detail-section-title">📄 Trang liên kết (${outgoing.length})</div>`
+    if (outgoing.length > 0) {
+      html += `<ul class="detail-section-list">`
+      for (const link of outgoing) {
+        const href = resolveRelative(currentSlug, link.slug)
+        html += `<li><a class="detail-item internal" href="${href}" data-slug="${link.slug}">
+          <span class="detail-icon">→</span>
+          <span class="detail-label">${escapeHtml(link.title)}</span>
+        </a></li>`
+      }
+      html += `</ul>`
+    } else {
+      html += `<div class="detail-empty">Chưa có liên kết</div>`
+    }
+    html += `</div>`
+
+    // Tags
+    if (pageTags.length > 0) {
+      html += `<div class="detail-section">`
+      html += `<div class="detail-section-title">🏷️ Tags (${pageTags.length})</div>`
+      html += `<ul class="detail-section-list">`
+      for (const tag of pageTags) {
+        const tagSlug = simplifySlug(("tags/" + tag) as FullSlug)
+        const href = resolveRelative(currentSlug, tagSlug)
+        html += `<li><a class="detail-item detail-item-tag internal" href="${href}" data-slug="${tagSlug}">
+          <span class="detail-icon">#</span>
+          <span class="detail-label">${escapeHtml(tag)}</span>
+        </a></li>`
+      }
+      html += `</ul>`
+      html += `</div>`
+    }
+
+    // Backlinks
+    html += `<div class="detail-section">`
+    html += `<div class="detail-section-title">🔗 Backlinks (${incoming.length})</div>`
+    if (incoming.length > 0) {
+      html += `<ul class="detail-section-list">`
+      for (const link of incoming) {
+        const href = resolveRelative(currentSlug, link.slug)
+        html += `<li><a class="detail-item internal" href="${href}" data-slug="${link.slug}">
+          <span class="detail-icon">←</span>
+          <span class="detail-label">${escapeHtml(link.title)}</span>
+        </a></li>`
+      }
+      html += `</ul>`
+    } else {
+      html += `<div class="detail-empty">Chưa có backlinks</div>`
+    }
+    html += `</div>`
+
+    contentEl.innerHTML = html
+  }
+
+  function escapeHtml(text: string): string {
+    return text
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+  }
+
   window.addCleanup(() => {
     document.removeEventListener("keydown", shortcutHandler)
     cleanupLocalGraphs()
