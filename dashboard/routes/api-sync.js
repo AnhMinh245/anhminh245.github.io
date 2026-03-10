@@ -6,7 +6,7 @@ const path = require('path');
 
 const CONTENT_DIR = path.resolve(__dirname, '..', '..', 'content');
 
-// POST /api/sync — Sync content from Anytype
+// POST /api/sync — Sync content from Anytype (all spaces or selected)
 router.post('/', async (req, res) => {
     try {
         // Check connection
@@ -18,55 +18,75 @@ router.post('/', async (req, res) => {
             });
         }
 
-        // List objects with 'publish' tag
-        const tag = req.body.tag || 'publish';
-        const result = await anytypeClient.listObjects(tag);
-        if (!result.success) {
-            return res.json({ success: false, error: result.error });
+        // Get spaces to sync: use provided spaceIds or all spaces
+        const spacesResult = await anytypeClient.listSpaces();
+        if (!spacesResult.success) {
+            return res.json({ success: false, error: spacesResult.error });
         }
 
-        // Export each object as Markdown
-        let synced = 0, failed = 0;
+        let spaces = spacesResult.spaces;
+        const requestedSpaceIds = req.body.spaceIds;
+        if (requestedSpaceIds && requestedSpaceIds.length > 0) {
+            spaces = spaces.filter(s => requestedSpaceIds.includes(s.id));
+        }
+
+        const tag = req.body.tag || 'publish';
+        let totalSynced = 0, totalFailed = 0, totalFound = 0;
         const syncedFiles = [];
+        const perSpace = [];
 
-        for (const obj of result.objects) {
-            try {
-                const exported = await anytypeClient.exportMarkdown(obj.id);
-                if (exported.success && exported.markdown) {
-                    const slug = slugify(obj.name || obj.title || obj.id);
+        // Loop through each space
+        for (const space of spaces) {
+            const result = await anytypeClient.listObjects(tag, space.id);
+            if (!result.success) {
+                perSpace.push({ id: space.id, name: space.name, found: 0, synced: 0, failed: 0, error: result.error });
+                continue;
+            }
 
-                    // Save to subfolder based on tag routing
-                    const subfolder = exported.targetFolder || '';
-                    const targetDir = subfolder
-                        ? path.join(CONTENT_DIR, subfolder)
-                        : CONTENT_DIR;
+            let synced = 0, failed = 0;
 
-                    // Ensure target directory exists
-                    if (!fs.existsSync(targetDir)) {
-                        fs.mkdirSync(targetDir, { recursive: true });
+            for (const obj of result.objects) {
+                try {
+                    const exported = await anytypeClient.exportMarkdown(obj.id, undefined, space.id);
+                    if (exported.success && exported.markdown) {
+                        const slug = slugify(obj.name || obj.title || obj.id);
+                        const subfolder = exported.targetFolder || '';
+                        const targetDir = subfolder
+                            ? path.join(CONTENT_DIR, subfolder)
+                            : CONTENT_DIR;
+
+                        if (!fs.existsSync(targetDir)) {
+                            fs.mkdirSync(targetDir, { recursive: true });
+                        }
+
+                        const filePath = path.join(targetDir, `${slug}.md`);
+                        fs.writeFileSync(filePath, exported.markdown, 'utf-8');
+
+                        const relPath = subfolder
+                            ? `content/${subfolder}/${slug}.md`
+                            : `content/${slug}.md`;
+                        syncedFiles.push({ name: slug, path: relPath, folder: subfolder, space: space.name });
+                        synced++;
+                    } else {
+                        failed++;
                     }
-
-                    const filePath = path.join(targetDir, `${slug}.md`);
-                    fs.writeFileSync(filePath, exported.markdown, 'utf-8');
-
-                    const relPath = subfolder
-                        ? `content/${subfolder}/${slug}.md`
-                        : `content/${slug}.md`;
-                    syncedFiles.push({ name: slug, path: relPath, folder: subfolder });
-                    synced++;
-                } else {
+                } catch (e) {
                     failed++;
                 }
-            } catch (e) {
-                failed++;
             }
+
+            perSpace.push({ id: space.id, name: space.name, found: result.objects.length, synced, failed });
+            totalFound += result.objects.length;
+            totalSynced += synced;
+            totalFailed += failed;
         }
 
         res.json({
             success: true,
-            total: result.objects.length,
-            synced,
-            failed,
+            total: totalFound,
+            synced: totalSynced,
+            failed: totalFailed,
+            spaces: perSpace,
             files: syncedFiles
         });
     } catch (err) {
@@ -78,6 +98,12 @@ router.post('/', async (req, res) => {
 router.get('/status', async (req, res) => {
     const conn = await anytypeClient.checkConnection();
     res.json(conn);
+});
+
+// GET /api/sync/spaces — List all available spaces
+router.get('/spaces', async (req, res) => {
+    const result = await anytypeClient.listSpaces();
+    res.json(result);
 });
 
 function slugify(text) {

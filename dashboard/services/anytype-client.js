@@ -6,7 +6,7 @@
 
 const API_URL = process.env.ANYTYPE_API_URL || 'http://127.0.0.1:31009';
 const API_KEY = process.env.ANYTYPE_API_KEY || '';
-const SPACE_ID = process.env.ANYTYPE_SPACE_ID || '';
+const DEFAULT_SPACE_ID = process.env.ANYTYPE_SPACE_ID || '';
 const API_VERSION = '2025-11-08';
 
 function headers() {
@@ -32,12 +32,32 @@ async function checkConnection() {
 }
 
 /**
+ * List all available spaces
+ * Returns array of { id, name, icon }
+ */
+async function listSpaces() {
+    try {
+        const res = await fetch(`${API_URL}/v1/spaces`, { headers: headers() });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data = await res.json();
+        const spaces = (data.data || []).map(s => ({
+            id: s.id,
+            name: s.name || 'Unnamed Space',
+            icon: (typeof s.icon === 'string' ? s.icon : s.icon?.emoji || s.icon?.image || '') || ''
+        }));
+        return { success: true, spaces };
+    } catch (err) {
+        return { success: false, error: err.message, spaces: [] };
+    }
+}
+
+/**
  * List all objects in the space, filtered by tag name
  * Tags: properties[].key='tag' → multi_select[].name
  */
-async function listObjects(tag = 'publish') {
+async function listObjects(tag = 'publish', spaceId = DEFAULT_SPACE_ID) {
     try {
-        const url = `${API_URL}/v1/spaces/${SPACE_ID}/objects?limit=100`;
+        const url = `${API_URL}/v1/spaces/${spaceId}/objects?limit=100`;
         const res = await fetch(url, { headers: headers() });
         if (!res.ok) throw new Error(`HTTP ${res.status}: ${await res.text()}`);
         const data = await res.json();
@@ -111,9 +131,9 @@ function getTargetFolder(tags = []) {
  * Get a single object's full details including markdown body
  * Response structure: { object: { id, name, markdown, snippet, ... } }
  */
-async function getObject(objectId) {
+async function getObject(objectId, spaceId = DEFAULT_SPACE_ID) {
     try {
-        const url = `${API_URL}/v1/spaces/${SPACE_ID}/objects/${objectId}`;
+        const url = `${API_URL}/v1/spaces/${spaceId}/objects/${objectId}`;
         const res = await fetch(url, { headers: headers() });
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const data = await res.json();
@@ -128,9 +148,9 @@ async function getObject(objectId) {
  * Export a single object as Markdown with full content
  * Uses getObject which returns the 'markdown' field with complete body
  */
-async function exportMarkdown(objectId, objectName) {
+async function exportMarkdown(objectId, objectName, spaceId = DEFAULT_SPACE_ID) {
     try {
-        const obj = await getObject(objectId);
+        const obj = await getObject(objectId, spaceId);
         if (obj.error) throw new Error(obj.error);
 
         const name = obj.name || objectName || 'Untitled';
@@ -280,6 +300,7 @@ function cleanTableRow(row) {
 
 module.exports = {
     checkConnection,
+    listSpaces,
     listObjects,
     exportMarkdown,
     getObject
