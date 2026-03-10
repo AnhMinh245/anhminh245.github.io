@@ -340,21 +340,28 @@ function showNewPostModal() {
 function hideNewPostModal() {
     document.getElementById('newPostModal').classList.add('hidden');
     document.getElementById('newPostTitle').value = '';
+    document.getElementById('newPostFolder').value = '';
+    document.getElementById('newPostTags').value = '';
+    document.getElementById('newPostContent').value = '';
 }
 
 async function createNewPost() {
     const title = document.getElementById('newPostTitle').value.trim();
     if (!title) return;
 
+    const folder = document.getElementById('newPostFolder').value;
+    const tags = document.getElementById('newPostTags').value.trim();
+    const content = document.getElementById('newPostContent').value;
+
     try {
         const res = await fetch('/api/content/new', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ title })
+            body: JSON.stringify({ title, folder, tags, content })
         });
         const data = await res.json();
         if (data.success) {
-            toast(`Created: ${data.slug}.md`, 'success');
+            toast(`Đã tạo: ${data.path}`, 'success');
             hideNewPostModal();
             loadContent();
         } else {

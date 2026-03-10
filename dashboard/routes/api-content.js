@@ -76,7 +76,7 @@ router.get('/:filename', (req, res) => {
 // POST /api/content/new — Create a new markdown file
 router.post('/new', (req, res) => {
     try {
-        const { title, content } = req.body;
+        const { title, folder, tags, content } = req.body;
         if (!title) return res.status(400).json({ success: false, error: 'Title required' });
 
         const slug = title
@@ -85,11 +85,42 @@ router.post('/new', (req, res) => {
             .replace(/đ/g, 'd').replace(/Đ/g, 'D')
             .replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 
-        const filePath = path.join(CONTENT_DIR, `${slug}.md`);
-        const mdContent = content || `---\ntitle: "${title}"\ndate: ${new Date().toISOString().split('T')[0]}\ndraft: false\n---\n\n# ${title}\n\n`;
+        // Determine target directory
+        const targetDir = folder
+            ? path.join(CONTENT_DIR, folder)
+            : CONTENT_DIR;
 
+        if (!fs.existsSync(targetDir)) {
+            fs.mkdirSync(targetDir, { recursive: true });
+        }
+
+        // Build frontmatter
+        const date = new Date().toISOString().split('T')[0];
+        let frontmatter = `---\ntitle: "${title}"\ndate: ${date}`;
+
+        if (tags && tags.trim()) {
+            const tagList = tags.split(',').map(t => t.trim()).filter(Boolean);
+            if (tagList.length > 0) {
+                frontmatter += `\ntags:\n${tagList.map(t => `  - ${t}`).join('\n')}`;
+            }
+        }
+
+        frontmatter += `\n---\n\n`;
+
+        // Build markdown content
+        const body = content && content.trim()
+            ? content
+            : `# ${title}\n\n`;
+
+        const mdContent = frontmatter + body;
+        const filePath = path.join(targetDir, `${slug}.md`);
         fs.writeFileSync(filePath, mdContent, 'utf-8');
-        res.json({ success: true, path: `content/${slug}.md`, slug });
+
+        const relPath = folder
+            ? `content/${folder}/${slug}.md`
+            : `content/${slug}.md`;
+
+        res.json({ success: true, path: relPath, slug });
     } catch (err) {
         res.status(500).json({ success: false, error: err.message });
     }

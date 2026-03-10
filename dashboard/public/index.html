@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <div class="app">
     <!-- Header -->
@@ -115,9 +117,22 @@
     <!-- New Post Modal -->
     <div class="modal hidden" id="newPostModal">
       <div class="modal-backdrop" onclick="hideNewPostModal()"></div>
-      <div class="modal-content">
+      <div class="modal-content modal-wide">
         <h3>➕ Tạo bài viết mới</h3>
-        <input type="text" id="newPostTitle" placeholder="Tiêu đề bài viết..." class="input" autofocus>
+        <div class="form-row">
+          <input type="text" id="newPostTitle" placeholder="Tiêu đề bài viết..." class="input" autofocus>
+          <select id="newPostFolder" class="input input-select">
+            <option value="">📁 Danh mục</option>
+            <option value="books">📚 Books</option>
+            <option value="insights">🧠 Insights</option>
+            <option value="journal">📅 Journal</option>
+            <option value="tech">💡 Tech</option>
+            <option value="other">📌 Other</option>
+          </select>
+        </div>
+        <input type="text" id="newPostTags" placeholder="Tags (cách nhau bằng dấu phẩy)..." class="input">
+        <textarea id="newPostContent" placeholder="Nội dung markdown..." class="input input-textarea"
+          rows="12"></textarea>
         <div class="modal-actions">
           <button class="btn btn-ghost" onclick="hideNewPostModal()">Hủy</button>
           <button class="btn btn-primary" onclick="createNewPost()">Tạo</button>
@@ -131,4 +146,5 @@
 
   <script src="/js/app.js"></script>
 </body>
+
 </html>
