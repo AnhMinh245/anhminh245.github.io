@@ -1,6 +1,6 @@
 ---
 title: "Xây dựng cơ sở dữ liệu cá nhân"
-date: 2026-03-10
+date: 2026-03-12
 tags:
   - knowledge
 description: "Intro

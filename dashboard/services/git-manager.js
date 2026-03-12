@@ -5,8 +5,10 @@
 
 const simpleGit = require('simple-git');
 const path = require('path');
+const fs = require('fs');
 
-const REPO_PATH = path.resolve(__dirname, '..', '..');
+const REPO_ROOT = path.resolve(__dirname, '..', '..');
+const REPO_PATH = REPO_ROOT;
 const git = simpleGit(REPO_PATH);
 
 /**
@@ -80,8 +82,43 @@ async function selectiveDeploy(files, message) {
         throw new Error('No files selected for deployment');
     }
 
-    // Stage selected files
-    await git.add(files);
+    // Collect related image files from files/ subdirectories
+    const allFiles = [...files];
+    const seenDirs = new Set();
+
+    for (const file of files) {
+        // For each .md file, check if its parent dir has a files/ subdirectory with untracked images
+        const dir = path.dirname(file);
+        if (seenDirs.has(dir)) continue;
+        seenDirs.add(dir);
+
+        const filesDir = path.join(dir, 'files');
+        const absDirPath = path.join(REPO_ROOT, filesDir);
+        if (fs.existsSync(absDirPath) && fs.statSync(absDirPath).isDirectory()) {
+            // Read the markdown to find referenced images
+            const absFilePath = path.join(REPO_ROOT, file);
+            let mdContent = '';
+            try {
+                mdContent = fs.readFileSync(absFilePath, 'utf-8');
+            } catch (e) { /* file might be deleted */ }
+
+            const imageRefs = mdContent.match(/!\[[^\]]*\]\([^)]*files\/[^)]+\)/g) || [];
+
+            // Also add all untracked files in the files/ dir (safer — catches all images)
+            const imageFiles = fs.readdirSync(absDirPath)
+                .filter(f => /\.(png|jpg|jpeg|gif|webp|svg|bmp|ico)$/i.test(f))
+                .map(f => path.join(filesDir, f).replace(/\\/g, '/'));
+
+            for (const imgFile of imageFiles) {
+                if (!allFiles.includes(imgFile)) {
+                    allFiles.push(imgFile);
+                }
+            }
+        }
+    }
+
+    // Stage all files (articles + images)
+    await git.add(allFiles);
 
     // Commit
     const commitMsg = message || `Publish ${files.length} article(s) — ${new Date().toISOString().split('T')[0]}`;
@@ -94,7 +131,7 @@ async function selectiveDeploy(files, message) {
         commit: commitResult.commit || 'no changes',
         summary: commitResult.summary,
         pushed: true,
-        filesDeployed: files.length
+        filesDeployed: allFiles.length
     };
 }
 
